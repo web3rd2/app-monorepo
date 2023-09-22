@@ -1,8 +1,0 @@
-<testsuite name="Mocha Tests" tests="0" failures="0" errors="1" skipped="-1" timestamp="Fri, 22 Sep 2023 13:21:03 GMT" time="0.001">
-<testcase classname="Test suite 1" name="&#x22;before all&#x22; hook for &#x22;create wallet&#x22;" time="0"><failure>Cannot read properties of undefined (reading &#x27;configurations&#x27;)
-TypeError: Cannot read properties of undefined (reading &#x27;configurations&#x27;)
-    at TestDriver.relaunchApp (/Users/joe/p2e/app-monorepo/packages/e2e/drivers/WebTestDriver.js:84:39)
-    at relaunchApp (/Users/joe/p2e/app-monorepo/packages/e2e/api/index.js:33:25)
-    at Context.&#x3C;anonymous&#x3E; (e2e/suite1.e2e.js:16:11)
-    at processImmediate (node:internal/timers:466:21)</failure></testcase>
-</testsuite>
