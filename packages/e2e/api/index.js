@@ -8,7 +8,7 @@ module.exports = {
   },
   waitAndTapText(elementId, text, timeout) {
     return global.instance
-      ? global.instance.typeText(elementId, text, timeout)
+      ? global.instance.waitAndTapText(elementId, text, timeout)
       : helper.waitAndTapText(elementId, text, timeout);
   },
   delay(ms) {

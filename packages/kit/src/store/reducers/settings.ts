@@ -139,7 +139,7 @@ export const defaultPushNotification = {
 const initialState: SettingsState = {
   theme: 'system',
   lastLocale: 'system',
-  locale: 'system',
+  locale: 'en-US',
   version: process.env.VERSION ?? '1.0.0',
   buildNumber: process.env.BUILD_NUMBER ?? '2022010100',
   instanceId: uuid.v4() as string,

@@ -1,8 +1,0 @@
-<testsuite name="Mocha Tests" tests="1" failures="0" errors="1" skipped="0" timestamp="Fri, 22 Sep 2023 13:30:49 GMT" time="1.9">
-<testcase classname="Test suite 1" name="create wallet" time="0"><failure>this.findElement is not a function
-TypeError: this.findElement is not a function
-    at TestDriver.waitAndTap (drivers/WebTestDriver.js:76:37)
-    at waitAndTap (api/index.js:6:25)
-    at Context.&#x3C;anonymous&#x3E; (test/web/test.e2e.js:29:11)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure></testcase>
-</testsuite>

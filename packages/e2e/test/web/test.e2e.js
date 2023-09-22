@@ -17,7 +17,6 @@ describe('Test suite 1', () => {
   });
   beforeEach(async () => {
     // await device.reloadReactNative();
-    console.log('beforeEach');
   });
 
   // it('"create wallet" button should be visible', async () => {
@@ -26,6 +25,8 @@ describe('Test suite 1', () => {
 
   it('create wallet', async () => {
     await disableSynchronization();
+    await delay(5000);
+
     await waitAndTap('create_wallet', 5000);
     await waitAndTapText('password', 'Hello, World!', 5000);
     await waitAndTapText('confirmPassword', 'Hello, World!', 5000);

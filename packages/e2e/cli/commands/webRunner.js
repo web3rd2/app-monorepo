@@ -13,10 +13,10 @@ exports.runWebTests = async function (configPath, testCasesPattern) {
   global.driver = instance.driver;
   const mochaInstance = new Mocha({
     timeout: 15000,
-    reporter: 'xunit',
-    reporterOptions: {
-      output: './test-results.xml',
-    },
+    reporter: 'spec',
+    // reporterOptions: {
+    //   output: './test-results.xml',
+    // },
   });
   const testFiles = glob.sync(testCasesPattern, {
     absolute: true,
@@ -27,7 +27,9 @@ exports.runWebTests = async function (configPath, testCasesPattern) {
     mochaInstance.addFile(file);
   });
   try {
-    mochaInstance.run();
+    mochaInstance.run(async (failures) => {
+      await global.driver.quit();
+    });
   } catch (error) {
     console.error(error.message);
     process.exit(1);

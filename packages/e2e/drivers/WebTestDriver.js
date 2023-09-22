@@ -16,8 +16,13 @@ class TestDriver {
   }
 
   async init() {
-    this.driver = await new Builder().forBrowser('chrome').build();
-    console.log(11111);
+    const options = new chrome.Options();
+    options.addArguments('--lang=en');
+
+    this.driver = await new Builder()
+      .forBrowser('chrome')
+      .setChromeOptions(options)
+      .build();
   }
 
   async quit() {
@@ -48,15 +53,18 @@ class TestDriver {
   }
 
   async waitAndTapText(elementId, text, timeout) {
-    const inputElement = await this.findElement(elementId);
-    await this.waitElement(inputElement, timeout);
+    const inputElement = await this.findElementById(elementId);
+    await this.waitElement(elementId, timeout);
     // 获取焦点
     await this.clickElement(inputElement);
     await this.inputTextByElement(inputElement, text);
   }
 
-  async waitElement(element, timeout) {
-    await this.driver.wait(element, timeout);
+  async waitElement(elementId, timeout) {
+    await this.driver.wait(
+      until.elementLocated(By.xpath(`//*[@data-testid='${elementId}']`)),
+      timeout,
+    );
   }
 
   async clickElement(element) {
@@ -73,8 +81,8 @@ class TestDriver {
   }
 
   async waitAndTap(elementId, timeout) {
-    const inputElement = await this.findElement(elementId);
-    await this.waitElement(inputElement, timeout);
+    const inputElement = await this.findElementById(elementId);
+    await this.waitElement(elementId, timeout);
     // 获取焦点
     await this.clickElement(inputElement);
   }
