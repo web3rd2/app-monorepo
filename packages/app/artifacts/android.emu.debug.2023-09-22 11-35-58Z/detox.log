@@ -1,0 +1,1364 @@
+19:35:58.850 detox[17108] [90mB[39m node_modules/detox/local-cli/cli.js test -c android.emu.debug -C /Users/joe/p2e/app-monorepo/packages/app/detox.config.js --record-logs all
+  data: {
+    "id": "3f2e9f9b-0cb0-14a6-73c1-c00806ae753c",
+    "detoxConfig": {
+      "configurationName": "android.emu.debug",
+      "apps": {
+        "default": {
+          "type": "android.apk",
+          "build": "cd android && ./gradlew :app:assembleDebug :app:assembleAndroidTest -DtestBuildType=debug && cd ..",
+          "testBinaryPath": "android/app/build/outputs/apk/androidTest/direct/debug/app-direct-debug-androidTest.apk",
+          "binaryPath": "android/app/build/outputs/apk/direct/debug/app-direct-debug.apk"
+        }
+      },
+      "artifacts": {
+        "rootDir": "artifacts/android.emu.debug.2023-09-22 11-35-58Z",
+        "plugins": {
+          "log": {
+            "enabled": true,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "screenshot": {
+            "enabled": true,
+            "shouldTakeAutomaticSnapshots": false,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "video": {
+            "enabled": false,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "instruments": {
+            "enabled": false,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "uiHierarchy": {
+            "enabled": false,
+            "keepOnlyFailedTestsArtifacts": false
+          }
+        }
+      },
+      "behavior": {
+        "init": {
+          "keepLockFile": false,
+          "reinstallApp": true,
+          "exposeGlobals": true
+        },
+        "cleanup": {
+          "shutdownDevice": false
+        },
+        "launchApp": "auto"
+      },
+      "cli": {
+        "recordLogs": "all",
+        "configPath": "/Users/joe/p2e/app-monorepo/packages/app/detox.config.js",
+        "configuration": "android.emu.debug",
+        "start": true
+      },
+      "device": {
+        "type": "android.emulator",
+        "device": {
+          "avdName": "Pixel_3a_API_29"
+        }
+      },
+      "logger": {
+        "level": "info",
+        "overrideConsole": true,
+        "options": {
+          "showLoggerName": true,
+          "showPid": true,
+          "showLevel": false,
+          "showMetadata": false,
+          "basepath": "/Users/joe/p2e/app-monorepo/packages/app/node_modules/detox/src",
+          "prefixers": {},
+          "stringifiers": {}
+        }
+      },
+      "testRunner": {
+        "retries": 0,
+        "forwardEnv": false,
+        "bail": false,
+        "jest": {
+          "setupTimeout": 300000,
+          "teardownTimeout": 30000,
+          "retryAfterCircusRetries": false,
+          "reportWorkerAssign": true
+        },
+        "args": {
+          "$0": "yarn dlx jest",
+          "_": [
+            "/Users/joe/p2e/app-monorepo/packages/app/e2e"
+          ],
+          "config": "/Users/joe/p2e/app-monorepo/packages/app/e2e/jest.config.js",
+          "--": []
+        }
+      },
+      "session": {
+        "autoStart": true,
+        "debugSynchronization": 10000
+      }
+    },
+    "detoxIPCServer": "primary-17108",
+    "testResults": [],
+    "testSessionIndex": 0,
+    "workersCount": 0
+  }
+19:35:58.857 detox[17108] [90mi[39m Server path not specified, so defaulting to ipc.config.socketRoot + ipc.config.appspace + ipc.config.id /tmp/detox.primary-17108
+19:35:58.858 detox[17108] [90mi[39m starting server on  /tmp/detox.primary-17108 
+19:35:58.858 detox[17108] [90mi[39m starting TLS server false
+19:35:58.858 detox[17108] [90mi[39m starting server as Unix || Windows Socket
+19:35:58.864 detox[17108] [90mi[39m Detox server listening on localhost:64041...
+19:35:58.868 detox[17108] [90mi[39m Serialized the session state at: /private/var/folders/lz/tqh25x1x7xg561858y_kk3900000gn/T/3f2e9f9b-0cb0-14a6-73c1-c00806ae753c.detox.json
+19:35:58.870 detox[17108] [90mB[39m yarn dlx jest --config /Users/joe/p2e/app-monorepo/packages/app/e2e/jest.config.js /Users/joe/p2e/app-monorepo/packages/app/e2e
+19:36:12.384 detox[17120] [90mB[39m e2e/suite1.e2e.js
+19:36:12.402 detox[17120] [90mB[39m set up environment
+19:36:12.411 detox[17120] [90mi[39m Service path not specified, so defaulting to ipc.config.socketRoot + ipc.config.appspace + id 
+19:36:12.411 detox[17120] [90mi[39m requested connection to  primary-17108 /tmp/detox.primary-17108
+19:36:12.411 detox[17120] [90mi[39m Connecting client on Unix Socket : /tmp/detox.primary-17108
+19:36:12.413 detox[17108] [90mi[39m ## socket connection to server detected ##
+19:36:12.413 detox[17120] [90mi[39m retrying reset
+19:36:12.415 detox[17120] [90mi[39m dispatching event to  primary-17108 /tmp/detox.primary-17108  :  registerContext , { id: 'secondary-17120' }
+19:36:12.417 detox[17108] [90mi[39m received event of :  registerContext { id: 'secondary-17120' }
+19:36:12.418 detox[17108] [90mi[39m dispatching event to socket  :  registerContextDone { testResults: [], testSessionIndex: 0 }
+19:36:12.418 detox[17120] [90mi[39m ## received events ##
+19:36:12.419 detox[17120] [90mi[39m detected event registerContextDone { testResults: [], testSessionIndex: 0 }
+19:36:12.419 detox[17120] [90mi[39m dispatching event to  primary-17108 /tmp/detox.primary-17108  :  registerWorker , { workerId: 'w1' }
+19:36:12.420 detox[17108] [90mi[39m received event of :  registerWorker { workerId: 'w1' }
+19:36:12.420 detox[17108] [90mi[39m dispatching event to socket  :  registerWorkerDone { workersCount: 1 }
+19:36:12.420 detox[17108] [90mi[39m broadcasting event to all known sockets listening to  /tmp/detox.primary-17108  :   sessionStateUpdate { workersCount: 1 }
+19:36:12.420 detox[17120] [90mi[39m ## received events ##
+19:36:12.420 detox[17120] [90mi[39m detected event registerWorkerDone { workersCount: 1 }
+19:36:12.591 detox[17120] [90mi[39m ## received events ##
+19:36:12.591 detox[17120] [90mi[39m detected event sessionStateUpdate { workersCount: 1 }
+19:36:12.598 detox[17108] [90mB[39m connection :64041<->:64157
+19:36:12.599 detox[17120] [90mi[39m opened web socket to: ws://localhost:64041
+19:36:12.600 detox[17120] [90mi[39m send message
+  data: {"type":"login","params":{"sessionId":"dee4c414-fae5-2856-7380-6a455ef6397e","role":"tester"},"messageId":0}
+19:36:12.603 detox[17108] [90mi[39m get
+  data: {"type":"login","params":{"sessionId":"dee4c414-fae5-2856-7380-6a455ef6397e","role":"tester"},"messageId":0}
+19:36:12.604 detox[17108] [90mi[39m created session dee4c414-fae5-2856-7380-6a455ef6397e
+19:36:12.604 detox[17108] [90mi[39m send
+  data: {
+    "type": "loginSuccess",
+    "params": {
+      "testerConnected": true,
+      "appConnected": false
+    },
+    "messageId": 0
+  }
+19:36:12.605 detox[17108] [90mi[39m tester joined session dee4c414-fae5-2856-7380-6a455ef6397e
+19:36:12.606 detox[17120] [90mi[39m get message
+  data: {"type":"loginSuccess","params":{"testerConnected":true,"appConnected":false},"messageId":0}
+   
+19:36:12.667 detox[17120] [90mB[39m allocate
+  args: ({"type":"android.emulator","device":{"avdName":"Pixel_3a_API_29"}})
+19:36:12.668 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/emulator/emulator" -list-avds --verbose
+19:36:12.735 detox[17120] [90mi[39m Pixel_3a_API_29
+
+19:36:12.735 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/emulator/emulator" -version 
+19:36:13.142 detox[17120] [90mi[39m INFO    | Storing crashdata in: /tmp/android-joe/emu-crash.db, detection is enabled
+INFO    | Duplicate loglines will be removed, if you wish to see each indiviudal line launch with the -log-nofilter flag.
+Android emulator version 32.1.15.0 (build_id 10696886) (CL:N/A)
+Copyright (C) 2006-2017 The Android Open Source Project and many others.
+This program is a derivative of the QEMU CPU emulator (www.qemu.org).
+
+  This software is licensed under the terms of the GNU General Public
+  License version 2, as published by the Free Software Foundation, and
+  may be copied, distributed, and modified under those terms.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+
+19:36:13.143 detox[17120] [90mi[39m Detected emulator binary version { major: 32, minor: 1, patch: 15, toString: [Function: toString] }
+19:36:13.143 detox[17120] [90mi[39m Trying to allocate a device based on "Pixel_3a_API_29"
+19:36:13.145 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb"  devices
+19:36:13.167 detox[17120] [90mi[39m List of devices attached
+emulator-11654	device
+
+
+19:36:13.168 detox[17120] [90mi[39m port: 11654, host: localhost
+19:36:13.176 detox[17120] [90mi[39m Found a matching & free device emulator-11654
+19:36:13.177 detox[17120] [90mi[39m Settled on emulator-11654
+19:36:13.178 detox[17120] [90mE[39m allocate
+19:36:13.178 detox[17120] [90mB[39m postAllocate
+  args: ({"adbName":"emulator-11654"})
+19:36:13.178 detox[17120] [90mB[39m _awaitEmulatorBoot
+  args: ("emulator-11654")
+19:36:13.178 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"
+19:36:13.234 detox[17120] [90mi[39m 1
+
+19:36:13.234 detox[17120] [90mE[39m _awaitEmulatorBoot
+19:36:13.235 detox[17120] [90mB[39m onBootDevice
+  args: ({"deviceId":"emulator-11654","type":"Pixel_3a_API_29","coldBoot":false})
+19:36:13.235 detox[17120] [90mE[39m onBootDevice
+19:36:13.235 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop ro.build.version.sdk"
+19:36:13.267 detox[17120] [90mi[39m 29
+
+19:36:13.267 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "settings put global animator_duration_scale 0"
+19:36:13.322 detox[17120] [90mi[39m 
+19:36:13.322 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "settings put global window_animation_scale 0"
+19:36:13.368 detox[17120] [90mi[39m 
+19:36:13.368 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "settings put global transition_animation_scale 0"
+19:36:13.405 detox[17120] [90mi[39m 
+19:36:13.405 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "dumpsys power | grep \"^[ ]*m[UW].*=\""
+19:36:13.454 detox[17120] [90mi[39m   mWakefulness=Awake
+  mWakefulnessChanging=false
+  mWakeLockSummary=0x1
+  mUserActivitySummary=0x1
+  mWakeUpWhenPluggedOrUnpluggedConfig=false
+  mWakeUpWhenPluggedOrUnpluggedInTheaterModeConfig=false
+  mUserActivityTimeoutOverrideFromWindowManager=-1
+  mUserInactiveOverrideFromWindowManager=false
+
+19:36:13.455 detox[17120] [90mE[39m postAllocate
+19:36:13.483 detox[17120] [90mB[39m installUtilBinaries
+  args: ()
+19:36:13.484 detox[17120] [90mE[39m installUtilBinaries
+19:36:13.484 detox[17120] [90mB[39m selectApp
+  args: ("default")
+19:36:13.486 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/build-tools/34.0.0/aapt" dump badging "/Users/joe/p2e/app-monorepo/packages/app/android/app/build/outputs/apk/direct/debug/app-direct-debug.apk"
+19:36:13.541 detox[17120] [90mi[39m package: name='so.onekey.app.wallet.dev' versionCode='1' versionName='4.14.0' platformBuildVersionName='13' platformBuildVersionCode='33' compileSdkVersion='33' compileSdkVersionCodename='13'
+sdkVersion:'23'
+targetSdkVersion:'33'
+uses-permission: name='android.permission.SYSTEM_ALERT_WINDOW'
+uses-permission: name='android.permission.POST_NOTIFICATIONS'
+uses-permission: name='android.permission.CAMERA'
+uses-permission: name='android.permission.FOREGROUND_SERVICE'
+uses-permission: name='android.permission.INTERNET'
+uses-permission: name='android.permission.ACCESS_WIFI_STATE'
+uses-permission: name='android.permission.READ_EXTERNAL_STORAGE'
+uses-permission: name='android.permission.VIBRATE'
+uses-permission: name='android.permission.WRITE_EXTERNAL_STORAGE'
+uses-permission: name='android.permission.NFC'
+uses-permission: name='android.permission.BLUETOOTH_SCAN'
+uses-permission: name='android.permission.BLUETOOTH_CONNECT'
+uses-permission: name='android.permission.READ_MEDIA_IMAGES'
+uses-permission: name='android.permission.READ_MEDIA_VIDEO'
+uses-permission: name='android.permission.BLUETOOTH' maxSdkVersion='30'
+uses-permission: name='android.permission.BLUETOOTH_ADMIN' maxSdkVersion='30'
+uses-permission-sdk-23: name='android.permission.ACCESS_COARSE_LOCATION' maxSdkVersion='30'
+uses-permission-sdk-23: name='android.permission.ACCESS_FINE_LOCATION' maxSdkVersion='30'
+uses-permission: name='android.permission.ACCESS_NETWORK_STATE'
+uses-permission: name='android.permission.WAKE_LOCK'
+uses-permission: name='so.onekey.app.wallet.dev.permission.JPUSH_MESSAGE'
+uses-permission: name='android.permission.RECEIVE_USER_PRESENT'
+uses-permission: name='android.permission.READ_PHONE_STATE'
+uses-permission: name='android.permission.MOUNT_UNMOUNT_FILESYSTEMS'
+uses-permission: name='android.permission.CHANGE_NETWORK_STATE'
+uses-permission: name='android.permission.USE_FINGERPRINT'
+uses-permission: name='android.permission.USE_BIOMETRIC'
+uses-permission: name='android.permission.READ_MEDIA_AUDIO'
+uses-permission: name='android.permission.ACCESS_MEDIA_LOCATION'
+uses-permission: name='android.permission.RECEIVE_BOOT_COMPLETED'
+uses-permission: name='com.google.android.c2dm.permission.RECEIVE'
+uses-permission: name='com.google.android.gms.permission.AD_ID'
+uses-permission: name='com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE'
+uses-permission: name='so.onekey.app.wallet.dev.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'
+uses-permission: name='com.google.android.providers.gsf.permission.READ_GSERVICES'
+uses-permission: name='com.google.android.gms.permission.ACTIVITY_RECOGNITION'
+uses-permission: name='com.sec.android.provider.badge.permission.READ'
+uses-permission: name='com.sec.android.provider.badge.permission.WRITE'
+uses-permission: name='com.htc.launcher.permission.READ_SETTINGS'
+uses-permission: name='com.htc.launcher.permission.UPDATE_SHORTCUT'
+uses-permission: name='com.sonyericsson.home.permission.BROADCAST_BADGE'
+uses-permission: name='com.sonymobile.home.permission.PROVIDER_INSERT_BADGE'
+uses-permission: name='com.anddoes.launcher.permission.UPDATE_COUNT'
+uses-permission: name='com.majeur.launcher.permission.UPDATE_BADGE'
+uses-permission: name='com.huawei.android.launcher.permission.CHANGE_BADGE'
+uses-permission: name='com.huawei.android.launcher.permission.READ_SETTINGS'
+uses-permission: name='com.huawei.android.launcher.permission.WRITE_SETTINGS'
+uses-permission: name='android.permission.READ_APP_BADGE'
+uses-permission: name='com.oppo.launcher.permission.READ_SETTINGS'
+uses-permission: name='com.oppo.launcher.permission.WRITE_SETTINGS'
+uses-permission: name='me.everything.badger.permission.BADGE_COUNT_READ'
+uses-permission: name='me.everything.badger.permission.BADGE_COUNT_WRITE'
+application-label:'OneKey Dev'
+application-label-af:'OneKey Dev'
+application-label-am:'OneKey Dev'
+application-label-ar:'OneKey Dev'
+application-label-as:'OneKey Dev'
+application-label-az:'OneKey Dev'
+application-label-be:'OneKey Dev'
+application-label-bg:'OneKey Dev'
+application-label-bn:'OneKey Dev'
+application-label-bs:'OneKey Dev'
+application-label-ca:'OneKey Dev'
+application-label-cs:'OneKey Dev'
+application-label-da:'OneKey Dev'
+application-label-de:'OneKey Dev'
+application-label-el:'OneKey Dev'
+application-label-en-AU:'OneKey Dev'
+application-label-en-CA:'OneKey Dev'
+application-label-en-GB:'OneKey Dev'
+application-label-en-IN:'OneKey Dev'
+application-label-en-XC:'OneKey Dev'
+application-label-es:'OneKey Dev'
+application-label-es-419:'OneKey Dev'
+application-label-es-GT:'OneKey Dev'
+application-label-es-US:'OneKey Dev'
+application-label-et:'OneKey Dev'
+application-label-eu:'OneKey Dev'
+application-label-fa:'OneKey Dev'
+application-label-fi:'OneKey Dev'
+application-label-fr:'OneKey Dev'
+application-label-fr-CA:'OneKey Dev'
+application-label-gl:'OneKey Dev'
+application-label-gu:'OneKey Dev'
+application-label-he:'OneKey Dev'
+application-label-hi:'OneKey Dev'
+application-label-hr:'OneKey Dev'
+application-label-hu:'OneKey Dev'
+application-label-hy:'OneKey Dev'
+application-label-id:'OneKey Dev'
+application-label-in:'OneKey Dev'
+application-label-is:'OneKey Dev'
+application-label-it:'OneKey Dev'
+application-label-iw:'OneKey Dev'
+application-label-ja:'OneKey Dev'
+application-label-ka:'OneKey Dev'
+application-label-kk:'OneKey Dev'
+application-label-km:'OneKey Dev'
+application-label-kn:'OneKey Dev'
+application-label-ko:'OneKey Dev'
+application-label-ky:'OneKey Dev'
+application-label-lo:'OneKey Dev'
+application-label-lt:'OneKey Dev'
+application-label-lv:'OneKey Dev'
+application-label-mk:'OneKey Dev'
+application-label-ml:'OneKey Dev'
+application-label-mn:'OneKey Dev'
+application-label-mr:'OneKey Dev'
+application-label-ms:'OneKey Dev'
+application-label-my:'OneKey Dev'
+application-label-nb:'OneKey Dev'
+application-label-ne:'OneKey Dev'
+application-label-nl:'OneKey Dev'
+application-label-or:'OneKey Dev'
+application-label-pa:'OneKey Dev'
+application-label-pl:'OneKey Dev'
+application-label-pt:'OneKey Dev'
+application-label-pt-BR:'OneKey Dev'
+application-label-pt-PT:'OneKey Dev'
+application-label-ro:'OneKey Dev'
+application-label-ru:'OneKey Dev'
+application-label-ru-RU:'OneKey Dev'
+application-label-si:'OneKey Dev'
+application-label-sk:'OneKey Dev'
+application-label-sl:'OneKey Dev'
+application-label-sq:'OneKey Dev'
+application-label-sr:'OneKey Dev'
+application-label-sr-Latn:'OneKey Dev'
+application-label-sv:'OneKey Dev'
+application-label-sw:'OneKey Dev'
+application-label-ta:'OneKey Dev'
+application-label-te:'OneKey Dev'
+application-label-th:'OneKey Dev'
+application-label-tl:'OneKey Dev'
+application-label-tr:'OneKey Dev'
+application-label-uk:'OneKey Dev'
+application-label-ur:'OneKey Dev'
+application-label-uz:'OneKey Dev'
+application-label-vi:'OneKey Dev'
+application-label-zh:'OneKey Dev'
+application-label-zh-CN:'OneKey Dev'
+application-label-zh-HK:'OneKey Dev'
+application-label-zh-TW:'OneKey Dev'
+application-label-zu:'OneKey Dev'
+application-icon-120:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application-icon-160:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application-icon-240:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application-icon-320:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application-icon-480:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application-icon-640:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application-icon-65534:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application: label='OneKey Dev' icon='res/mipmap-anydpi-v26/ic_launcher.xml'
+application-debuggable
+launchable-activity: name='so.onekey.app.wallet.MainActivity'  label='OneKey Dev' icon=''
+feature-group: label=''
+  uses-feature: name='android.hardware.bluetooth_le'
+  uses-feature: name='android.hardware.bluetooth'
+  uses-implied-feature: name='android.hardware.bluetooth' reason='requested android.permission.BLUETOOTH permission, requested android.permission.BLUETOOTH_ADMIN permission, and targetSdkVersion > 4'
+  uses-feature: name='android.hardware.camera'
+  uses-implied-feature: name='android.hardware.camera' reason='requested android.permission.CAMERA permission'
+  uses-feature: name='android.hardware.faketouch'
+  uses-implied-feature: name='android.hardware.faketouch' reason='default feature for all apps'
+  uses-feature-sdk-23: name='android.hardware.location'
+  uses-implied-feature-sdk-23: name='android.hardware.location' reason='requested android.permission.ACCESS_COARSE_LOCATION permission, and requested android.permission.ACCESS_FINE_LOCATION permission'
+  uses-feature: name='android.hardware.screen.portrait'
+  uses-implied-feature: name='android.hardware.screen.portrait' reason='one or more activities have specified a portrait orientation'
+  uses-feature: name='android.hardware.wifi'
+  uses-implied-feature: name='android.hardware.wifi' reason='requested android.permission.ACCESS_WIFI_STATE permission'
+main
+other-activities
+other-receivers
+other-services
+supports-screens: 'small' 'normal' 'large' 'xlarge'
+supports-any-density: 'true'
+locales: '--_--' 'af' 'am' 'ar' 'as' 'az' 'be' 'bg' 'bn' 'bs' 'ca' 'cs' 'da' 'de' 'el' 'en-AU' 'en-CA' 'en-GB' 'en-IN' 'en-XC' 'es' 'es-419' 'es-GT' 'es-US' 'et' 'eu' 'fa' 'fi' 'fr' 'fr-CA' 'gl' 'gu' 'he' 'hi' 'hr' 'hu' 'hy' 'id' 'in' 'is' 'it' 'iw' 'ja' 'ka' 'kk' 'km' 'kn' 'ko' 'ky' 'lo' 'lt' 'lv' 'mk' 'ml' 'mn' 'mr' 'ms' 'my' 'nb' 'ne' 'nl' 'or' 'pa' 'pl' 'pt' 'pt-BR' 'pt-PT' 'ro' 'ru' 'ru-RU' 'si' 'sk' 'sl' 'sq' 'sr' 'sr-Latn' 'sv' 'sw' 'ta' 'te' 'th' 'tl' 'tr' 'uk' 'ur' 'uz' 'vi' 'zh' 'zh-CN' 'zh-HK' 'zh-TW' 'zu'
+densities: '120' '160' '240' '320' '480' '640' '65534'
+native-code: 'arm64-v8a' 'x86'
+
+19:36:13.541 detox[17120] [90mE[39m selectApp
+19:36:13.542 detox[17120] [90mB[39m uninstallApp
+  args: ()
+19:36:13.542 detox[17120] [90mB[39m onBeforeUninstallApp
+  args: ({"deviceId":"emulator-11654","bundleId":"so.onekey.app.wallet.dev"})
+19:36:13.542 detox[17120] [90mE[39m onBeforeUninstallApp
+19:36:13.542 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "pm list packages so.onekey.app.wallet.dev"
+19:36:13.603 detox[17120] [90mi[39m package:so.onekey.app.wallet.dev
+package:so.onekey.app.wallet.dev.test
+
+19:36:13.604 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 uninstall so.onekey.app.wallet.dev
+19:36:14.083 detox[17120] [90mi[39m Success
+
+19:36:14.083 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "pm list packages so.onekey.app.wallet.dev.test"
+19:36:14.318 detox[17120] [90mi[39m package:so.onekey.app.wallet.dev.test
+
+19:36:14.318 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 uninstall so.onekey.app.wallet.dev.test
+19:36:14.984 detox[17120] [90mi[39m Success
+
+19:36:14.985 detox[17120] [90mE[39m uninstallApp
+19:36:14.985 detox[17120] [90mB[39m selectApp
+  args: ("default")
+19:36:14.986 detox[17120] [90mB[39m terminateApp
+  args: ()
+19:36:14.986 detox[17120] [90mB[39m onBeforeTerminateApp
+  args: ({"deviceId":"emulator-11654","bundleId":"so.onekey.app.wallet.dev"})
+19:36:14.987 detox[17120] [90mE[39m onBeforeTerminateApp
+19:36:14.987 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "am force-stop so.onekey.app.wallet.dev"
+19:36:15.085 detox[17120] [90mi[39m 
+19:36:15.086 detox[17120] [90mB[39m onTerminateApp
+  args: ({"deviceId":"emulator-11654","bundleId":"so.onekey.app.wallet.dev"})
+19:36:15.087 detox[17120] [90mE[39m onTerminateApp
+19:36:15.087 detox[17120] [90mE[39m terminateApp
+19:36:15.087 detox[17120] [90mE[39m selectApp
+19:36:15.087 detox[17120] [90mB[39m installApp
+  args: ()
+19:36:15.088 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/build-tools/34.0.0/aapt" dump xmlstrings "/Users/joe/p2e/app-monorepo/packages/app/android/app/build/outputs/apk/direct/debug/app-direct-debug.apk" AndroidManifest.xml
+19:36:15.112 detox[17120] [90mi[39m String pool of 282 unique UTF-16 non-sorted strings, 282 entries and 0 styles using 23140 bytes:
+String #0: theme
+String #1: label
+String #2: icon
+String #3: name
+String #4: permission
+String #5: protectionLevel
+String #6: enabled
+String #7: debuggable
+String #8: exported
+String #9: process
+String #10: taskAffinity
+String #11: stateNotNeeded
+String #12: excludeFromRecents
+String #13: authorities
+String #14: initOrder
+String #15: grantUriPermissions
+String #16: priority
+String #17: launchMode
+String #18: screenOrientation
+String #19: configChanges
+String #20: value
+String #21: resource
+String #22: mimeType
+String #23: scheme
+String #24: minSdkVersion
+String #25: versionCode
+String #26: versionName
+String #27: windowSoftInputMode
+String #28: noHistory
+String #29: targetSdkVersion
+String #30: maxSdkVersion
+String #31: allowBackup
+String #32: required
+String #33: largeHeap
+String #34: extractNativeLibs
+String #35: usesCleartextTraffic
+String #36: directBootAware
+String #37: networkSecurityConfig
+String #38: roundIcon
+String #39: compileSdkVersion
+String #40: compileSdkVersionCodename
+String #41: appComponentFactory
+String #42: foregroundServiceType
+String #43: usesPermissionFlags
+String #44: 
+String #45: */*
+String #46: 13
+String #47: 4.14.0
+String #48: :phoenix
+String #49: GlideModule
+String #50: JPUSH_APPKEY
+String #51: JPUSH_CHANNEL
+String #52: action
+String #53: activity
+String #54: android
+String #55: android.hardware.bluetooth_le
+String #56: android.intent.action.BOOT_COMPLETED
+String #57: android.intent.action.GET_CONTENT
+String #58: android.intent.action.MAIN
+String #59: android.intent.action.MY_PACKAGE_REPLACED
+String #60: android.intent.action.OPEN_DOCUMENT_TREE
+String #61: android.intent.action.PACKAGE_ADDED
+String #62: android.intent.action.PACKAGE_REMOVED
+String #63: android.intent.action.QUICKBOOT_POWERON
+String #64: android.intent.action.REBOOT
+String #65: android.intent.action.VIEW
+String #66: android.intent.category.BROWSABLE
+String #67: android.intent.category.DEFAULT
+String #68: android.intent.category.LAUNCHER
+String #69: android.intent.category.OPENABLE
+String #70: android.media.action.ACTION_VIDEO_CAPTURE
+String #71: android.media.action.IMAGE_CAPTURE
+String #72: android.net.conn.CONNECTIVITY_CHANGE
+String #73: android.permission.ACCESS_COARSE_LOCATION
+String #74: android.permission.ACCESS_FINE_LOCATION
+String #75: android.permission.ACCESS_MEDIA_LOCATION
+String #76: android.permission.ACCESS_NETWORK_STATE
+String #77: android.permission.ACCESS_WIFI_STATE
+String #78: android.permission.BIND_JOB_SERVICE
+String #79: android.permission.BLUETOOTH
+String #80: android.permission.BLUETOOTH_ADMIN
+String #81: android.permission.BLUETOOTH_CONNECT
+String #82: android.permission.BLUETOOTH_SCAN
+String #83: android.permission.CAMERA
+String #84: android.permission.CHANGE_NETWORK_STATE
+String #85: android.permission.DUMP
+String #86: android.permission.FOREGROUND_SERVICE
+String #87: android.permission.INTERNET
+String #88: android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+String #89: android.permission.NFC
+String #90: android.permission.POST_NOTIFICATIONS
+String #91: android.permission.READ_APP_BADGE
+String #92: android.permission.READ_EXTERNAL_STORAGE
+String #93: android.permission.READ_MEDIA_AUDIO
+String #94: android.permission.READ_MEDIA_IMAGES
+String #95: android.permission.READ_MEDIA_VIDEO
+String #96: android.permission.READ_PHONE_STATE
+String #97: android.permission.RECEIVE_BOOT_COMPLETED
+String #98: android.permission.RECEIVE_USER_PRESENT
+String #99: android.permission.SYSTEM_ALERT_WINDOW
+String #100: android.permission.USE_BIOMETRIC
+String #101: android.permission.USE_FINGERPRINT
+String #102: android.permission.VIBRATE
+String #103: android.permission.WAKE_LOCK
+String #104: android.permission.WRITE_EXTERNAL_STORAGE
+String #105: android.support.FILE_PROVIDER_PATHS
+String #106: androidx.camera.camera2.Camera2Config$DefaultProvider
+String #107: androidx.camera.core.impl.MetadataHolderService
+String #108: androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER
+String #109: androidx.core.app.CoreComponentFactory
+String #110: androidx.core.content.FileProvider
+String #111: androidx.emoji2.text.EmojiCompatInitializer
+String #112: androidx.lifecycle.ProcessLifecycleInitializer
+String #113: androidx.profileinstaller.ProfileInstallReceiver
+String #114: androidx.profileinstaller.ProfileInstallerInitializer
+String #115: androidx.profileinstaller.action.BENCHMARK_OPERATION
+String #116: androidx.profileinstaller.action.INSTALL_PROFILE
+String #117: androidx.profileinstaller.action.SAVE_PROFILE
+String #118: androidx.profileinstaller.action.SKIP_FILE
+String #119: androidx.startup
+String #120: androidx.startup.InitializationProvider
+String #121: androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity
+String #122: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity
+String #123: androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity
+String #124: app_data_collection_default_enabled
+String #125: application
+String #126: backend:com.google.android.datatransport.cct.CctBackendFactory
+String #127: category
+String #128: cct
+String #129: cl.json.RNShareFileProvider
+String #130: cn.android.service.JTransitActivity
+String #131: cn.jiguang.plugins.push.receiver.JPushBroadcastReceiver
+String #132: cn.jiguang.plugins.push.receiver.JPushModuleReceiver
+String #133: cn.jiguang.plugins.service.JCoreModuleService
+String #134: cn.jiguang.user.service.action
+String #135: cn.jpush.android.intent.DActivity
+String #136: cn.jpush.android.intent.JNotifyActivity
+String #137: cn.jpush.android.intent.NOTIFICATION_OPENED
+String #138: cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY
+String #139: cn.jpush.android.intent.PUSH_TIME
+String #140: cn.jpush.android.intent.PushService
+String #141: cn.jpush.android.intent.RECEIVE_MESSAGE
+String #142: cn.jpush.android.intent.REGISTER
+String #143: cn.jpush.android.intent.REPORT
+String #144: cn.jpush.android.service.AlarmReceiver
+String #145: cn.jpush.android.service.DActivity
+String #146: cn.jpush.android.service.JNotifyActivity
+String #147: cn.jpush.android.service.PushReceiver
+String #148: cn.jpush.android.service.PushService
+String #149: cn.jpush.android.service.SchedulerReceiver
+String #150: cn.jpush.android.ui.PopWinActivity
+String #151: cn.jpush.android.ui.PushActivity
+String #152: com.anddoes.launcher.permission.UPDATE_COUNT
+String #153: com.bumptech.glide.integration.okhttp3.OkHttpGlideModule
+String #154: com.canhub.cropper.CropFileProvider
+String #155: com.canhub.cropper.CropImageActivity
+String #156: com.facebook.react.devsupport.DevSettingsActivity
+String #157: com.facebook.soloader.enabled
+String #158: com.google.android.c2dm.intent.RECEIVE
+String #159: com.google.android.c2dm.permission.RECEIVE
+String #160: com.google.android.c2dm.permission.SEND
+String #161: com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+String #162: com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+String #163: com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+String #164: com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+String #165: com.google.android.gms.auth.api.signin.RevocationBoundService
+String #166: com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+String #167: com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION
+String #168: com.google.android.gms.common.api.GoogleApiActivity
+String #169: com.google.android.gms.measurement.AppMeasurementJobService
+String #170: com.google.android.gms.measurement.AppMeasurementReceiver
+String #171: com.google.android.gms.measurement.AppMeasurementService
+String #172: com.google.android.gms.permission.ACTIVITY_RECOGNITION
+String #173: com.google.android.gms.permission.AD_ID
+String #174: com.google.android.gms.version
+String #175: com.google.android.play.core.common.PlayCoreDialogWrapperActivity
+String #176: com.google.android.providers.gsf.permission.READ_GSERVICES
+String #177: com.google.firebase.MESSAGING_EVENT
+String #178: com.google.firebase.components.ComponentDiscoveryService
+String #179: com.google.firebase.components.ComponentRegistrar
+String #180: com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar
+String #181: com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+String #182: com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar
+String #183: com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar
+String #184: com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar
+String #185: com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+String #186: com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
+String #187: com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar
+String #188: com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar
+String #189: com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar
+String #190: com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar
+String #191: com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar
+String #192: com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar
+String #193: com.google.firebase.iid.FirebaseInstanceIdReceiver
+String #194: com.google.firebase.messaging.FirebaseMessagingService
+String #195: com.google.firebase.provider.FirebaseInitProvider
+String #196: com.google.mlkit.common.internal.MlKitComponentDiscoveryService
+String #197: com.google.mlkit.common.internal.MlKitInitProvider
+String #198: com.htc.intent.action.QUICKBOOT_POWERON
+String #199: com.htc.launcher.permission.READ_SETTINGS
+String #200: com.htc.launcher.permission.UPDATE_SHORTCUT
+String #201: com.huawei.android.launcher.permission.CHANGE_BADGE
+String #202: com.huawei.android.launcher.permission.READ_SETTINGS
+String #203: com.huawei.android.launcher.permission.WRITE_SETTINGS
+String #204: com.jakewharton.processphoenix.ProcessPhoenix
+String #205: com.majeur.launcher.permission.UPDATE_BADGE
+String #206: com.oppo.launcher.permission.READ_SETTINGS
+String #207: com.oppo.launcher.permission.WRITE_SETTINGS
+String #208: com.reactnativecommunity.webview.RNCWebViewFileProvider
+String #209: com.sec.android.provider.badge.permission.READ
+String #210: com.sec.android.provider.badge.permission.WRITE
+String #211: com.sonyericsson.home.permission.BROADCAST_BADGE
+String #212: com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+String #213: data
+String #214: ethereum
+String #215: expo.modules.adapters.react.apploader.RNHeadlessAppLoader
+String #216: expo.modules.clipboard.CLIPBOARD_FILE_PROVIDER_PATHS
+String #217: expo.modules.clipboard.ClipboardFileProvider
+String #218: expo.modules.filesystem.FileSystemFileProvider
+String #219: expo.modules.imagepicker.fileprovider.ImagePickerFileProvider
+String #220: expo.modules.location.services.LocationTaskService
+String #221: expo.modules.notifications.NOTIFICATION_EVENT
+String #222: expo.modules.notifications.service.ExpoFirebaseMessagingService
+String #223: expo.modules.notifications.service.NotificationForwarderActivity
+String #224: expo.modules.notifications.service.NotificationsService
+String #225: firebase_analytics_collection_deactivated
+String #226: firebase_analytics_collection_enabled
+String #227: firebase_crashlytics_collection_enabled
+String #228: firebase_performance_collection_deactivated
+String #229: firebase_performance_collection_enabled
+String #230: google_analytics_adid_collection_enabled
+String #231: google_analytics_automatic_screen_reporting_enabled
+String #232: google_analytics_default_allow_ad_personalization_signals
+String #233: google_analytics_ssaid_collection_enabled
+String #234: http://schemas.android.com/apk/res/android
+String #235: https
+String #236: intent
+String #237: intent-filter
+String #238: io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider
+String #239: io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider
+String #240: io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService
+String #241: io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService
+String #242: io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService
+String #243: jpush.custom
+String #244: manifest
+String #245: me.everything.badger.permission.BADGE_COUNT_READ
+String #246: me.everything.badger.permission.BADGE_COUNT_WRITE
+String #247: meta-data
+String #248: onekey-wallet
+String #249: org.unimodules.core.AppLoader#react-native-headless
+String #250: package
+String #251: permission
+String #252: platformBuildVersionCode
+String #253: platformBuildVersionName
+String #254: prod
+String #255: provider
+String #256: queries
+String #257: receiver
+String #258: service
+String #259: so.onekey.app.wallet
+String #260: so.onekey.app.wallet.MainActivity
+String #261: so.onekey.app.wallet.MainApplication
+String #262: so.onekey.app.wallet.dev
+String #263: so.onekey.app.wallet.dev.ClipboardFileProvider
+String #264: so.onekey.app.wallet.dev.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+String #265: so.onekey.app.wallet.dev.FileSystemFileProvider
+String #266: so.onekey.app.wallet.dev.ImagePickerFileProvider
+String #267: so.onekey.app.wallet.dev.androidx-startup
+String #268: so.onekey.app.wallet.dev.cropper.fileprovider
+String #269: so.onekey.app.wallet.dev.fileprovider
+String #270: so.onekey.app.wallet.dev.firebaseinitprovider
+String #271: so.onekey.app.wallet.dev.mlkitinitprovider
+String #272: so.onekey.app.wallet.dev.permission.JPUSH_MESSAGE
+String #273: so.onekey.app.wallet.dev.provider
+String #274: so.onekey.app.wallet.dev.reactnativefirebaseappinitprovider
+String #275: so.onekey.app.wallet.dev.reactnativefirebasecrashlyticsinitprovider
+String #276: so.onekey.app.wallet.dev.rnshare.fileprovider
+String #277: uses-feature
+String #278: uses-permission
+String #279: uses-permission-sdk-23
+String #280: uses-sdk
+String #281: wc
+
+19:36:15.113 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/build-tools/34.0.0/aapt" dump xmlstrings "/Users/joe/p2e/app-monorepo/packages/app/android/app/build/outputs/apk/androidTest/direct/debug/app-direct-debug-androidTest.apk" AndroidManifest.xml
+19:36:15.139 detox[17120] [90mi[39m String pool of 43 unique UTF-16 non-sorted strings, 43 entries and 0 styles using 2168 bytes:
+String #0: theme
+String #1: label
+String #2: name
+String #3: debuggable
+String #4: exported
+String #5: priority
+String #6: targetPackage
+String #7: handleProfiling
+String #8: functionalTest
+String #9: minSdkVersion
+String #10: targetSdkVersion
+String #11: extractNativeLibs
+String #12: compileSdkVersion
+String #13: compileSdkVersionCodename
+String #14: 13
+String #15: Tests for so.onekey.app.wallet.dev
+String #16: activity
+String #17: android
+String #18: android.intent.category.LAUNCHER
+String #19: android.permission.REORDER_TASKS
+String #20: android.test.runner
+String #21: androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity
+String #22: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity
+String #23: androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity
+String #24: androidx.test.orchestrator
+String #25: androidx.test.runner.AndroidJUnitRunner
+String #26: androidx.test.services
+String #27: application
+String #28: category
+String #29: com.google.android.apps.common.testing.services
+String #30: http://schemas.android.com/apk/res/android
+String #31: instrumentation
+String #32: intent-filter
+String #33: manifest
+String #34: package
+String #35: platformBuildVersionCode
+String #36: platformBuildVersionName
+String #37: queries
+String #38: so.onekey.app.wallet.dev
+String #39: so.onekey.app.wallet.dev.test
+String #40: uses-library
+String #41: uses-permission
+String #42: uses-sdk
+
+19:36:15.140 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "rm -fr /data/local/tmp/detox"
+19:36:15.328 detox[17120] [90mi[39m 
+19:36:15.328 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "mkdir -p /data/local/tmp/detox"
+19:36:15.391 detox[17120] [90mi[39m 
+19:36:15.391 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 push "/Users/joe/p2e/app-monorepo/packages/app/android/app/build/outputs/apk/direct/debug/app-direct-debug.apk" "/data/local/tmp/detox/Application.apk"
+19:36:16.763 detox[17120] [90mi[39m /Users/joe/p2e/app-monorepo/packages/app/android/app/build/outputs/apk/direct/debug/app-direct-debug.apk: 1 file pushed, 0 skipped. 187.9 MB/s (260948701 bytes in 1.325s)
+
+19:36:16.770 detox[17120] [90mi[39m /Users/joe/Library/Android/sdk/platform-tools/adb -s emulator-11654 shell pm install -r -g -t /data/local/tmp/detox/Application.apk
+19:36:18.190 detox[17120] [90mi[39m Success
+
+19:36:18.194 detox[17120] [90mi[39m /Users/joe/Library/Android/sdk/platform-tools/adb -s emulator-11654 shell pm install -r -g -t /data/local/tmp/detox/Application.apk exited with code #0
+19:36:18.195 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 push "/Users/joe/p2e/app-monorepo/packages/app/android/app/build/outputs/apk/androidTest/direct/debug/app-direct-debug-androidTest.apk" "/data/local/tmp/detox/Test.apk"
+19:36:18.330 detox[17120] [90mi[39m /Users/joe/p2e/app-monorepo/packages/app/android/app/build/outputs/apk/androidTest/direct/debug/app-direct-debug-androidTest.apk: 1 file pushed, 0 skipped. 126.1 MB/s (3333802 bytes in 0.025s)
+
+19:36:18.335 detox[17120] [90mi[39m /Users/joe/Library/Android/sdk/platform-tools/adb -s emulator-11654 shell pm install -r -g -t /data/local/tmp/detox/Test.apk
+19:36:18.726 detox[17120] [90mi[39m Success
+
+19:36:18.737 detox[17120] [90mi[39m /Users/joe/Library/Android/sdk/platform-tools/adb -s emulator-11654 shell pm install -r -g -t /data/local/tmp/detox/Test.apk exited with code #0
+19:36:18.737 detox[17120] [90mE[39m installApp
+19:36:18.742 detox[17120] [90mB[39m selectApp
+  args: ("default")
+19:36:18.742 detox[17120] [90mB[39m terminateApp
+  args: ()
+19:36:18.742 detox[17120] [90mB[39m onBeforeTerminateApp
+  args: ({"deviceId":"emulator-11654","bundleId":"so.onekey.app.wallet.dev"})
+19:36:18.743 detox[17120] [90mE[39m onBeforeTerminateApp
+19:36:18.743 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "am force-stop so.onekey.app.wallet.dev"
+19:36:18.916 detox[17120] [90mi[39m 
+19:36:18.916 detox[17120] [90mB[39m onTerminateApp
+  args: ({"deviceId":"emulator-11654","bundleId":"so.onekey.app.wallet.dev"})
+19:36:18.917 detox[17120] [90mE[39m onTerminateApp
+19:36:18.917 detox[17120] [90mE[39m terminateApp
+19:36:18.917 detox[17120] [90mE[39m selectApp
+19:36:18.917 detox[17120] [90mE[39m set up environment
+19:36:19.531 detox[17120] [90mi[39m suite1.e2e.js is assigned to emulator-11654 (Pixel_3a_API_29)
+19:36:19.533 detox[17120] [90mB[39m run the tests
+19:36:19.533 detox[17120] [90mB[39m onRunDescribeStart
+  args: ({"name":"ROOT_DESCRIBE_BLOCK"})
+19:36:19.534 detox[17120] [90mE[39m onRunDescribeStart
+19:36:19.534 detox[17120] [90mB[39m Test suite 1
+19:36:19.535 detox[17120] [90mB[39m onRunDescribeStart
+  args: ({"name":"Test suite 1"})
+19:36:19.535 detox[17120] [90mE[39m onRunDescribeStart
+19:36:19.535 detox[17120] [90mB[39m beforeAll
+19:36:19.538 detox[17120] [90mB[39m launchApp
+  args: ({"newInstance":true})
+19:36:19.539 detox[17120] [90mB[39m terminateApp
+  args: ("so.onekey.app.wallet.dev")
+19:36:19.539 detox[17120] [90mB[39m onBeforeTerminateApp
+  args: ({"deviceId":"emulator-11654","bundleId":"so.onekey.app.wallet.dev"})
+19:36:19.539 detox[17120] [90mE[39m onBeforeTerminateApp
+19:36:19.539 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "am force-stop so.onekey.app.wallet.dev"
+19:36:19.598 detox[17120] [90mi[39m 
+19:36:19.599 detox[17120] [90mB[39m onTerminateApp
+  args: ({"deviceId":"emulator-11654","bundleId":"so.onekey.app.wallet.dev"})
+19:36:19.599 detox[17120] [90mE[39m onTerminateApp
+19:36:19.599 detox[17120] [90mE[39m terminateApp
+19:36:19.600 detox[17120] [90mB[39m onBeforeLaunchApp
+  args: ({"deviceId":"emulator-11654","bundleId":"so.onekey.app.wallet.dev","launchArgs":{"detoxServer":"ws://localhost:64041","detoxSessionId":"dee4c414-fae5-2856-7380-6a455ef6397e"}})
+19:36:19.600 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "date +\"%m-%d %T.000\""
+19:36:19.644 detox[17120] [90mi[39m 09-22 19:36:19.000
+
+19:36:19.644 detox[17120] [90mE[39m onBeforeLaunchApp
+19:36:19.645 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 reverse tcp:64041 tcp:64041
+19:36:19.672 detox[17120] [90mi[39m 64041
+
+19:36:19.673 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "pm list instrumentation"
+19:36:19.715 detox[17120] [90mi[39m instrumentation:so.onekey.app.wallet.dev.test/androidx.test.runner.AndroidJUnitRunner (target=so.onekey.app.wallet.dev)
+
+19:36:19.720 detox[17120] [90mi[39m /Users/joe/Library/Android/sdk/platform-tools/adb -s emulator-11654 shell am instrument -w -r -e detoxServer ws://localhost:64041 -e detoxSessionId dee4c414-fae5-2856-7380-6a455ef6397e -e debug false so.onekey.app.wallet.dev.test/androidx.test.runner.AndroidJUnitRunner
+19:36:20.222 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "ps | grep \"so\.onekey\.app\.wallet\.dev$\""
+19:36:20.309 detox[17120] [90mi[39m u0_a157      13313  2043 5638644  61256 0                   0 R so.onekey.app.wallet.dev
+
+19:36:20.310 detox[17120] [90mB[39m onLaunchApp
+  args: ({"deviceId":"emulator-11654","bundleId":"so.onekey.app.wallet.dev","launchArgs":{"detoxServer":"ws://localhost:64041","detoxSessionId":"dee4c414-fae5-2856-7380-6a455ef6397e"},"pid":13313})
+19:36:20.311 detox[17120] [90mi[39m starting ADBLogcatRecording
+19:36:20.316 detox[17120] [90mi[39m /Users/joe/Library/Android/sdk/platform-tools/adb -s emulator-11654 shell "logcat -T \"09-22 19:36:19.000\" --pid=13313 -f /sdcard/193612650_0.log"
+19:36:20.317 detox[17120] [90mE[39m onLaunchApp
+19:36:20.617 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell du /sdcard/193612650_0.log
+19:36:20.658 detox[17120] [90mi[39m 4	/sdcard/193612650_0.log
+
+19:36:23.769 detox[17120] [90mi[39m INSTRUMENTATION_STATUS: class=so.onekey.app.wallet.DetoxTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+so.onekey.app.wallet.DetoxTest:
+
+19:36:23.770 detox[17120] [90mi[39m INSTRUMENTATION_STATUS: test=runDetoxTests
+INSTRUMENTATION_STATUS_CODE: 1
+
+19:36:24.696 detox[17108] [90mB[39m connection :64041<->:64246
+19:36:24.712 detox[17108] [90mi[39m get
+  data: {"messageId":0,"type":"login","params":{"role":"app","sessionId":"dee4c414-fae5-2856-7380-6a455ef6397e"}}
+19:36:24.713 detox[17108] [90mi[39m send
+  data: {
+    "messageId": 0,
+    "type": "loginSuccess",
+    "params": {
+      "testerConnected": true,
+      "appConnected": true
+    }
+  }
+19:36:24.713 detox[17108] [90mi[39m app joined session dee4c414-fae5-2856-7380-6a455ef6397e
+19:36:24.713 detox[17108] [90mi[39m send
+  data: {
+    "type": "appConnected"
+  }
+19:36:24.717 detox[17120] [90mi[39m get message
+  data: {"type":"appConnected"}
+   
+19:36:24.727 detox[17120] [90mi[39m send message
+  data: {"type":"isReady","params":{},"messageId":-1000}
+19:36:24.729 detox[17108] [90mi[39m get
+  data: {"type":"isReady","params":{},"messageId":-1000}
+19:36:24.729 detox[17108] [90mi[39m send
+  data: {
+    "type": "isReady",
+    "params": {},
+    "messageId": -1000
+  }
+19:36:34.723 detox[17120] [90mi[39m send message
+  data: {"type":"currentStatus","params":{},"messageId":1}
+19:36:34.731 detox[17108] [90mi[39m get
+  data: {"type":"currentStatus","params":{},"messageId":1}
+19:36:34.731 detox[17108] [90mi[39m send
+  data: {
+    "type": "currentStatus",
+    "params": {},
+    "messageId": 1
+  }
+19:36:34.739 detox[17108] [90mi[39m get
+  data: {"messageId":1,"type":"currentStatusResult","params":{"status":{"app_status":"busy","busy_resources":[{"name":"looper","description":{"thread":"\"LooperIdlingResource-703-mqt_js\" (JS Thread)","execution_type":"JavaScript code"}},{"name":"network","description":{"urls":["https:\/\/node.onekey.so\/eth","https:\/\/data.onekey.so\/config.json?nocache=0.27042224981232965","https:\/\/api.onekeycn.com\/api\/token\/list?impl=evm&chainId=1&includeNativeToken=1"]}},{"name":"bridge"}]}}}
+19:36:34.739 detox[17108] [90mi[39m send
+  data: {
+    "messageId": 1,
+    "type": "currentStatusResult",
+    "params": {
+      "status": {
+        "app_status": "busy",
+        "busy_resources": [
+          {
+            "name": "looper",
+            "description": {
+              "thread": "\"LooperIdlingResource-703-mqt_js\" (JS Thread)",
+              "execution_type": "JavaScript code"
+            }
+          },
+          {
+            "name": "network",
+            "description": {
+              "urls": [
+                "https://node.onekey.so/eth",
+                "https://data.onekey.so/config.json?nocache=0.27042224981232965",
+                "https://api.onekeycn.com/api/token/list?impl=evm&chainId=1&includeNativeToken=1"
+              ]
+            }
+          },
+          {
+            "name": "bridge"
+          }
+        ]
+      }
+    }
+  }
+19:36:34.740 detox[17120] [90mi[39m get message
+  data: {"messageId":1,"type":"currentStatusResult","params":{"status":{"app_status":"busy","busy_resources":[{"name":"looper","description":{"thread":"\"LooperIdlingResource-703-mqt_js\" (JS Thread)","execution_type":"JavaScript code"}},{"name":"network","description":{"urls":["https://node.onekey.so/eth","https://data.onekey.so/config.json?nocache=0.27042224981232965","https://api.onekeycn.com/api/token/list?impl=evm&chainId=1&includeNativeToken=1"]}},{"name":"bridge"}]}}}
+   
+19:36:34.744 detox[17120] [90mi[39m The app is busy with the following tasks:
+• "LooperIdlingResource-703-mqt_js" (JS Thread) is executing (JavaScript code).
+• 3 network requests with URLs:
+  - URL #1: https://node.onekey.so/eth
+  - URL #2: https://data.onekey.so/config.json?nocache=0.27042224981232965
+  - URL #3: https://api.onekeycn.com/api/token/list?impl=evm&chainId=1&includeNativeToken=1
+• Activity on the React-Native bridge.
+19:36:44.747 detox[17120] [90mi[39m send message
+  data: {"type":"currentStatus","params":{},"messageId":2}
+19:36:44.749 detox[17108] [90mi[39m get
+  data: {"type":"currentStatus","params":{},"messageId":2}
+19:36:44.749 detox[17108] [90mi[39m send
+  data: {
+    "type": "currentStatus",
+    "params": {},
+    "messageId": 2
+  }
+19:36:44.755 detox[17108] [90mi[39m get
+  data: {"messageId":2,"type":"currentStatusResult","params":{"status":{"app_status":"busy","busy_resources":[{"name":"network","description":{"urls":["https:\/\/node.onekey.so\/eth","https:\/\/data.onekey.so\/config.json?nocache=0.27042224981232965"]}}]}}}
+19:36:44.755 detox[17108] [90mi[39m send
+  data: {
+    "messageId": 2,
+    "type": "currentStatusResult",
+    "params": {
+      "status": {
+        "app_status": "busy",
+        "busy_resources": [
+          {
+            "name": "network",
+            "description": {
+              "urls": [
+                "https://node.onekey.so/eth",
+                "https://data.onekey.so/config.json?nocache=0.27042224981232965"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+19:36:44.756 detox[17120] [90mi[39m get message
+  data: {"messageId":2,"type":"currentStatusResult","params":{"status":{"app_status":"busy","busy_resources":[{"name":"network","description":{"urls":["https://node.onekey.so/eth","https://data.onekey.so/config.json?nocache=0.27042224981232965"]}}]}}}
+   
+19:36:44.756 detox[17120] [90mi[39m The app is busy with the following tasks:
+• 2 network requests with URLs:
+  - URL #1: https://node.onekey.so/eth
+  - URL #2: https://data.onekey.so/config.json?nocache=0.27042224981232965
+19:36:54.761 detox[17120] [90mi[39m send message
+  data: {"type":"currentStatus","params":{},"messageId":3}
+19:36:54.771 detox[17108] [90mi[39m get
+  data: {"type":"currentStatus","params":{},"messageId":3}
+19:36:54.772 detox[17108] [90mi[39m send
+  data: {
+    "type": "currentStatus",
+    "params": {},
+    "messageId": 3
+  }
+19:36:54.777 detox[17108] [90mi[39m get
+  data: {"messageId":3,"type":"currentStatusResult","params":{"status":{"app_status":"busy","busy_resources":[{"name":"network","description":{"urls":["https:\/\/node.onekey.so\/eth","https:\/\/data.onekey.so\/config.json?nocache=0.27042224981232965"]}}]}}}
+19:36:54.777 detox[17108] [90mi[39m send
+  data: {
+    "messageId": 3,
+    "type": "currentStatusResult",
+    "params": {
+      "status": {
+        "app_status": "busy",
+        "busy_resources": [
+          {
+            "name": "network",
+            "description": {
+              "urls": [
+                "https://node.onekey.so/eth",
+                "https://data.onekey.so/config.json?nocache=0.27042224981232965"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+19:36:54.778 detox[17120] [90mi[39m get message
+  data: {"messageId":3,"type":"currentStatusResult","params":{"status":{"app_status":"busy","busy_resources":[{"name":"network","description":{"urls":["https://node.onekey.so/eth","https://data.onekey.so/config.json?nocache=0.27042224981232965"]}}]}}}
+   
+19:36:54.778 detox[17120] [90mi[39m The app is busy with the following tasks:
+• 2 network requests with URLs:
+  - URL #1: https://node.onekey.so/eth
+  - URL #2: https://data.onekey.so/config.json?nocache=0.27042224981232965
+19:37:04.783 detox[17120] [90mi[39m send message
+  data: {"type":"currentStatus","params":{},"messageId":4}
+19:37:04.784 detox[17108] [90mi[39m get
+  data: {"type":"currentStatus","params":{},"messageId":4}
+19:37:04.785 detox[17108] [90mi[39m send
+  data: {
+    "type": "currentStatus",
+    "params": {},
+    "messageId": 4
+  }
+19:37:04.791 detox[17108] [90mi[39m get
+  data: {"messageId":4,"type":"currentStatusResult","params":{"status":{"app_status":"busy","busy_resources":[{"name":"network","description":{"urls":["https:\/\/node.onekey.so\/eth","https:\/\/data.onekey.so\/config.json?nocache=0.27042224981232965"]}}]}}}
+19:37:04.791 detox[17108] [90mi[39m send
+  data: {
+    "messageId": 4,
+    "type": "currentStatusResult",
+    "params": {
+      "status": {
+        "app_status": "busy",
+        "busy_resources": [
+          {
+            "name": "network",
+            "description": {
+              "urls": [
+                "https://node.onekey.so/eth",
+                "https://data.onekey.so/config.json?nocache=0.27042224981232965"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+19:37:04.792 detox[17120] [90mi[39m get message
+  data: {"messageId":4,"type":"currentStatusResult","params":{"status":{"app_status":"busy","busy_resources":[{"name":"network","description":{"urls":["https://node.onekey.so/eth","https://data.onekey.so/config.json?nocache=0.27042224981232965"]}}]}}}
+   
+19:37:04.792 detox[17120] [90mi[39m The app is busy with the following tasks:
+• 2 network requests with URLs:
+  - URL #1: https://node.onekey.so/eth
+  - URL #2: https://data.onekey.so/config.json?nocache=0.27042224981232965
+19:37:14.794 detox[17120] [90mi[39m send message
+  data: {"type":"currentStatus","params":{},"messageId":5}
+19:37:14.796 detox[17108] [90mi[39m get
+  data: {"type":"currentStatus","params":{},"messageId":5}
+19:37:14.796 detox[17108] [90mi[39m send
+  data: {
+    "type": "currentStatus",
+    "params": {},
+    "messageId": 5
+  }
+19:37:14.803 detox[17108] [90mi[39m get
+  data: {"messageId":5,"type":"currentStatusResult","params":{"status":{"app_status":"busy","busy_resources":[{"name":"network","description":{"urls":["https:\/\/node.onekey.so\/eth","https:\/\/data.onekey.so\/config.json?nocache=0.27042224981232965"]}}]}}}
+19:37:14.803 detox[17108] [90mi[39m send
+  data: {
+    "messageId": 5,
+    "type": "currentStatusResult",
+    "params": {
+      "status": {
+        "app_status": "busy",
+        "busy_resources": [
+          {
+            "name": "network",
+            "description": {
+              "urls": [
+                "https://node.onekey.so/eth",
+                "https://data.onekey.so/config.json?nocache=0.27042224981232965"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+19:37:14.803 detox[17120] [90mi[39m get message
+  data: {"messageId":5,"type":"currentStatusResult","params":{"status":{"app_status":"busy","busy_resources":[{"name":"network","description":{"urls":["https://node.onekey.so/eth","https://data.onekey.so/config.json?nocache=0.27042224981232965"]}}]}}}
+   
+19:37:14.804 detox[17120] [90mi[39m The app is busy with the following tasks:
+• 2 network requests with URLs:
+  - URL #1: https://node.onekey.so/eth
+  - URL #2: https://data.onekey.so/config.json?nocache=0.27042224981232965
+19:37:24.807 detox[17120] [90mi[39m send message
+  data: {"type":"currentStatus","params":{},"messageId":6}
+19:37:24.810 detox[17108] [90mi[39m get
+  data: {"type":"currentStatus","params":{},"messageId":6}
+19:37:24.810 detox[17108] [90mi[39m send
+  data: {
+    "type": "currentStatus",
+    "params": {},
+    "messageId": 6
+  }
+19:37:24.816 detox[17108] [90mi[39m get
+  data: {"messageId":6,"type":"currentStatusResult","params":{"status":{"app_status":"busy","busy_resources":[{"name":"network","description":{"urls":["https:\/\/node.onekey.so\/eth","https:\/\/data.onekey.so\/config.json?nocache=0.27042224981232965"]}}]}}}
+19:37:24.816 detox[17108] [90mi[39m send
+  data: {
+    "messageId": 6,
+    "type": "currentStatusResult",
+    "params": {
+      "status": {
+        "app_status": "busy",
+        "busy_resources": [
+          {
+            "name": "network",
+            "description": {
+              "urls": [
+                "https://node.onekey.so/eth",
+                "https://data.onekey.so/config.json?nocache=0.27042224981232965"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+19:37:24.817 detox[17120] [90mi[39m get message
+  data: {"messageId":6,"type":"currentStatusResult","params":{"status":{"app_status":"busy","busy_resources":[{"name":"network","description":{"urls":["https://node.onekey.so/eth","https://data.onekey.so/config.json?nocache=0.27042224981232965"]}}]}}}
+   
+19:37:24.817 detox[17120] [90mi[39m The app is busy with the following tasks:
+• 2 network requests with URLs:
+  - URL #1: https://node.onekey.so/eth
+  - URL #2: https://data.onekey.so/config.json?nocache=0.27042224981232965
+19:37:34.820 detox[17120] [90mi[39m send message
+  data: {"type":"currentStatus","params":{},"messageId":7}
+19:37:34.822 detox[17108] [90mi[39m get
+  data: {"type":"currentStatus","params":{},"messageId":7}
+19:37:34.822 detox[17108] [90mi[39m send
+  data: {
+    "type": "currentStatus",
+    "params": {},
+    "messageId": 7
+  }
+19:37:34.828 detox[17108] [90mi[39m get
+  data: {"messageId":7,"type":"currentStatusResult","params":{"status":{"app_status":"busy","busy_resources":[{"name":"network","description":{"urls":["https:\/\/node.onekey.so\/eth","https:\/\/data.onekey.so\/config.json?nocache=0.27042224981232965"]}}]}}}
+19:37:34.828 detox[17108] [90mi[39m send
+  data: {
+    "messageId": 7,
+    "type": "currentStatusResult",
+    "params": {
+      "status": {
+        "app_status": "busy",
+        "busy_resources": [
+          {
+            "name": "network",
+            "description": {
+              "urls": [
+                "https://node.onekey.so/eth",
+                "https://data.onekey.so/config.json?nocache=0.27042224981232965"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+19:37:34.829 detox[17120] [90mi[39m get message
+  data: {"messageId":7,"type":"currentStatusResult","params":{"status":{"app_status":"busy","busy_resources":[{"name":"network","description":{"urls":["https://node.onekey.so/eth","https://data.onekey.so/config.json?nocache=0.27042224981232965"]}}]}}}
+   
+19:37:34.829 detox[17120] [90mi[39m The app is busy with the following tasks:
+• 2 network requests with URLs:
+  - URL #1: https://node.onekey.so/eth
+  - URL #2: https://data.onekey.so/config.json?nocache=0.27042224981232965
+19:37:35.489 detox[17108] [90mi[39m get
+  data: {"messageId":-10000,"type":"AppWillTerminateWithError","params":{"errorDetails":"@Thread detox.primary(693):\njava.lang.RuntimeException: java.util.concurrent.ExecutionException: androidx.test.espresso.IdlingResourceTimeoutException: Wait for [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource] to become idle timed out\n\tat androidx.test.espresso.Espresso.onIdle(Espresso.java:15)\n\tat com.wix.detox.TestEngineFacade.awaitIdle(TestEngineFacade.kt:12)\n\tat com.wix.detox.adapters.server.ReadyActionHandler.handle(DetoxActionHandlers.kt:25)\n\tat com.wix.detox.adapters.server.ActionsExecutor.executeAction$lambda-2$lambda-1(DetoxActionsDispatcher.kt:64)\n\tat com.wix.detox.adapters.server.ActionsExecutor.$r8$lambda$nk3cF8ntnfFqbJOcVqd04vjb5nY(Unknown Source:0)\n\tat com.wix.detox.adapters.server.ActionsExecutor$$ExternalSyntheticLambda0.run(Unknown Source:8)\n\tat android.os.Handler.handleCallback(Handler.java:883)\n\tat android.os.Handler.dispatchMessage(Handler.java:100)\n\tat android.os.Looper.loop(Looper.java:214)\n\tat com.wix.detox.adapters.server.ActionsExecutor._init_$lambda-0(DetoxActionsDispatcher.kt:50)\n\tat com.wix.detox.adapters.server.ActionsExecutor.$r8$lambda$Hi5vyewqQiQqk57AkJy_cHqNGKY(Unknown Source:0)\n\tat com.wix.detox.adapters.server.ActionsExecutor$$ExternalSyntheticLambda1.run(Unknown Source:4)\n\tat java.lang.Thread.run(Thread.java:919)\nCaused by: java.util.concurrent.ExecutionException: androidx.test.espresso.IdlingResourceTimeoutException: Wait for [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource] to become idle timed out\n\tat java.util.concurrent.FutureTask.report(FutureTask.java:123)\n\tat java.util.concurrent.FutureTask.get(FutureTask.java:193)\n\tat androidx.test.espresso.Espresso.onIdle(Espresso.java:10)\n\t... 12 more\nCaused by: androidx.test.espresso.IdlingResourceTimeoutException: Wait for [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource] to become idle timed out\n\tat androidx.test.espresso.IdlingPolicy.handleTimeout(IdlingPolicy.java:4)\n\tat androidx.test.espresso.base.UiControllerImpl$5.resourcesHaveTimedOut(UiControllerImpl.java:1)\n\tat androidx.test.espresso.base.IdlingResourceRegistry$Dispatcher.handleTimeout(IdlingResourceRegistry.java:4)\n\tat androidx.test.espresso.base.IdlingResourceRegistry$Dispatcher.handleMessage(IdlingResourceRegistry.java:6)\n\tat android.os.Handler.dispatchMessage(Handler.java:103)\n\tat androidx.test.espresso.base.Interrogator.loopAndInterrogate(Interrogator.java:14)\n\tat androidx.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:8)\n\tat androidx.test.espresso.base.UiControllerImpl.loopMainThreadUntilIdle(UiControllerImpl.java:17)\n\tat androidx.test.espresso.Espresso$1.run(Espresso.java:1)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat android.os.Handler.handleCallback(Handler.java:883)\n\tat android.os.Handler.dispatchMessage(Handler.java:100)\n\tat android.os.Looper.loop(Looper.java:214)\n\tat android.app.ActivityThread.main(ActivityThread.java:7356)\n\tat java.lang.reflect.Method.invoke(Native Method)\n\tat com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492)\n\tat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)\n\nCheck device logs for full details!"}}
+19:37:35.489 detox[17108] [90mi[39m send
+  data: {
+    "messageId": -10000,
+    "type": "AppWillTerminateWithError",
+    "params": {
+      "errorDetails": "@Thread detox.primary(693):\njava.lang.RuntimeException: java.util.concurrent.ExecutionException: androidx.test.espresso.IdlingResourceTimeoutException: Wait for [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource] to become idle timed out\n\tat androidx.test.espresso.Espresso.onIdle(Espresso.java:15)\n\tat com.wix.detox.TestEngineFacade.awaitIdle(TestEngineFacade.kt:12)\n\tat com.wix.detox.adapters.server.ReadyActionHandler.handle(DetoxActionHandlers.kt:25)\n\tat com.wix.detox.adapters.server.ActionsExecutor.executeAction$lambda-2$lambda-1(DetoxActionsDispatcher.kt:64)\n\tat com.wix.detox.adapters.server.ActionsExecutor.$r8$lambda$nk3cF8ntnfFqbJOcVqd04vjb5nY(Unknown Source:0)\n\tat com.wix.detox.adapters.server.ActionsExecutor$$ExternalSyntheticLambda0.run(Unknown Source:8)\n\tat android.os.Handler.handleCallback(Handler.java:883)\n\tat android.os.Handler.dispatchMessage(Handler.java:100)\n\tat android.os.Looper.loop(Looper.java:214)\n\tat com.wix.detox.adapters.server.ActionsExecutor._init_$lambda-0(DetoxActionsDispatcher.kt:50)\n\tat com.wix.detox.adapters.server.ActionsExecutor.$r8$lambda$Hi5vyewqQiQqk57AkJy_cHqNGKY(Unknown Source:0)\n\tat com.wix.detox.adapters.server.ActionsExecutor$$ExternalSyntheticLambda1.run(Unknown Source:4)\n\tat java.lang.Thread.run(Thread.java:919)\nCaused by: java.util.concurrent.ExecutionException: androidx.test.espresso.IdlingResourceTimeoutException: Wait for [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource] to become idle timed out\n\tat java.util.concurrent.FutureTask.report(FutureTask.java:123)\n\tat java.util.concurrent.FutureTask.get(FutureTask.java:193)\n\tat androidx.test.espresso.Espresso.onIdle(Espresso.java:10)\n\t... 12 more\nCaused by: androidx.test.espresso.IdlingResourceTimeoutException: Wait for [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource] to become idle timed out\n\tat androidx.test.espresso.IdlingPolicy.handleTimeout(IdlingPolicy.java:4)\n\tat androidx.test.espresso.base.UiControllerImpl$5.resourcesHaveTimedOut(UiControllerImpl.java:1)\n\tat androidx.test.espresso.base.IdlingResourceRegistry$Dispatcher.handleTimeout(IdlingResourceRegistry.java:4)\n\tat androidx.test.espresso.base.IdlingResourceRegistry$Dispatcher.handleMessage(IdlingResourceRegistry.java:6)\n\tat android.os.Handler.dispatchMessage(Handler.java:103)\n\tat androidx.test.espresso.base.Interrogator.loopAndInterrogate(Interrogator.java:14)\n\tat androidx.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:8)\n\tat androidx.test.espresso.base.UiControllerImpl.loopMainThreadUntilIdle(UiControllerImpl.java:17)\n\tat androidx.test.espresso.Espresso$1.run(Espresso.java:1)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat android.os.Handler.handleCallback(Handler.java:883)\n\tat android.os.Handler.dispatchMessage(Handler.java:100)\n\tat android.os.Looper.loop(Looper.java:214)\n\tat android.app.ActivityThread.main(ActivityThread.java:7356)\n\tat java.lang.reflect.Method.invoke(Native Method)\n\tat com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492)\n\tat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)\n\nCheck device logs for full details!"
+    }
+  }
+19:37:35.490 detox[17120] [90mi[39m get message
+  data: {"messageId":-10000,"type":"AppWillTerminateWithError","params":{"errorDetails":"@Thread detox.primary(693):\njava.lang.RuntimeException: java.util.concurrent.ExecutionException: androidx.test.espresso.IdlingResourceTimeoutException: Wait for [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource] to become idle timed out\n\tat androidx.test.espresso.Espresso.onIdle(Espresso.java:15)\n\tat com.wix.detox.TestEngineFacade.awaitIdle(TestEngineFacade.kt:12)\n\tat com.wix.detox.adapters.server.ReadyActionHandler.handle(DetoxActionHandlers.kt:25)\n\tat com.wix.detox.adapters.server.ActionsExecutor.executeAction$lambda-2$lambda-1(DetoxActionsDispatcher.kt:64)\n\tat com.wix.detox.adapters.server.ActionsExecutor.$r8$lambda$nk3cF8ntnfFqbJOcVqd04vjb5nY(Unknown Source:0)\n\tat com.wix.detox.adapters.server.ActionsExecutor$$ExternalSyntheticLambda0.run(Unknown Source:8)\n\tat android.os.Handler.handleCallback(Handler.java:883)\n\tat android.os.Handler.dispatchMessage(Handler.java:100)\n\tat android.os.Looper.loop(Looper.java:214)\n\tat com.wix.detox.adapters.server.ActionsExecutor._init_$lambda-0(DetoxActionsDispatcher.kt:50)\n\tat com.wix.detox.adapters.server.ActionsExecutor.$r8$lambda$Hi5vyewqQiQqk57AkJy_cHqNGKY(Unknown Source:0)\n\tat com.wix.detox.adapters.server.ActionsExecutor$$ExternalSyntheticLambda1.run(Unknown Source:4)\n\tat java.lang.Thread.run(Thread.java:919)\nCaused by: java.util.concurrent.ExecutionException: androidx.test.espresso.IdlingResourceTimeoutException: Wait for [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource] to become idle timed out\n\tat java.util.concurrent.FutureTask.report(FutureTask.java:123)\n\tat java.util.concurrent.FutureTask.get(FutureTask.java:193)\n\tat androidx.test.espresso.Espresso.onIdle(Espresso.java:10)\n\t... 12 more\nCaused by: androidx.test.espresso.IdlingResourceTimeoutException: Wait for [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource] to become idle timed out\n\tat androidx.test.espresso.IdlingPolicy.handleTimeout(IdlingPolicy.java:4)\n\tat androidx.test.espresso.base.UiControllerImpl$5.resourcesHaveTimedOut(UiControllerImpl.java:1)\n\tat androidx.test.espresso.base.IdlingResourceRegistry$Dispatcher.handleTimeout(IdlingResourceRegistry.java:4)\n\tat androidx.test.espresso.base.IdlingResourceRegistry$Dispatcher.handleMessage(IdlingResourceRegistry.java:6)\n\tat android.os.Handler.dispatchMessage(Handler.java:103)\n\tat androidx.test.espresso.base.Interrogator.loopAndInterrogate(Interrogator.java:14)\n\tat androidx.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:8)\n\tat androidx.test.espresso.base.UiControllerImpl.loopMainThreadUntilIdle(UiControllerImpl.java:17)\n\tat androidx.test.espresso.Espresso$1.run(Espresso.java:1)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat android.os.Handler.handleCallback(Handler.java:883)\n\tat android.os.Handler.dispatchMessage(Handler.java:100)\n\tat android.os.Looper.loop(Looper.java:214)\n\tat android.app.ActivityThread.main(ActivityThread.java:7356)\n\tat java.lang.reflect.Method.invoke(Native Method)\n\tat com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492)\n\tat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)\n\nCheck device logs for full details!"}}
+   
+19:37:40.494 detox[17120] [90mB[39m terminateApp
+  args: ()
+19:37:40.495 detox[17120] [90mB[39m onBeforeTerminateApp
+  args: ({"deviceId":"emulator-11654","bundleId":"so.onekey.app.wallet.dev"})
+19:37:40.495 detox[17120] [90mE[39m onBeforeTerminateApp
+19:37:40.498 detox[17120] [90mi[39m sending SIGINT to: /Users/joe/Library/Android/sdk/platform-tools/adb -s emulator-11654 shell am instrument -w -r -e detoxServer ws://localhost:64041 -e detoxSessionId dee4c414-fae5-2856-7380-6a455ef6397e -e debug false so.onekey.app.wallet.dev.test/androidx.test.runner.AndroidJUnitRunner
+19:37:40.501 detox[17120] [90mi[39m /Users/joe/Library/Android/sdk/platform-tools/adb -s emulator-11654 shell am instrument -w -r -e detoxServer ws://localhost:64041 -e detoxSessionId dee4c414-fae5-2856-7380-6a455ef6397e -e debug false so.onekey.app.wallet.dev.test/androidx.test.runner.AndroidJUnitRunner terminated with SIGINT
+19:37:40.502 detox[17120] [90mi[39m An error occurred while waiting for the app to become ready. Waiting for disconnection...
+  error: Failed to run application on the device
+  
+  HINT: Most likely, your tests have timed out and called detox.cleanup() while it was waiting for "ready" message (over WebSocket) from the instrumentation process.
+19:37:40.502 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "am force-stop so.onekey.app.wallet.dev"
+19:37:40.510 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 reverse --remove tcp:64041
+19:37:40.532 detox[17120] [90mi[39m 
+19:37:40.672 detox[17108] [90mi[39m app exited session dee4c414-fae5-2856-7380-6a455ef6397e
+19:37:40.672 detox[17108] [90mi[39m send
+  data: {
+    "type": "appDisconnected"
+  }
+19:37:40.672 detox[17108] [90mE[39m connection :64041<->:64246
+19:37:40.674 detox[17120] [90mi[39m get message
+  data: {"type":"appDisconnected"}
+   
+19:37:40.675 detox[17120] [90mE[39m terminateApp
+  error: The app has crashed, see the details below:
+  
+  @Thread detox.primary(693):
+  java.lang.RuntimeException: java.util.concurrent.ExecutionException: androidx.test.espresso.IdlingResourceTimeoutException: Wait for [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource] to become idle timed out
+  	at androidx.test.espresso.Espresso.onIdle(Espresso.java:15)
+  	at com.wix.detox.TestEngineFacade.awaitIdle(TestEngineFacade.kt:12)
+  	at com.wix.detox.adapters.server.ReadyActionHandler.handle(DetoxActionHandlers.kt:25)
+  	at com.wix.detox.adapters.server.ActionsExecutor.executeAction$lambda-2$lambda-1(DetoxActionsDispatcher.kt:64)
+  	at com.wix.detox.adapters.server.ActionsExecutor.$r8$lambda$nk3cF8ntnfFqbJOcVqd04vjb5nY(Unknown Source:0)
+  	at com.wix.detox.adapters.server.ActionsExecutor$$ExternalSyntheticLambda0.run(Unknown Source:8)
+  	at android.os.Handler.handleCallback(Handler.java:883)
+  	at android.os.Handler.dispatchMessage(Handler.java:100)
+  	at android.os.Looper.loop(Looper.java:214)
+  	at com.wix.detox.adapters.server.ActionsExecutor._init_$lambda-0(DetoxActionsDispatcher.kt:50)
+  	at com.wix.detox.adapters.server.ActionsExecutor.$r8$lambda$Hi5vyewqQiQqk57AkJy_cHqNGKY(Unknown Source:0)
+  	at com.wix.detox.adapters.server.ActionsExecutor$$ExternalSyntheticLambda1.run(Unknown Source:4)
+  	at java.lang.Thread.run(Thread.java:919)
+  Caused by: java.util.concurrent.ExecutionException: androidx.test.espresso.IdlingResourceTimeoutException: Wait for [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource] to become idle timed out
+  	at java.util.concurrent.FutureTask.report(FutureTask.java:123)
+  	at java.util.concurrent.FutureTask.get(FutureTask.java:193)
+  	at androidx.test.espresso.Espresso.onIdle(Espresso.java:10)
+  	... 12 more
+  Caused by: androidx.test.espresso.IdlingResourceTimeoutException: Wait for [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource] to become idle timed out
+  	at androidx.test.espresso.IdlingPolicy.handleTimeout(IdlingPolicy.java:4)
+  	at androidx.test.espresso.base.UiControllerImpl$5.resourcesHaveTimedOut(UiControllerImpl.java:1)
+  	at androidx.test.espresso.base.IdlingResourceRegistry$Dispatcher.handleTimeout(IdlingResourceRegistry.java:4)
+  	at androidx.test.espresso.base.IdlingResourceRegistry$Dispatcher.handleMessage(IdlingResourceRegistry.java:6)
+  	at android.os.Handler.dispatchMessage(Handler.java:103)
+  	at androidx.test.espresso.base.Interrogator.loopAndInterrogate(Interrogator.java:14)
+  	at androidx.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:8)
+  	at androidx.test.espresso.base.UiControllerImpl.loopMainThreadUntilIdle(UiControllerImpl.java:17)
+  	at androidx.test.espresso.Espresso$1.run(Espresso.java:1)
+  	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+  	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  	at android.os.Handler.handleCallback(Handler.java:883)
+  	at android.os.Handler.dispatchMessage(Handler.java:100)
+  	at android.os.Looper.loop(Looper.java:214)
+  	at android.app.ActivityThread.main(ActivityThread.java:7356)
+  	at java.lang.reflect.Method.invoke(Native Method)
+  	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492)
+  	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)
+  
+  Check device logs for full details!
+19:37:40.676 detox[17120] [90mB[39m onHookFailure
+  args: ({"error":{"name":"DetoxRuntimeError"},"hook":"beforeAll"})
+19:37:40.677 detox[17120] [90mE[39m onHookFailure
+19:37:40.678 detox[17120] [90mE[39m beforeAll
+  error: The app has crashed, see the details below:
+  
+  @Thread detox.primary(693):
+  java.lang.RuntimeException: java.util.concurrent.ExecutionException: androidx.test.espresso.IdlingResourceTimeoutException: Wait for [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource] to become idle timed out
+  	at androidx.test.espresso.Espresso.onIdle(Espresso.java:15)
+  	at com.wix.detox.TestEngineFacade.awaitIdle(TestEngineFacade.kt:12)
+  	at com.wix.detox.adapters.server.ReadyActionHandler.handle(DetoxActionHandlers.kt:25)
+  	at com.wix.detox.adapters.server.ActionsExecutor.executeAction$lambda-2$lambda-1(DetoxActionsDispatcher.kt:64)
+  	at com.wix.detox.adapters.server.ActionsExecutor.$r8$lambda$nk3cF8ntnfFqbJOcVqd04vjb5nY(Unknown Source:0)
+  	at com.wix.detox.adapters.server.ActionsExecutor$$ExternalSyntheticLambda0.run(Unknown Source:8)
+  	at android.os.Handler.handleCallback(Handler.java:883)
+  	at android.os.Handler.dispatchMessage(Handler.java:100)
+  	at android.os.Looper.loop(Looper.java:214)
+  	at com.wix.detox.adapters.server.ActionsExecutor._init_$lambda-0(DetoxActionsDispatcher.kt:50)
+  	at com.wix.detox.adapters.server.ActionsExecutor.$r8$lambda$Hi5vyewqQiQqk57AkJy_cHqNGKY(Unknown Source:0)
+  	at com.wix.detox.adapters.server.ActionsExecutor$$ExternalSyntheticLambda1.run(Unknown Source:4)
+  	at java.lang.Thread.run(Thread.java:919)
+  Caused by: java.util.concurrent.ExecutionException: androidx.test.espresso.IdlingResourceTimeoutException: Wait for [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource] to become idle timed out
+  	at java.util.concurrent.FutureTask.report(FutureTask.java:123)
+  	at java.util.concurrent.FutureTask.get(FutureTask.java:193)
+  	at androidx.test.espresso.Espresso.onIdle(Espresso.java:10)
+  	... 12 more
+  Caused by: androidx.test.espresso.IdlingResourceTimeoutException: Wait for [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource] to become idle timed out
+  	at androidx.test.espresso.IdlingPolicy.handleTimeout(IdlingPolicy.java:4)
+  	at androidx.test.espresso.base.UiControllerImpl$5.resourcesHaveTimedOut(UiControllerImpl.java:1)
+  	at androidx.test.espresso.base.IdlingResourceRegistry$Dispatcher.handleTimeout(IdlingResourceRegistry.java:4)
+  	at androidx.test.espresso.base.IdlingResourceRegistry$Dispatcher.handleMessage(IdlingResourceRegistry.java:6)
+  	at android.os.Handler.dispatchMessage(Handler.java:103)
+  	at androidx.test.espresso.base.Interrogator.loopAndInterrogate(Interrogator.java:14)
+  	at androidx.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:8)
+  	at androidx.test.espresso.base.UiControllerImpl.loopMainThreadUntilIdle(UiControllerImpl.java:17)
+  	at androidx.test.espresso.Espresso$1.run(Espresso.java:1)
+  	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+  	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  	at android.os.Handler.handleCallback(Handler.java:883)
+  	at android.os.Handler.dispatchMessage(Handler.java:100)
+  	at android.os.Looper.loop(Looper.java:214)
+  	at android.app.ActivityThread.main(ActivityThread.java:7356)
+  	at java.lang.reflect.Method.invoke(Native Method)
+  	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492)
+  	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)
+  
+  Check device logs for full details!
+19:37:40.679 detox[17120] [90mB[39m "create wallet" button should be visible
+19:37:40.679 detox[17120] [90mi[39m Test suite 1: "create wallet" button should be visible
+19:37:40.683 detox[17120] [90mE[39m "create wallet" button should be visible
+19:37:40.683 detox[17120] [90mi[39m Test suite 1: "create wallet" button should be visible [FAIL]
+19:37:40.685 detox[17120] [90mB[39m create wallet
+19:37:40.686 detox[17120] [90mi[39m Test suite 1: create wallet
+19:37:40.686 detox[17120] [90mE[39m create wallet
+19:37:40.686 detox[17120] [90mi[39m Test suite 1: create wallet [FAIL]
+19:37:40.687 detox[17120] [90mB[39m onRunDescribeFinish
+  args: ({"name":"Test suite 1"})
+19:37:40.687 detox[17120] [90mE[39m onRunDescribeFinish
+19:37:40.687 detox[17120] [90mE[39m Test suite 1
+19:37:40.688 detox[17120] [90mB[39m onRunDescribeFinish
+  args: ({"name":"ROOT_DESCRIBE_BLOCK"})
+19:37:40.688 detox[17120] [90mE[39m onRunDescribeFinish
+19:37:40.688 detox[17120] [90mE[39m run the tests
+19:37:40.734 detox[17120] [90mB[39m tear down environment
+19:37:40.734 detox[17120] [90mB[39m onBeforeCleanup
+  args: ()
+19:37:40.737 detox[17120] [90mi[39m 
+19:37:40.738 detox[17120] [90mB[39m onTerminateApp
+  args: ({"deviceId":"emulator-11654","bundleId":"so.onekey.app.wallet.dev"})
+19:37:40.738 detox[17120] [90mE[39m onTerminateApp
+19:37:40.738 detox[17120] [90mE[39m launchApp
+19:37:40.738 detox[17120] [90mi[39m saving ADBLogcatRecording to: artifacts/android.emu.debug.2023-09-22 11-35-58Z/emulator-11654 2023-09-22 11-37-40Z.startup.log
+19:37:40.738 detox[17120] [90mi[39m stopping ADBLogcatRecording
+19:37:40.739 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "date +\"%m-%d %T.000\""
+19:37:40.842 detox[17120] [90mi[39m 09-22 19:37:40.000
+
+19:37:40.844 detox[17120] [90mi[39m sending SIGINT to: /Users/joe/Library/Android/sdk/platform-tools/adb -s emulator-11654 shell logcat -T "09-22 19:36:19.000" --pid=13313 -f /sdcard/193612650_0.log
+19:37:40.847 detox[17120] [90mi[39m /Users/joe/Library/Android/sdk/platform-tools/adb -s emulator-11654 shell "logcat -T \"09-22 19:36:19.000\" --pid=13313 -f /sdcard/193612650_0.log" terminated with SIGINT
+19:37:40.849 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 pull "/sdcard/193612650_0.log" "artifacts/android.emu.debug.2023-09-22 11-35-58Z/emulator-11654 2023-09-22 11-37-40Z.startup.log"
+19:37:40.895 detox[17120] [90mi[39m /sdcard/193612650_0.log: 1 file pulled, 0 skipped. 31.4 MB/s (135013 bytes in 0.004s)
+
+19:37:40.895 detox[17120] [90mi[39m "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "rm  \"/sdcard/193612650_0.log\""
+19:37:40.948 detox[17120] [90mi[39m 
+19:37:40.951 detox[17120] [90mi[39m saving FileArtifact to: artifacts/android.emu.debug.2023-09-22 11-35-58Z/detox_pid_17120.json.log { append: true }
+19:37:40.951 detox[17120] [90mi[39m saving FileArtifact to: artifacts/android.emu.debug.2023-09-22 11-35-58Z/detox_pid_17120.log { append: true }
+19:37:40.951 detox[17120] [90mE[39m onBeforeCleanup
+19:37:40.956 detox[17108] [90mi[39m tester exited session dee4c414-fae5-2856-7380-6a455ef6397e
+19:37:40.957 detox[17108] [90mE[39m connection :64041<->:64157
+19:37:40.957 detox[17120] [90mB[39m free
+  args: ({"adbName":"emulator-11654"}, {"shutdown":false})
+19:37:40.960 detox[17120] [90mE[39m free
+19:37:40.961 detox[17108] [90mi[39m socket disconnected secondary-17120
+19:37:40.961 detox[17120] [90mi[39m connection closed primary-17108 /tmp/detox.primary-17108 0 tries remaining of 0
+19:37:40.961 detox[17120] [90mi[39m secondary-17120 exceeded connection rety amount of  or stopRetrying flag set.
+19:37:40.961 detox[17120] [90mE[39m tear down environment
+19:37:40.961 detox[17120] [90mE[39m e2e/suite1.e2e.js
+19:37:41.678 detox[17108] [90mE[39m Command failed with exit code = 1:
+yarn dlx jest --config /Users/joe/p2e/app-monorepo/packages/app/e2e/jest.config.js /Users/joe/p2e/app-monorepo/packages/app/e2e
+19:37:41.681 detox[17108] [90mi[39m Detox server has been closed gracefully
+19:37:41.683 detox[17108] [90mE[39m node_modules/detox/local-cli/cli.js test -c android.emu.debug -C /Users/joe/p2e/app-monorepo/packages/app/detox.config.js --record-logs all

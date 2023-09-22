@@ -1,0 +1,242 @@
+--------- beginning of main
+09-22 13:30:24.268 10490 10638 D DetoxWSClient: Received action 'invoke' (ID #3, params={"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"setSynchronization","args":[{"type":"boolean","value":false}]})
+09-22 13:30:24.268 10490 10634 I DetoxDispatcher: Handling action 'invoke' (ID #3)...
+09-22 13:30:24.269 10490 10634 D Detox   : class com.wix.detox.espresso.EspressoDetox, setSynchronization, [false]
+09-22 13:30:24.269 10490 10634 I DetoxWSClient: Sending out action 'invokeResult' (ID #3)
+09-22 13:30:24.269 10490 10634 I DetoxDispatcher: Done with action 'invoke'
+09-22 13:30:24.274 10490 10638 D DetoxWSClient: Received action 'invoke' (ID #4, params={"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"waitForAssertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["create_wallet",{"type":"boolean","value":false}]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}},{"type":"Double","value":5}]})
+09-22 13:30:24.274 10490 10634 I DetoxDispatcher: Handling action 'invoke' (ID #4)...
+09-22 13:30:24.274 10490 10634 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForTestId, [create_wallet, false]
+09-22 13:30:24.274 10490 10634 D Detox   : class androidx.test.espresso.Espresso, onView, [(view.getTag() is "create_wallet" and view has effective visibility <VISIBLE>)]
+09-22 13:30:24.274 10490 10634 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForSufficientlyVisible, [75]
+09-22 13:30:24.275 10490 10634 D Detox   : class com.wix.detox.espresso.DetoxAssertion, waitForAssertMatcher, [androidx.test.espresso.ViewInteraction@d2252a7, (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area), 5.0]
+09-22 13:30:24.276 10490 10490 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)}' assertion on view (view.getTag() is "create_wallet" and view has effective visibility <VISIBLE>)
+09-22 13:30:24.276 10490 10634 I DetoxWSClient: Sending out action 'invokeResult' (ID #4)
+09-22 13:30:24.276 10490 10634 I DetoxDispatcher: Done with action 'invoke'
+09-22 13:30:24.280 10490 10638 D DetoxWSClient: Received action 'invoke' (ID #5, params={"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["create_wallet",{"type":"boolean","value":false}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.action.ViewActions"},"method":"longClick","args":[]}}]})
+09-22 13:30:24.281 10490 10634 I DetoxDispatcher: Handling action 'invoke' (ID #5)...
+09-22 13:30:24.281 10490 10634 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForTestId, [create_wallet, false]
+09-22 13:30:24.281 10490 10634 D Detox   : class androidx.test.espresso.action.ViewActions, longClick, []
+09-22 13:30:24.281 10490 10634 W .app.wallet.de: Accessing hidden method Landroid/view/ViewConfiguration;->getDoubleTapMinTime()I (greylist, reflection, allowed)
+09-22 13:30:24.282 10490 10634 D Detox   : class com.wix.detox.espresso.EspressoDetox, perform, [(view.getTag() is "create_wallet" and view has effective visibility <VISIBLE>), androidx.test.espresso.action.GeneralClickAction@f64354]
+09-22 13:30:24.282 10490 10634 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-22 13:30:24.283 10490 10490 I ViewInteraction: Performing 'long click' action on view (view.getTag() is "create_wallet" and view has effective visibility <VISIBLE>)
+09-22 13:30:24.295 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:24.296 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:24.308 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:24.608 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 19 lines
+09-22 13:30:24.622 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:24.639 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:24.906 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 18 lines
+09-22 13:30:24.923 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:24.964 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:24.987 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:24.998 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:24.998 10490 10634 I DetoxWSClient: Sending out action 'invokeResult' (ID #5)
+09-22 13:30:24.998 10490 10634 I DetoxDispatcher: Done with action 'invoke'
+09-22 13:30:25.003 10490 10638 D DetoxWSClient: Received action 'invoke' (ID #6, params={"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"waitForAssertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["password",{"type":"boolean","value":false}]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}},{"type":"Double","value":5}]})
+09-22 13:30:25.003 10490 10634 I DetoxDispatcher: Handling action 'invoke' (ID #6)...
+09-22 13:30:25.003 10490 10634 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForTestId, [password, false]
+09-22 13:30:25.003 10490 10634 D Detox   : class androidx.test.espresso.Espresso, onView, [(view.getTag() is "password" and view has effective visibility <VISIBLE>)]
+09-22 13:30:25.004 10490 10634 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForSufficientlyVisible, [75]
+09-22 13:30:25.004 10490 10634 D Detox   : class com.wix.detox.espresso.DetoxAssertion, waitForAssertMatcher, [androidx.test.espresso.ViewInteraction@a8d574a, (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area), 5.0]
+09-22 13:30:25.015 10490 10490 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)}' assertion on view (view.getTag() is "password" and view has effective visibility <VISIBLE>)
+09-22 13:30:25.028 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:25.030 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 1 line
+09-22 13:30:25.037 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:25.044 10490 10490 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)}' assertion on view (view.getTag() is "password" and view has effective visibility <VISIBLE>)
+09-22 13:30:25.051 10490 10650 W unknown:ReactNative: Attempt to set local data for view with unknown tag: -1
+09-22 13:30:25.051 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:25.058 10490 10650 W unknown:ReactNative: Attempt to set local data for view with unknown tag: -1
+09-22 13:30:25.062 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:25.062 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 1 line
+09-22 13:30:25.072 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:25.075 10490 10490 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)}' assertion on view (view.getTag() is "password" and view has effective visibility <VISIBLE>)
+09-22 13:30:25.099 10490 10490 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)}' assertion on view (view.getTag() is "password" and view has effective visibility <VISIBLE>)
+09-22 13:30:25.108 10490 10650 D RNFBCrashlyticsInit: isCrashlyticsCollectionEnabled via RNFBMeta: true
+09-22 13:30:25.109 10490 10650 D RNFBCrashlyticsInit: isCrashlyticsCollectionEnabled after checking crashlytics_debug_enabled: false
+09-22 13:30:25.109 10490 10650 D RNFBCrashlyticsInit: isCrashlyticsCollectionEnabled final value: false
+09-22 13:30:25.111 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:25.123 10490 10490 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)}' assertion on view (view.getTag() is "password" and view has effective visibility <VISIBLE>)
+09-22 13:30:25.127 10490 10490 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 13:30:25.127 10490 10626 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+09-22 13:30:25.127 10490 10626 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 13:30:25.127 10490 10626 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 13:30:25.162 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:25.165 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 7 lines
+09-22 13:30:25.165 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:25.165 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:25.191 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 2 lines
+09-22 13:30:25.208 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:25.208 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:25.225 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:25.225 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 1 line
+09-22 13:30:25.281 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:25.294 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:25.294 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:25.294 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:25.307 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:25.307 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:25.324 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:25.375 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 4 lines
+09-22 13:30:25.376 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:25.376 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:25.390 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:25.393 10490 10490 I AssistStructure: Flattened final assist data: 2272 bytes, containing 1 windows, 9 views
+09-22 13:30:25.408 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:25.408 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:25.408 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:25.408 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:25.409 10490 10490 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)}' assertion on view (view.getTag() is "password" and view has effective visibility <VISIBLE>)
+09-22 13:30:25.410 10490 10634 I DetoxWSClient: Sending out action 'invokeResult' (ID #6)
+09-22 13:30:25.410 10490 10634 I DetoxDispatcher: Done with action 'invoke'
+09-22 13:30:25.414 10490 10638 D DetoxWSClient: Received action 'invoke' (ID #7, params={"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["password",{"type":"boolean","value":false}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.action.ViewActions"},"method":"replaceText","args":["Hello, World!"]}}]})
+09-22 13:30:25.414 10490 10634 I DetoxDispatcher: Handling action 'invoke' (ID #7)...
+09-22 13:30:25.414 10490 10634 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForTestId, [password, false]
+09-22 13:30:25.414 10490 10634 D Detox   : class androidx.test.espresso.action.ViewActions, replaceText, [Hello, World!]
+09-22 13:30:25.414 10490 10634 D Detox   : class com.wix.detox.espresso.EspressoDetox, perform, [(view.getTag() is "password" and view has effective visibility <VISIBLE>), androidx.test.espresso.action.ReplaceTextAction@b26fe9f]
+09-22 13:30:25.415 10490 10490 I ViewInteraction: Performing 'replace text(Hello, World!)' action on view (view.getTag() is "password" and view has effective visibility <VISIBLE>)
+09-22 13:30:25.469 10490 10634 I DetoxWSClient: Sending out action 'invokeResult' (ID #7)
+09-22 13:30:25.469 10490 10634 I DetoxDispatcher: Done with action 'invoke'
+09-22 13:30:25.474 10490 10638 D DetoxWSClient: Received action 'invoke' (ID #8, params={"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["confirmPassword",{"type":"boolean","value":false}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.action.ViewActions"},"method":"replaceText","args":["Hello, World!"]}}]})
+09-22 13:30:25.475 10490 10634 I DetoxDispatcher: Handling action 'invoke' (ID #8)...
+09-22 13:30:25.475 10490 10634 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForTestId, [confirmPassword, false]
+09-22 13:30:25.476 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:25.476 10490 10634 D Detox   : class androidx.test.espresso.action.ViewActions, replaceText, [Hello, World!]
+09-22 13:30:25.476 10490 10634 D Detox   : class com.wix.detox.espresso.EspressoDetox, perform, [(view.getTag() is "confirmPassword" and view has effective visibility <VISIBLE>), androidx.test.espresso.action.ReplaceTextAction@490fad8]
+09-22 13:30:25.505 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:25.505 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:25.505 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:25.505 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:25.510 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:25.510 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:25.527 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:25.545 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:25.559 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 1 line
+09-22 13:30:25.559 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:25.560 10490 10490 I ViewInteraction: Performing 'replace text(Hello, World!)' action on view (view.getTag() is "confirmPassword" and view has effective visibility <VISIBLE>)
+09-22 13:30:25.564 10490 10634 I DetoxWSClient: Sending out action 'invokeResult' (ID #8)
+09-22 13:30:25.564 10490 10634 I DetoxDispatcher: Done with action 'invoke'
+09-22 13:30:25.576 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:25.592 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:25.592 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:25.592 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:25.976 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 24 lines
+09-22 13:30:25.976 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:25.976 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:25.990 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:26.057 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 4 lines
+09-22 13:30:26.059 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:26.061 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:26.073 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:26.090 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:26.149 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:26.151 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:26.153 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:26.158 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:26.610 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 28 lines
+09-22 13:30:26.623 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:26.642 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:26.656 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:28.073 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 88 lines
+09-22 13:30:28.093 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:28.108 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:28.512 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 24 lines
+09-22 13:30:28.523 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:28.540 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:28.557 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:28.574 10490 10638 D DetoxWSClient: Received action 'invoke' (ID #9, params={"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["continue",{"type":"boolean","value":false}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.action.ViewActions"},"method":"longClick","args":[]}}]})
+09-22 13:30:28.575 10490 10634 I DetoxDispatcher: Handling action 'invoke' (ID #9)...
+09-22 13:30:28.575 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:28.576 10490 10634 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForTestId, [continue, false]
+09-22 13:30:28.576 10490 10634 D Detox   : class androidx.test.espresso.action.ViewActions, longClick, []
+09-22 13:30:28.577 10490 10634 D Detox   : class com.wix.detox.espresso.EspressoDetox, perform, [(view.getTag() is "continue" and view has effective visibility <VISIBLE>), androidx.test.espresso.action.GeneralClickAction@4407eb4]
+09-22 13:30:28.580 10490 10490 I ViewInteraction: Performing 'long click' action on view (view.getTag() is "continue" and view has effective visibility <VISIBLE>)
+09-22 13:30:28.594 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:28.596 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:28.606 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:28.625 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 1 line
+09-22 13:30:28.641 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:28.656 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:29.207 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 34 lines
+09-22 13:30:29.226 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:29.243 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:29.244 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:29.299 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:29.299 10490 10634 I DetoxWSClient: Sending out action 'invokeResult' (ID #9)
+09-22 13:30:29.299 10490 10634 I DetoxDispatcher: Done with action 'invoke'
+09-22 13:30:29.303 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:29.358 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 3 lines
+09-22 13:30:29.358 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:29.358 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:29.358 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:29.361 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:29.361 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:29.375 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 2 lines
+09-22 13:30:29.375 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:29.375 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:29.388 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:30.641 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 77 lines
+09-22 13:30:30.658 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:30.673 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:32.642 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 119 lines
+09-22 13:30:32.656 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:32.673 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:33.239 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 35 lines
+09-22 13:30:33.256 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:33.273 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:33.289 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:33.489 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 12 lines
+09-22 13:30:33.507 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:33.523 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:34.058 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 33 lines
+09-22 13:30:34.072 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:34.089 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:34.156 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 4 lines
+09-22 13:30:34.182 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:34.183 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:34.191 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:34.292 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 7 lines
+09-22 13:30:34.308 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:34.333 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:34.350 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:34.363 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 1 line
+09-22 13:30:34.386 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:34.407 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:34.408 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:34.409 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:34.427 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:34.522 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 6 lines
+09-22 13:30:34.539 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:34.556 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:34.656 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 6 lines
+09-22 13:30:34.672 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:34.689 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:35.007 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 20 lines
+09-22 13:30:35.023 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:35.032 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:35.053 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 2 lines
+09-22 13:30:35.063 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:35.082 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:35.094 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:35.094 10490 10650 D RNFBCrashlyticsInit: isCrashlyticsCollectionEnabled via RNFBMeta: true
+09-22 13:30:35.094 10490 10650 D RNFBCrashlyticsInit: isCrashlyticsCollectionEnabled after checking crashlytics_debug_enabled: false
+09-22 13:30:35.094 10490 10650 D RNFBCrashlyticsInit: isCrashlyticsCollectionEnabled final value: false
+09-22 13:30:35.094 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:35.097 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:35.107 10490 10490 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 13:30:35.116 10490 10626 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+09-22 13:30:35.116 10490 10626 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 13:30:35.116 10490 10626 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+09-22 13:30:35.116 10490 10626 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 13:30:35.123 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:35.123 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 1 line
+09-22 13:30:35.123 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:35.131 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:35.141 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:35.241 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 7 lines
+09-22 13:30:35.263 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:35.263 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@ab8253e
+09-22 13:30:35.291 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9
+09-22 13:30:35.291 10490 10490 I chatty  : uid=10153(so.onekey.app.wallet.dev) identical 1 line
+09-22 13:30:35.308 10490 10490 I IdlingResourceRegistry: Ignoring message from unregistered resource: androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler@f1c41f9

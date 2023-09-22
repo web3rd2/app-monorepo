@@ -1,0 +1,35 @@
+--------- beginning of main
+09-22 13:39:40.209 11693 11693 I Detox   : Network is busy, with 1 in-flight calls
+09-22 13:39:40.209 11693 11693 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 1400 iterations.
+09-22 13:39:40.222 11693 11693 I Detox   : Network is busy, with 1 in-flight calls
+09-22 13:39:40.809 11693 11693 I chatty  : uid=10157(so.onekey.app.wallet.dev) identical 142 lines
+09-22 13:39:40.809 11693 11693 I Detox   : Network is busy, with 1 in-flight calls
+09-22 13:39:40.824 11693 11948 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 13:39:40.826 11693 11850 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 13:39:40.826 11693 11850 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 13:39:40.830 11693 11693 I Detox   : UIManagerModule is busy
+09-22 13:39:40.842 11693 11693 I Detox   : Wait is over: App is now idle!
+09-22 13:39:40.842 11693 11865 I DetoxWSClient: Sending out action 'ready' (ID #-1000)
+09-22 13:39:40.842 11693 11865 I DetoxDispatcher: Done with action 'isReady'
+09-22 13:39:40.842 11693 11865 I DetoxDispatcher: Handling action 'loginSuccess' (ID #0)...
+09-22 13:39:40.842 11693 11865 I DetoxDispatcher: Done with action 'loginSuccess'
+09-22 13:39:40.842 11693 11865 I DetoxDispatcher: Handling action 'isReady' (ID #-1000)...
+09-22 13:39:40.846 11693 11693 I Detox   : Wait is over: App is now idle!
+09-22 13:39:40.846 11693 11865 I DetoxWSClient: Sending out action 'ready' (ID #-1000)
+09-22 13:39:40.846 11693 11865 I DetoxDispatcher: Done with action 'isReady'
+09-22 13:39:40.913 11693 11867 D DetoxWSClient: Received action 'invoke' (ID #2, params={"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["create_wallet",{"type":"boolean","value":false}]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]})
+09-22 13:39:40.913 11693 11865 I DetoxDispatcher: Handling action 'invoke' (ID #2)...
+09-22 13:39:40.915 11693 11865 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForTestId, [create_wallet, false]
+09-22 13:39:40.917 11693 11865 D Detox   : class androidx.test.espresso.Espresso, onView, [(view.getTag() is "create_wallet" and view has effective visibility <VISIBLE>)]
+09-22 13:39:40.917 11693 11865 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForSufficientlyVisible, [75]
+09-22 13:39:40.917 11693 11865 D Detox   : class com.wix.detox.espresso.DetoxAssertion, assertMatcher, [androidx.test.espresso.ViewInteraction@68b593, (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)]
+09-22 13:39:40.919 11693 11865 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getUnsafe()Lsun/misc/Unsafe; (greylist,core-platform-api, linking, allowed)
+09-22 13:39:40.919 11693 11865 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+09-22 13:39:40.919 11693 11865 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-22 13:39:40.919 11693 11865 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 13:39:40.919 11693 11693 W .app.wallet.de: Accessing hidden method Landroid/view/WindowManagerGlobal;->getInstance()Landroid/view/WindowManagerGlobal; (greylist, reflection, allowed)
+09-22 13:39:40.919 11693 11693 W .app.wallet.de: Accessing hidden field Landroid/view/WindowManagerGlobal;->mViews:Ljava/util/ArrayList; (greylist, reflection, allowed)
+09-22 13:39:40.919 11693 11693 W .app.wallet.de: Accessing hidden field Landroid/view/WindowManagerGlobal;->mParams:Ljava/util/ArrayList; (greylist, reflection, allowed)
+09-22 13:39:40.922 11693 11693 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)}' assertion on view (view.getTag() is "create_wallet" and view has effective visibility <VISIBLE>)
+09-22 13:39:40.922 11693 11865 I DetoxWSClient: Sending out action 'invokeResult' (ID #2)
+09-22 13:39:40.923 11693 11865 I DetoxDispatcher: Done with action 'invoke'

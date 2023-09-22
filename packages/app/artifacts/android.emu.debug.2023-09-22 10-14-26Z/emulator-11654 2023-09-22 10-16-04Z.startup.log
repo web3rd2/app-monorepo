@@ -1,0 +1,1455 @@
+--------- beginning of main
+09-22 18:14:46.231  9917  9917 I .app.wallet.de: Late-enabling -Xcheck:jni
+09-22 18:14:46.239  9917  9917 E .app.wallet.de: Unknown bits set in runtime_flags: 0x8000
+--------- beginning of system
+09-22 18:14:46.272  9917  9917 W ActivityThread: Package uses different ABI(s) than its instrumentation: package[so.onekey.app.wallet.dev]: arm64-v8a, null instrumentation[so.onekey.app.wallet.dev.test]: null, null
+09-22 18:14:46.276  9917  9917 I .app.wallet.de: The ClassLoaderContext is a special shared library.
+09-22 18:14:47.008  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 2 lines
+09-22 18:14:47.008  9917  9917 I .app.wallet.de: The ClassLoaderContext is a special shared library.
+09-22 18:14:47.711  9917  9917 W .app.wallet.de: Accessing hidden method Landroid/app/Instrumentation;->execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Landroid/app/Activity;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult; (greylist, linking, allowed)
+09-22 18:14:47.712  9917  9917 W .app.wallet.de: Accessing hidden method Landroid/app/Instrumentation;->execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Ljava/lang/String;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult; (greylist, linking, allowed)
+09-22 18:14:47.715  9917  9917 I MonitoringInstr: newApplication called!
+09-22 18:14:47.770  9917  9917 I FirebaseApp: Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+09-22 18:14:47.795  9917  9917 I FirebaseCrashlytics: Initializing Firebase Crashlytics 18.3.6 for so.onekey.app.wallet.dev
+09-22 18:14:47.806  9917  9951 I DynamiteModule: Considering local module com.google.android.gms.measurement.dynamite:88 and remote module com.google.android.gms.measurement.dynamite:15
+09-22 18:14:47.806  9917  9951 I DynamiteModule: Selected local version of com.google.android.gms.measurement.dynamite
+09-22 18:14:47.824  9917  9954 D libcrashlytics: Initializing libcrashlytics version 3.2.0
+09-22 18:14:47.831  9917  9917 I FirebaseInitProvider: FirebaseApp initialization successful
+09-22 18:14:47.832  9917  9917 D ReactNativeFirebaseApp: received application context.
+09-22 18:14:47.860  9917  9917 D RNFBCrashlyticsInit: isCrashlyticsCollectionEnabled via RNFBMeta: true
+09-22 18:14:47.861  9917  9917 D RNFBCrashlyticsInit: isCrashlyticsCollectionEnabled after checking crashlytics_debug_enabled: false
+09-22 18:14:47.861  9917  9917 D RNFBCrashlyticsInit: isCrashlyticsCollectionEnabled final value: false
+09-22 18:14:47.861  9917  9917 I RNFBCrashlyticsInit: initialization successful
+09-22 18:14:47.866  9917  9954 D libcrashlytics: Initializing native crash handling successful.
+09-22 18:14:47.877  9917  9970 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: true
+09-22 18:14:47.888  9917  9917 I MonitoringInstr: Instrumentation started!
+09-22 18:14:47.891  9917  9917 I AndroidJUnitRunner: onCreate Bundle[{debug=false, detoxServer=ws://localhost:57523, detoxSessionId=f6723f28-a975-c02a-e193-a170946cc024}]
+09-22 18:14:47.891  9917  9917 V TestEventClient: No service name argument was given (testDiscoveryService, testRunEventService or orchestratorService)
+09-22 18:14:47.892  9917  9917 W .app.wallet.de: Accessing hidden field Landroid/database/CursorWindow;->sCursorWindowSize:I (greylist, reflection, allowed)
+09-22 18:14:47.892  9917  9977 D AndroidJUnitRunner: onStart is called.
+09-22 18:14:47.894  9917  9917 W .app.wallet.de: Accessing hidden method Ldalvik/system/BaseDexClassLoader;->getLdLibraryPath()Ljava/lang/String; (greylist,core-platform-api, reflection, allowed)
+09-22 18:14:47.957  9917  9960 I FA      : App measurement initialized, version: 76003
+09-22 18:14:47.957  9917  9960 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+09-22 18:14:47.957  9917  9960 I FA      : To enable faster debug mode event logging run:
+09-22 18:14:47.957  9917  9960 I FA      :   adb shell setprop debug.firebase.analytics.app so.onekey.app.wallet.dev
+09-22 18:14:48.002  9917  9985 V SoLoader: libfbjni.so not found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/lib/arm64
+09-22 18:14:48.005  9917  9985 V SoLoader: libandroid.so not found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/lib/arm64
+09-22 18:14:48.005  9917  9985 V SoLoader: libandroid.so not found on /data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a
+09-22 18:14:48.005  9917  9985 V SoLoader: libandroid.so not found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/base.apk!/lib/arm64-v8a
+09-22 18:14:48.005  9917  9985 D SoLoader: libandroid.so found on /system/lib64
+09-22 18:14:48.005  9917  9985 D SoLoader: libandroid.so loaded implicitly
+09-22 18:14:48.005  9917  9985 V SoLoader: liblog.so not found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/lib/arm64
+09-22 18:14:48.005  9917  9985 V SoLoader: liblog.so not found on /data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a
+09-22 18:14:48.005  9917  9985 V SoLoader: liblog.so not found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/base.apk!/lib/arm64-v8a
+09-22 18:14:48.005  9917  9985 D SoLoader: liblog.so found on /system/lib64
+09-22 18:14:48.005  9917  9985 D SoLoader: liblog.so loaded implicitly
+09-22 18:14:48.005  9917  9985 V SoLoader: libm.so not found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/lib/arm64
+09-22 18:14:48.005  9917  9985 V SoLoader: libm.so not found on /data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a
+09-22 18:14:48.005  9917  9985 V SoLoader: libm.so not found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/base.apk!/lib/arm64-v8a
+09-22 18:14:48.005  9917  9985 D SoLoader: libm.so found on /system/lib64
+09-22 18:14:48.005  9917  9985 D SoLoader: libm.so loaded implicitly
+09-22 18:14:48.005  9917  9985 V SoLoader: libdl.so not found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/lib/arm64
+09-22 18:14:48.005  9917  9985 V SoLoader: libdl.so not found on /data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a
+09-22 18:14:48.005  9917  9985 V SoLoader: libdl.so not found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/base.apk!/lib/arm64-v8a
+09-22 18:14:48.005  9917  9985 D SoLoader: libdl.so found on /system/lib64
+09-22 18:14:48.005  9917  9985 D SoLoader: libdl.so loaded implicitly
+09-22 18:14:48.005  9917  9985 V SoLoader: libc.so not found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/lib/arm64
+09-22 18:14:48.005  9917  9985 V SoLoader: libc.so not found on /data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a
+09-22 18:14:48.005  9917  9985 V SoLoader: libc.so not found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/base.apk!/lib/arm64-v8a
+09-22 18:14:48.005  9917  9985 D SoLoader: libc.so found on /system/lib64
+09-22 18:14:48.005  9917  9985 D SoLoader: libc.so loaded implicitly
+09-22 18:14:48.006  9917  9985 W SoLoader: libfbjni.so not found on /data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a flag: 4
+09-22 18:14:48.006  9917  9985 W SoLoader: java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a/libfbjni.so" not found
+09-22 18:14:48.006  9917  9985 W SoLoader: 	at java.lang.Runtime.load0(Runtime.java:938)
+09-22 18:14:48.006  9917  9985 W SoLoader: 	at java.lang.System.load(System.java:1631)
+09-22 18:14:48.006  9917  9985 W SoLoader: 	at com.facebook.soloader.SoLoader$1.load(SoLoader.java:558)
+09-22 18:14:48.006  9917  9985 W SoLoader: 	at com.facebook.soloader.DirectApkSoSource.loadLibrary(DirectApkSoSource.java:81)
+09-22 18:14:48.006  9917  9985 W SoLoader: 	at com.facebook.soloader.SoLoader.doLoadLibraryBySoName(SoLoader.java:1067)
+09-22 18:14:48.006  9917  9985 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibraryBySoNameImpl(SoLoader.java:943)
+09-22 18:14:48.006  9917  9985 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibraryBySoName(SoLoader.java:855)
+09-22 18:14:48.006  9917  9985 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibrary(SoLoader.java:802)
+09-22 18:14:48.006  9917  9985 W SoLoader: 	at com.facebook.soloader.NativeLoaderToSoLoaderDelegate.loadLibrary(NativeLoaderToSoLoaderDelegate.java:29)
+09-22 18:14:48.006  9917  9985 W SoLoader: 	at com.facebook.soloader.nativeloader.NativeLoader.loadLibrary(NativeLoader.java:51)
+09-22 18:14:48.006  9917  9985 W SoLoader: 	at com.facebook.soloader.nativeloader.NativeLoader.loadLibrary(NativeLoader.java:30)
+09-22 18:14:48.006  9917  9985 W SoLoader: 	at com.facebook.jni.HybridData.<clinit>(HybridData.java:34)
+09-22 18:14:48.006  9917  9985 W SoLoader: 	at com.facebook.flipper.android.FlipperThread.run(FlipperThread.java:25)
+09-22 18:14:48.009  9917  9985 W linker  : Warning: "/data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/base.apk!/lib/arm64-v8a/libc++_shared.so" unused DT entry: unknown processor-specific (type 0x70000001 arg 0x0) (ignoring)
+09-22 18:14:48.010  9917  9985 D SoLoader: libfbjni.so found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/base.apk!/lib/arm64-v8a
+09-22 18:14:48.010  9917  9985 V SoLoader: libflipper.so not found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/lib/arm64
+09-22 18:14:48.012  9917  9985 W SoLoader: libflipper.so not found on /data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a flag: 4
+09-22 18:14:48.012  9917  9985 W SoLoader: java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a/libflipper.so" not found
+09-22 18:14:48.012  9917  9985 W SoLoader: 	at java.lang.Runtime.load0(Runtime.java:938)
+09-22 18:14:48.012  9917  9985 W SoLoader: 	at java.lang.System.load(System.java:1631)
+09-22 18:14:48.012  9917  9985 W SoLoader: 	at com.facebook.soloader.SoLoader$1.load(SoLoader.java:558)
+09-22 18:14:48.012  9917  9985 W SoLoader: 	at com.facebook.soloader.DirectApkSoSource.loadLibrary(DirectApkSoSource.java:81)
+09-22 18:14:48.012  9917  9985 W SoLoader: 	at com.facebook.soloader.SoLoader.doLoadLibraryBySoName(SoLoader.java:1067)
+09-22 18:14:48.012  9917  9985 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibraryBySoNameImpl(SoLoader.java:943)
+09-22 18:14:48.012  9917  9985 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibraryBySoName(SoLoader.java:855)
+09-22 18:14:48.012  9917  9985 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibrary(SoLoader.java:802)
+09-22 18:14:48.012  9917  9985 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibrary(SoLoader.java:772)
+09-22 18:14:48.012  9917  9985 W SoLoader: 	at com.facebook.flipper.android.EventBase.<clinit>(EventBase.java:19)
+09-22 18:14:48.012  9917  9985 W SoLoader: 	at com.facebook.flipper.android.FlipperThread.run(FlipperThread.java:25)
+09-22 18:14:48.020  9917  9985 D SoLoader: libflipper.so found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/base.apk!/lib/arm64-v8a
+09-22 18:14:48.047  9917  9917 W .app.wallet.de: Accessing hidden field Landroid/view/View;->mKeyedTags:Landroid/util/SparseArray; (greylist, reflection, allowed)
+09-22 18:14:48.047  9917  9917 W .app.wallet.de: Accessing hidden field Landroid/view/View;->mListenerInfo:Landroid/view/View$ListenerInfo; (greylist, reflection, allowed)
+09-22 18:14:48.047  9917  9917 W .app.wallet.de: Accessing hidden field Landroid/view/View$ListenerInfo;->mOnClickListener:Landroid/view/View$OnClickListener; (greylist, reflection, allowed)
+09-22 18:14:48.049  9917  9917 I flipper : flipper: FlipperClient::addPlugin Inspector
+09-22 18:14:48.050  9917  9917 I flipper : flipper: FlipperClient::addPlugin Databases
+09-22 18:14:48.050  9917  9917 I flipper : flipper: FlipperClient::addPlugin Preferences
+09-22 18:14:48.051  9917  9917 I flipper : flipper: FlipperClient::addPlugin rn-perf-monitor
+09-22 18:14:48.051  9917  9917 I flipper : flipper: FlipperClient::addPlugin CrashReporter
+09-22 18:14:48.051  9917  9917 I flipper : flipper: FlipperClient::addPlugin Network
+09-22 18:14:48.057  9917  9990 W unknown:InspectorPackagerConnection: Couldn't connect to packager, will silently retry
+09-22 18:14:48.057  9917  9991 W unknown:ReconnectingWebSocket: Couldn't connect to "ws://localhost:8081/message?device=Android%20SDK%20built%20for%20arm64%20-%2010%20-%20API%2029&app=so.onekey.app.wallet.dev&clientid=BridgeDevSupportManager", will silently retry
+09-22 18:14:48.063  9917  9985 W .app.wallet.de: Accessing hidden method Landroid/app/AppGlobals;->getInitialApplication()Landroid/app/Application; (greylist, reflection, allowed)
+09-22 18:14:48.069  9917  9917 I WebViewFactory: Loading com.google.android.webview version 91.0.4472.114 (code 447211484)
+09-22 18:14:48.072  9917  9917 I .app.wallet.de: The ClassLoaderContext is a special shared library.
+09-22 18:14:48.073  9917  9917 I .app.wallet.de: The ClassLoaderContext is a special shared library.
+09-22 18:14:48.126  9917  9917 W .app.wallet.de: Accessing hidden method Landroid/os/Trace;->isTagEnabled(J)Z (greylist, reflection, allowed)
+09-22 18:14:48.126  9917  9917 W .app.wallet.de: Accessing hidden method Landroid/os/Trace;->traceBegin(JLjava/lang/String;)V (greylist, reflection, allowed)
+09-22 18:14:48.126  9917  9917 W .app.wallet.de: Accessing hidden method Landroid/os/Trace;->traceEnd(J)V (greylist, reflection, allowed)
+09-22 18:14:48.126  9917  9917 W .app.wallet.de: Accessing hidden method Landroid/os/Trace;->asyncTraceBegin(JLjava/lang/String;I)V (greylist, reflection, allowed)
+09-22 18:14:48.126  9917  9917 W .app.wallet.de: Accessing hidden method Landroid/os/Trace;->asyncTraceEnd(JLjava/lang/String;I)V (greylist, reflection, allowed)
+09-22 18:14:48.140  9917  9917 I cr_LibraryLoader: Loaded native library version number "91.0.4472.114"
+09-22 18:14:48.141  9917  9917 I cr_CachingUmaRecorder: Flushed 6 samples from 6 histograms.
+09-22 18:14:48.290  9917 10026 W .app.wallet.de: Accessing hidden method Llibcore/io/Memory;->peekLong(JZ)J (greylist, reflection, allowed)
+09-22 18:14:48.290  9917 10026 W .app.wallet.de: Accessing hidden method Llibcore/io/Memory;->pokeLong(JJZ)V (greylist, reflection, allowed)
+09-22 18:14:48.290  9917 10026 W .app.wallet.de: Accessing hidden method Llibcore/io/Memory;->pokeInt(JIZ)V (greylist, reflection, allowed)
+09-22 18:14:48.290  9917 10026 W .app.wallet.de: Accessing hidden method Llibcore/io/Memory;->peekInt(JZ)I (greylist, reflection, allowed)
+09-22 18:14:48.290  9917 10026 W .app.wallet.de: Accessing hidden method Llibcore/io/Memory;->pokeByte(JB)V (greylist, reflection, allowed)
+09-22 18:14:48.290  9917 10026 W .app.wallet.de: Accessing hidden method Llibcore/io/Memory;->peekByte(J)B (greylist, reflection, allowed)
+09-22 18:14:48.290  9917 10026 W .app.wallet.de: Accessing hidden method Llibcore/io/Memory;->pokeByteArray(J[BII)V (greylist, reflection, allowed)
+09-22 18:14:48.290  9917 10026 W .app.wallet.de: Accessing hidden method Llibcore/io/Memory;->peekByteArray(J[BII)V (greylist, reflection, allowed)
+09-22 18:14:48.290  9917 10026 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J (greylist,core-platform-api, reflection, allowed)
+09-22 18:14:48.290  9917 10026 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+09-22 18:14:48.290  9917 10026 W .app.wallet.de: Accessing hidden field Ljava/nio/Buffer;->address:J (greylist, reflection, allowed)
+09-22 18:14:48.291  9917 10026 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->arrayBaseOffset(Ljava/lang/Class;)I (greylist,core-platform-api, reflection, allowed)
+09-22 18:14:48.291  9917 10026 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->arrayIndexScale(Ljava/lang/Class;)I (greylist, reflection, allowed)
+09-22 18:14:48.291  9917 10026 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, reflection, allowed)
+09-22 18:14:48.291  9917 10026 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, reflection, allowed)
+09-22 18:14:48.291  9917 10026 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+09-22 18:14:48.291  9917 10026 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, reflection, allowed)
+09-22 18:14:48.291  9917 10026 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, reflection, allowed)
+09-22 18:14:48.291  9917 10026 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, reflection, allowed)
+09-22 18:14:48.303  9917  9977 D TestRequestBuilder: Using class path scanning to discover tests
+09-22 18:14:48.303  9917  9977 I TestRequestBuilder: Scanning classpath to find tests in paths [/data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk]
+09-22 18:14:48.303  9917  9977 W .app.wallet.de: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+09-22 18:14:48.523  9917  9977 I .app.wallet.de: Waiting for a blocking GC ClassLinker
+09-22 18:14:48.529  9917  9977 I .app.wallet.de: WaitForGcToComplete blocked ClassLinker on ClassLinker for 6.346ms
+09-22 18:14:48.532  9917  9977 D AndroidJUnitRunner: Use the raw file system for managing file I/O.
+09-22 18:14:48.533  9917  9977 D TestExecutor: Adding listener androidx.test.internal.runner.listener.LogRunListener
+09-22 18:14:48.533  9917  9977 D TestExecutor: Adding listener androidx.test.internal.runner.listener.InstrumentationResultPrinter
+09-22 18:14:48.533  9917  9977 D TestExecutor: Adding listener androidx.test.internal.runner.listener.ActivityFinisherRunListener
+09-22 18:14:48.533  9917  9977 D TestExecutor: Adding listener androidx.test.internal.runner.listener.TraceRunListener
+09-22 18:14:48.534  9917  9977 I TestRunner: run started: 1 tests
+09-22 18:14:48.534  9917  9977 I TestRunner: started: runDetoxTests(so.onekey.app.wallet.DetoxTest)
+09-22 18:14:48.540  9917  9977 D EventInjectionStrategy: Creating injection strategy with input manager.
+09-22 18:14:48.540  9917  9977 W .app.wallet.de: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (greylist, reflection, allowed)
+09-22 18:14:48.541  9917  9977 W .app.wallet.de: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (greylist, reflection, allowed)
+09-22 18:14:48.541  9917  9977 W .app.wallet.de: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (greylist, reflection, allowed)
+09-22 18:14:48.544  9917  9977 W .app.wallet.de: Accessing hidden field Ljava/lang/reflect/Field;->accessFlags:I (greylist, reflection, allowed)
+09-22 18:14:48.575  9917  9917 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@8242807
+09-22 18:14:48.647  9917  9917 W RenderThread: type=1400 audit(0.0:62): avc: denied { write } for name="property_service" dev="tmpfs" ino=6654 scontext=u:r:untrusted_app:s0:c149,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0
+09-22 18:14:48.650  9917 10048 D libEGL  : Emulator has host GPU support, qemu.gles is set to 1.
+09-22 18:14:48.652  9917 10048 W libc    : Unable to set property "qemu.gles" to "1": connection failed; errno=13 (Permission denied)
+09-22 18:14:48.722  9917 10048 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+09-22 18:14:48.731  9917 10048 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+09-22 18:14:48.739  9917 10048 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+09-22 18:14:48.772  9917  9917 D LifecycleMonitor: Lifecycle status change: so.onekey.app.wallet.MainActivity@75f1ecc in: PRE_ON_CREATE
+09-22 18:14:48.821  9917 10051 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+09-22 18:14:48.822  9917 10051 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:48.822  9917 10051 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+09-22 18:14:48.822  9917 10051 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+09-22 18:14:48.825  9917 10051 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+09-22 18:14:48.825  9917 10051 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+09-22 18:14:48.826  9917 10051 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+09-22 18:14:48.827  9917  9917 W .app.wallet.de: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (greylist, reflection, allowed)
+09-22 18:14:48.827  9917  9917 W .app.wallet.de: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+09-22 18:14:48.828  9917 10051 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->allocateInstance(Ljava/lang/Class;)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:48.829  9917 10051 W .app.wallet.de: Accessing hidden method Llibcore/io/Memory;->pokeByte(JB)V (greylist, reflection, allowed)
+09-22 18:14:48.829  9917 10051 W .app.wallet.de: Accessing hidden method Llibcore/io/Memory;->peekByte(J)B (greylist, reflection, allowed)
+09-22 18:14:48.829  9917 10051 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, reflection, allowed)
+09-22 18:14:48.829  9917 10051 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, reflection, allowed)
+09-22 18:14:48.829  9917 10051 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+09-22 18:14:48.829  9917 10051 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, reflection, allowed)
+09-22 18:14:48.829  9917 10051 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, reflection, allowed)
+09-22 18:14:48.829  9917 10051 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, reflection, allowed)
+09-22 18:14:48.830  9917 10051 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:48.831  9917 10051 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+09-22 18:14:48.831  9917 10051 W unknown:ReactNative: The packager does not seem to be running as we got an IOException requesting its status: Failed to connect to localhost/127.0.0.1:8081
+09-22 18:14:48.833  9917  9917 D LifecycleMonitor: Lifecycle status change: so.onekey.app.wallet.MainActivity@75f1ecc in: CREATED
+09-22 18:14:48.837  9917  9917 D LifecycleMonitor: Lifecycle status change: so.onekey.app.wallet.MainActivity@75f1ecc in: STARTED
+09-22 18:14:48.841  9917  9917 D LifecycleMonitor: Lifecycle status change: so.onekey.app.wallet.MainActivity@75f1ecc in: RESUMED
+09-22 18:14:48.859  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:48.859  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+09-22 18:14:48.860  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+09-22 18:14:48.860  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:48.860  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+09-22 18:14:48.890  9917  9960 I FA      : Tag Manager is not found and thus will not be used
+09-22 18:14:49.021  9917 10056 V SoLoader: libv8executor.so not found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/lib/arm64
+09-22 18:14:49.022  9917  9917 W unknown:ReactNative: Packager connection already open, nooping.
+09-22 18:14:49.024  9917  9917 W .app.wallet.de: Accessing hidden method Landroid/view/WindowInsets$Type;->ime()I (blacklist, linking, denied)
+09-22 18:14:49.027  9917 10056 W SoLoader: libv8executor.so not found on /data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a flag: 4
+09-22 18:14:49.027  9917 10056 W SoLoader: java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a/libv8executor.so" not found
+09-22 18:14:49.027  9917 10056 W SoLoader: 	at java.lang.Runtime.load0(Runtime.java:938)
+09-22 18:14:49.027  9917 10056 W SoLoader: 	at java.lang.System.load(System.java:1631)
+09-22 18:14:49.027  9917 10056 W SoLoader: 	at com.facebook.soloader.SoLoader$1.load(SoLoader.java:558)
+09-22 18:14:49.027  9917 10056 W SoLoader: 	at com.facebook.soloader.DirectApkSoSource.loadLibrary(DirectApkSoSource.java:81)
+09-22 18:14:49.027  9917 10056 W SoLoader: 	at com.facebook.soloader.SoLoader.doLoadLibraryBySoName(SoLoader.java:1067)
+09-22 18:14:49.027  9917 10056 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibraryBySoNameImpl(SoLoader.java:943)
+09-22 18:14:49.027  9917 10056 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibraryBySoName(SoLoader.java:855)
+09-22 18:14:49.027  9917 10056 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibrary(SoLoader.java:802)
+09-22 18:14:49.027  9917 10056 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibrary(SoLoader.java:772)
+09-22 18:14:49.027  9917 10056 W SoLoader: 	at io.csie.kudo.reactnative.v8.executor.V8Executor.<clinit>(V8Executor.java:22)
+09-22 18:14:49.027  9917 10056 W SoLoader: 	at io.csie.kudo.reactnative.v8.executor.V8ExecutorFactory.create(V8ExecutorFactory.java:50)
+09-22 18:14:49.027  9917 10056 W SoLoader: 	at com.facebook.react.ReactInstanceManager$5.run(ReactInstanceManager.java:1110)
+09-22 18:14:49.027  9917 10056 W SoLoader: 	at java.lang.Thread.run(Thread.java:919)
+09-22 18:14:49.034  9917 10046 D HostConnection: HostConnection::get() New Host Connection established 0x784f0276a0, tid 10046
+09-22 18:14:49.035  9917 10046 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+09-22 18:14:49.039  9917 10056 W linker  : Warning: "/data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/base.apk!/lib/arm64-v8a/libruntimeexecutor.so" unused DT entry: unknown processor-specific (type 0x70000001 arg 0x0) (ignoring)
+09-22 18:14:49.040  9917 10056 I chatty  : uid=10149(so.onekey.app.wallet.dev) create_react_co identical 1 line
+09-22 18:14:49.041  9917 10056 W linker  : Warning: "/data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/base.apk!/lib/arm64-v8a/libruntimeexecutor.so" unused DT entry: unknown processor-specific (type 0x70000001 arg 0x0) (ignoring)
+09-22 18:14:49.041  9917 10046 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+09-22 18:14:49.043  9917 10046 D EGL_emulation: eglCreateContext: 0x77ed70aa00: maj 3 min 0 rcv 3
+09-22 18:14:49.044  9917 10046 D EGL_emulation: eglMakeCurrent: 0x77ed70aa00: ver 3 0 (tinfo 0x784f0de160)
+09-22 18:14:49.059  9917 10056 D SoLoader: libv8executor.so found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/base.apk!/lib/arm64-v8a
+09-22 18:14:49.062  9917 10046 W Gralloc3: mapper 3.x is not supported
+09-22 18:14:49.067  9917 10046 D HostConnection: createUnique: call
+09-22 18:14:49.069  9917 10056 V AsyncStorageExpoMigration: No scoped database found
+09-22 18:14:49.072  9917 10046 D HostConnection: HostConnection::get() New Host Connection established 0x77ed70ab40, tid 10046
+09-22 18:14:49.072  9917 10046 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+09-22 18:14:49.073  9917 10046 D eglCodecCommon: allocate: Ask for block of size 0x1000
+09-22 18:14:49.073  9917 10046 D eglCodecCommon: allocate: ioctl allocate returned offset 0x1ff69c000 size 0x8000
+09-22 18:14:49.079  9917 10046 D EGL_emulation: eglMakeCurrent: 0x77ed70aa00: ver 3 0 (tinfo 0x784f0de160)
+09-22 18:14:49.212  9917  9977 I Detox   : Detox server connection details: url=ws://localhost:57523, sessionId=f6723f28-a975-c02a-e193-a170946cc024
+09-22 18:14:49.227  9917 10069 I DetoxDispatcher: Handling action '_init' (ID #0)...
+09-22 18:14:49.227  9917 10069 I Detox   : Connecting to server...
+09-22 18:14:49.227  9917 10069 I DetoxWSClient: At connectToServer
+09-22 18:14:49.237  9917 10056 I ExpoModulesCore: ✅ AppContext was initialized
+09-22 18:14:49.244  9917 10056 D ReactNativeBleManager: BleManager created
+09-22 18:14:49.308  9917  9917 D InstallReferrerState: OK
+09-22 18:14:49.348  9917 10071 D DetoxWSClient: At onOpen
+09-22 18:14:49.348  9917 10071 I DetoxWSClient: Sending out action 'login' (ID #0)
+09-22 18:14:49.349  9917 10071 I Detox   : Connected to server!
+09-22 18:14:49.360  9917 10071 D DetoxWSClient: Received action 'loginSuccess' (ID #0, params={"testerConnected":true,"appConnected":true})
+09-22 18:14:49.372  9917 10056 V SoLoader: libreactnativejni.so not found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/lib/arm64
+09-22 18:14:49.379  9917 10056 W SoLoader: libreactnativejni.so not found on /data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a flag: 4
+09-22 18:14:49.379  9917 10056 W SoLoader: java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a/libreactnativejni.so" not found
+09-22 18:14:49.379  9917 10056 W SoLoader: 	at java.lang.Runtime.load0(Runtime.java:938)
+09-22 18:14:49.379  9917 10056 W SoLoader: 	at java.lang.System.load(System.java:1631)
+09-22 18:14:49.379  9917 10056 W SoLoader: 	at com.facebook.soloader.SoLoader$1.load(SoLoader.java:558)
+09-22 18:14:49.379  9917 10056 W SoLoader: 	at com.facebook.soloader.DirectApkSoSource.loadLibrary(DirectApkSoSource.java:81)
+09-22 18:14:49.379  9917 10056 W SoLoader: 	at com.facebook.soloader.SoLoader.doLoadLibraryBySoName(SoLoader.java:1067)
+09-22 18:14:49.379  9917 10056 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibraryBySoNameImpl(SoLoader.java:943)
+09-22 18:14:49.379  9917 10056 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibraryBySoName(SoLoader.java:855)
+09-22 18:14:49.379  9917 10056 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibrary(SoLoader.java:802)
+09-22 18:14:49.379  9917 10056 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibrary(SoLoader.java:772)
+09-22 18:14:49.379  9917 10056 W SoLoader: 	at com.facebook.react.bridge.ReactBridge.staticInit(ReactBridge.java:34)
+09-22 18:14:49.379  9917 10056 W SoLoader: 	at com.facebook.react.bridge.CatalystInstanceImpl.<clinit>(CatalystInstanceImpl.java:49)
+09-22 18:14:49.379  9917 10056 W SoLoader: 	at com.facebook.react.bridge.CatalystInstanceImpl$Builder.build(CatalystInstanceImpl.java:705)
+09-22 18:14:49.379  9917 10056 W SoLoader: 	at com.facebook.react.ReactInstanceManager.createReactContext(ReactInstanceManager.java:1353)
+09-22 18:14:49.379  9917 10056 W SoLoader: 	at com.facebook.react.ReactInstanceManager.access$1200(ReactInstanceManager.java:135)
+09-22 18:14:49.379  9917 10056 W SoLoader: 	at com.facebook.react.ReactInstanceManager$5.run(ReactInstanceManager.java:1109)
+09-22 18:14:49.379  9917 10056 W SoLoader: 	at java.lang.Thread.run(Thread.java:919)
+09-22 18:14:49.392  9917 10056 D SoLoader: libreactnativejni.so found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/base.apk!/lib/arm64-v8a
+09-22 18:14:49.402  9917 10071 D DetoxWSClient: Received action 'isReady' (ID #-1000, params={})
+09-22 18:14:49.433  9917 10056 W unknown:ReactContext: initializeMessageQueueThreads() is called.
+09-22 18:14:49.726  9917  9917 W unknown:ReactNative: Packager connection already open, nooping.
+09-22 18:14:49.775  9917 10080 I ReactNativeJNI: Cannot load codecache file: /data/user/0/so.onekey.app.wallet.dev/code_cache/index.android.bundle
+09-22 18:14:49.796  9917 10081 I .app.wallet.de: Waiting for a blocking GC ClassLinker
+09-22 18:14:49.815  9917  9930 I .app.wallet.de: Background young concurrent copying GC freed 72280(3912KB) AllocSpace objects, 2(40KB) LOS objects, 7% free, 13MB/14MB, paused 82us total 110.141ms
+09-22 18:14:49.815  9917 10081 I .app.wallet.de: WaitForGcToComplete blocked ClassLinker on ClassLinker for 19.147ms
+09-22 18:14:49.821  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.drawer.ReactDrawerLayoutManager
+09-22 18:14:49.824  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.uimanager.LayoutShadowNode
+09-22 18:14:49.829  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollViewManager
+09-22 18:14:49.830  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollContainerViewManager
+09-22 18:14:49.831  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ReactProgressBarViewManager
+09-22 18:14:49.832  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ProgressBarShadowNode
+09-22 18:14:49.835  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactScrollViewManager
+09-22 18:14:49.838  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.slider.ReactSliderManager
+09-22 18:14:49.840  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.slider.ReactSliderManager$ReactSliderShadowNode
+09-22 18:14:49.841  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager
+09-22 18:14:49.841  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager$ReactSwitchShadowNode
+09-22 18:14:49.841  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.swiperefresh.SwipeRefreshLayoutManager
+09-22 18:14:49.842  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineImageViewManager
+09-22 18:14:49.842  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineImageShadowNode
+09-22 18:14:49.848  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.image.ReactImageManager
+09-22 18:14:49.850  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.ReactModalHostManager
+09-22 18:14:49.851  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.ModalHostShadowNode
+09-22 18:14:49.854  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactRawTextManager
+09-22 18:14:49.854  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactRawTextShadowNode
+09-22 18:14:49.855  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputManager
+09-22 18:14:49.858  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputShadowNode
+09-22 18:14:49.859  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextViewManager
+09-22 18:14:49.863  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextShadowNode
+09-22 18:14:49.863  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.view.ReactViewManager
+09-22 18:14:49.868  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactVirtualTextViewManager
+09-22 18:14:49.869  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactVirtualTextShadowNode
+09-22 18:14:49.870  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.unimplementedview.ReactUnimplementedViewManager
+09-22 18:14:49.871  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.reactnativegooglesignin.RNGoogleSigninButtonViewManager
+09-22 18:14:49.874  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.reactnativecommunity.slider.ReactSliderManager
+09-22 18:14:49.875  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.reactnativecommunity.slider.ReactSliderManager$ReactSliderShadowNode
+09-22 18:14:49.875  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class expo.modules.kotlin.views.GroupViewManagerWrapper
+09-22 18:14:49.878  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class expo.modules.kotlin.views.SimpleViewManagerWrapper
+09-22 18:14:49.879  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.airbnb.android.react.lottie.LottieAnimationViewManager
+09-22 18:14:49.879  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.rncamerakit.CKCameraManager
+09-22 18:14:49.880  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.dylanvann.fastimage.FastImageViewManager
+09-22 18:14:49.883  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.gesturehandler.react.RNGestureHandlerRootViewManager
+09-22 18:14:49.883  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.gesturehandler.react.RNGestureHandlerButtonViewManager
+09-22 18:14:49.883  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.rnnestedscrollview.ReactNestedScrollViewManager
+09-22 18:14:49.884  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.rnnestedscrollview.ReactHorizontalNestedScrollViewManager
+09-22 18:14:49.886  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.rnnestedscrollview.ReactHorizontalNestedScrollContainerViewManager
+09-22 18:14:49.887  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.reactnativepagerview.PagerViewViewManager
+09-22 18:14:49.888  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.th3rdwave.safeareacontext.SafeAreaProviderManager
+09-22 18:14:49.889  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.th3rdwave.safeareacontext.SafeAreaViewManager
+09-22 18:14:49.894  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.th3rdwave.safeareacontext.SafeAreaViewShadowNode
+09-22 18:14:49.895  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenContainerViewManager
+09-22 18:14:49.898  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenViewManager
+09-22 18:14:49.899  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenStackViewManager
+09-22 18:14:49.899  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenStackHeaderConfigViewManager
+09-22 18:14:49.899  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenStackHeaderSubviewManager
+09-22 18:14:49.900  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.SearchBarManager
+09-22 18:14:49.900  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$DefsViewManager
+09-22 18:14:49.901  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.VirtualViewManager$RenderableShadowNode
+09-22 18:14:49.901  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$MarkerManager
+09-22 18:14:49.903  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$ForeignObjectManager
+09-22 18:14:49.906  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$EllipseViewManager
+09-22 18:14:49.909  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$LineViewManager
+09-22 18:14:49.910  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$LinearGradientManager
+09-22 18:14:49.914  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$GroupViewManager
+09-22 18:14:49.916  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$TextViewManager
+09-22 18:14:49.918  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$ImageViewManager
+09-22 18:14:49.919  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$ClipPathViewManager
+09-22 18:14:49.920  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$RadialGradientManager
+09-22 18:14:49.924  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$MaskManager
+09-22 18:14:49.926  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$SymbolManager
+09-22 18:14:49.927  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$PatternManager
+09-22 18:14:49.931  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$RectViewManager
+09-22 18:14:49.932  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$TextPathViewManager
+09-22 18:14:49.935  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.SvgViewManager
+09-22 18:14:49.937  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$PathViewManager
+09-22 18:14:49.939  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$UseViewManager
+09-22 18:14:49.939  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$CircleViewManager
+09-22 18:14:49.940  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$TSpanViewManager
+09-22 18:14:49.941  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.reactnativecommunity.webview.RNCWebViewManager
+09-22 18:14:49.942  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class so.onekey.app.wallet.viewManager.homePage.HomePageManager
+09-22 18:14:49.948  9917 10081 W unknown:ReactContext: initializeMessageQueueThreads() is called.
+09-22 18:14:49.949  9917 10081 V SoLoader: libyoga.so not found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/lib/arm64
+09-22 18:14:49.953  9917 10081 W SoLoader: libyoga.so not found on /data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a flag: 4
+09-22 18:14:49.953  9917 10081 W SoLoader: java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a/libyoga.so" not found
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at java.lang.Runtime.load0(Runtime.java:938)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at java.lang.System.load(System.java:1631)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at com.facebook.soloader.SoLoader$1.load(SoLoader.java:558)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at com.facebook.soloader.DirectApkSoSource.loadLibrary(DirectApkSoSource.java:81)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at com.facebook.soloader.SoLoader.doLoadLibraryBySoName(SoLoader.java:1067)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibraryBySoNameImpl(SoLoader.java:943)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibraryBySoName(SoLoader.java:855)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibrary(SoLoader.java:802)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibrary(SoLoader.java:772)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at com.facebook.yoga.YogaNative.<clinit>(YogaNative.java:16)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at com.facebook.yoga.YogaNative.jni_YGConfigNewJNI(Native Method)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at com.facebook.yoga.YogaConfigJNIBase.<init>(YogaConfigJNIBase.java:23)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at com.facebook.yoga.YogaConfigJNIFinalizer.<init>(YogaConfigJNIFinalizer.java:12)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at com.facebook.yoga.YogaConfigFactory.create(YogaConfigFactory.java:12)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at com.facebook.react.uimanager.ReactYogaConfigProvider.get(ReactYogaConfigProvider.java:19)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at com.facebook.react.uimanager.ReactShadowNodeImpl.<clinit>(ReactShadowNodeImpl.java:62)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at com.facebook.react.uimanager.UIImplementation.createRootShadowNode(UIImplementation.java:96)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at com.facebook.react.uimanager.UIImplementation.registerRootView(UIImplementation.java:150)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at com.facebook.react.uimanager.UIManagerModule.addRootView(UIManagerModule.java:405)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at com.facebook.react.ReactInstanceManager.attachRootViewToInstance(ReactInstanceManager.java:1267)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at com.facebook.react.ReactInstanceManager.setupReactContext(ReactInstanceManager.java:1183)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at com.facebook.react.ReactInstanceManager.access$1600(ReactInstanceManager.java:135)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at com.facebook.react.ReactInstanceManager$5$2.run(ReactInstanceManager.java:1137)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at android.os.Handler.handleCallback(Handler.java:883)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.java:27)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at android.os.Looper.loop(Looper.java:214)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$4.run(MessageQueueThreadImpl.java:228)
+09-22 18:14:49.953  9917 10081 W SoLoader: 	at java.lang.Thread.run(Thread.java:919)
+09-22 18:14:49.961  9917 10081 D SoLoader: libyoga.so found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/base.apk!/lib/arm64-v8a
+09-22 18:14:49.974  9917  9917 D DetoxRNLoading: Listener-proxy method called: onReactContextInitialized
+09-22 18:14:49.974  9917  9917 I DetoxRNLoading: Got new RN-context async'ly through listener
+09-22 18:14:49.975  9917  9917 D DetoxRNLoading: Listener-proxy method called: equals
+09-22 18:14:49.976  9917 10069 I DetoxRNIdleRes: Setting up Espresso Idling Resources for React Native
+09-22 18:14:49.994  9917  9917 V NFC     : this device does not have NFC support
+09-22 18:14:49.994  9917  9917 D OKLiteManager: NFC starting success
+09-22 18:14:50.004  9917 10069 D AsyncStorageIR: Checking whether a custom IR for Async-Storage is required... (legacy=false)
+09-22 18:14:50.004  9917 10069 D AsyncStorageIR: IR for Async-Storage is required! (legacy=false)
+09-22 18:14:50.004  9917 10069 D AsyncStorageIR: Checking whether a custom IR for Async-Storage is required... (legacy=true)
+09-22 18:14:50.004  9917 10069 D DetoxRNHelpers: Native RN module resolution (class com.facebook.react.modules.storage.AsyncStorageModule): no such class
+09-22 18:14:50.007  9917  9917 D AsyncStorageIR: Async-storage is busy!
+09-22 18:14:50.009  9917 10081 I flipper : flipper: FlipperClient::addPlugin Fresco
+09-22 18:14:50.009  9917 10081 W .app.wallet.de: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (greylist, reflection, allowed)
+09-22 18:14:50.009  9917 10081 W .app.wallet.de: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (greylist, reflection, allowed)
+09-22 18:14:50.010  9917 10081 W .app.wallet.de: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (greylist, reflection, allowed)
+09-22 18:14:50.012  9917 10069 I DetoxDispatcher: Done with action '_init'
+09-22 18:14:50.012  9917 10069 I DetoxDispatcher: Handling action 'isReady' (ID #-1000)...
+09-22 18:14:50.379  9917 10093 W .app.wallet.de: Accessing hidden method Landroid/os/WorkSource;->add(I)Z (greylist, reflection, allowed)
+09-22 18:14:50.379  9917 10093 W .app.wallet.de: Accessing hidden method Landroid/os/WorkSource;->add(ILjava/lang/String;)Z (greylist, reflection, allowed)
+09-22 18:14:50.379  9917 10093 W .app.wallet.de: Accessing hidden method Landroid/os/WorkSource;->size()I (greylist, reflection, allowed)
+09-22 18:14:50.379  9917 10093 W .app.wallet.de: Accessing hidden method Landroid/os/WorkSource;->get(I)I (greylist, reflection, allowed)
+09-22 18:14:50.379  9917 10093 W .app.wallet.de: Accessing hidden method Landroid/os/WorkSource;->getName(I)Ljava/lang/String; (greylist, reflection, allowed)
+09-22 18:14:50.380  9917 10093 W .app.wallet.de: Accessing hidden method Landroid/os/WorkSource;->isEmpty()Z (greylist-max-o, reflection, denied)
+09-22 18:14:51.447  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 100 iterations.
+09-22 18:14:51.526  9917  9930 I .app.wallet.de: NativeAlloc concurrent copying GC freed 129611(3670KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 14MB/20MB, paused 19us total 107.009ms
+09-22 18:14:51.959  9917  9930 I .app.wallet.de: NativeAlloc concurrent copying GC freed 131932(4040KB) AllocSpace objects, 0(0B) LOS objects, 25% free, 17MB/23MB, paused 486us total 101.591ms
+09-22 18:14:53.080  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 200 iterations.
+09-22 18:14:53.356  9917 10080 I v8      : index.android.bundle:23253773: Invalid asm.js: Type mismatch in assignment
+09-22 18:14:53.561  9917 10080 V SoLoader: libexpo-modules-core.so not found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/lib/arm64
+09-22 18:14:53.565  9917 10080 W SoLoader: libexpo-modules-core.so not found on /data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a flag: 4
+09-22 18:14:53.565  9917 10080 W SoLoader: java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a/libexpo-modules-core.so" not found
+09-22 18:14:53.565  9917 10080 W SoLoader: 	at java.lang.Runtime.load0(Runtime.java:938)
+09-22 18:14:53.565  9917 10080 W SoLoader: 	at java.lang.System.load(System.java:1631)
+09-22 18:14:53.565  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader$1.load(SoLoader.java:558)
+09-22 18:14:53.565  9917 10080 W SoLoader: 	at com.facebook.soloader.DirectApkSoSource.loadLibrary(DirectApkSoSource.java:81)
+09-22 18:14:53.565  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader.doLoadLibraryBySoName(SoLoader.java:1067)
+09-22 18:14:53.565  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibraryBySoNameImpl(SoLoader.java:943)
+09-22 18:14:53.565  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibraryBySoName(SoLoader.java:855)
+09-22 18:14:53.565  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibrary(SoLoader.java:802)
+09-22 18:14:53.565  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibrary(SoLoader.java:772)
+09-22 18:14:53.565  9917 10080 W SoLoader: 	at expo.modules.kotlin.jni.JSIInteropModuleRegistry.<clinit>(JSIInteropModuleRegistry.kt:120)
+09-22 18:14:53.565  9917 10080 W SoLoader: 	at expo.modules.kotlin.AppContext.installJSIInterop(AppContext.kt:127)
+09-22 18:14:53.565  9917 10080 W SoLoader: 	at expo.modules.kotlin.KotlinInteropModuleRegistry.installJSIInterop(KotlinInteropModuleRegistry.kt:127)
+09-22 18:14:53.565  9917 10080 W SoLoader: 	at expo.modules.adapters.react.NativeModulesProxy.getConstants(NativeModulesProxy.java:102)
+09-22 18:14:53.565  9917 10080 W SoLoader: 	at com.facebook.react.bridge.JavaModuleWrapper.getConstants(JavaModuleWrapper.java:142)
+09-22 18:14:53.565  9917 10080 W SoLoader: 	at com.facebook.jni.NativeRunnable.run(Native Method)
+09-22 18:14:53.565  9917 10080 W SoLoader: 	at android.os.Handler.handleCallback(Handler.java:883)
+09-22 18:14:53.565  9917 10080 W SoLoader: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+09-22 18:14:53.565  9917 10080 W SoLoader: 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.java:27)
+09-22 18:14:53.565  9917 10080 W SoLoader: 	at android.os.Looper.loop(Looper.java:214)
+09-22 18:14:53.565  9917 10080 W SoLoader: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$4.run(MessageQueueThreadImpl.java:228)
+09-22 18:14:53.565  9917 10080 W SoLoader: 	at java.lang.Thread.run(Thread.java:919)
+09-22 18:14:53.568  9917 10118 D ProfileInstaller: Installing profile for so.onekey.app.wallet.dev
+09-22 18:14:53.617  9917 10080 D SoLoader: libexpo-modules-core.so found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/base.apk!/lib/arm64-v8a
+09-22 18:14:53.618  9917 10080 V SoLoader: libturbomodulejsijni.so not found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/lib/arm64
+09-22 18:14:53.621  9917 10080 W SoLoader: libturbomodulejsijni.so not found on /data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a flag: 4
+09-22 18:14:53.621  9917 10080 W SoLoader: java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a/libturbomodulejsijni.so" not found
+09-22 18:14:53.621  9917 10080 W SoLoader: 	at java.lang.Runtime.load0(Runtime.java:938)
+09-22 18:14:53.621  9917 10080 W SoLoader: 	at java.lang.System.load(System.java:1631)
+09-22 18:14:53.621  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader$1.load(SoLoader.java:558)
+09-22 18:14:53.621  9917 10080 W SoLoader: 	at com.facebook.soloader.DirectApkSoSource.loadLibrary(DirectApkSoSource.java:81)
+09-22 18:14:53.621  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader.doLoadLibraryBySoName(SoLoader.java:1067)
+09-22 18:14:53.621  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibraryBySoNameImpl(SoLoader.java:943)
+09-22 18:14:53.621  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibraryBySoName(SoLoader.java:855)
+09-22 18:14:53.621  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibrary(SoLoader.java:802)
+09-22 18:14:53.621  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibrary(SoLoader.java:772)
+09-22 18:14:53.621  9917 10080 W SoLoader: 	at com.facebook.react.turbomodule.core.CallInvokerHolderImpl.maybeLoadSoLibrary(CallInvokerHolderImpl.java:32)
+09-22 18:14:53.621  9917 10080 W SoLoader: 	at com.facebook.react.turbomodule.core.CallInvokerHolderImpl.<init>(CallInvokerHolderImpl.java:25)
+09-22 18:14:53.621  9917 10080 W SoLoader: 	at com.facebook.react.bridge.CatalystInstanceImpl.getJSCallInvokerHolder(Native Method)
+09-22 18:14:53.621  9917 10080 W SoLoader: 	at com.facebook.react.bridge.CatalystInstanceImpl.getJSCallInvokerHolder(CatalystInstanceImpl.java:46)
+09-22 18:14:53.621  9917 10080 W SoLoader: 	at expo.modules.adapters.react.services.UIManagerModuleWrapper.getJSCallInvokerHolder(UIManagerModuleWrapper.java:214)
+09-22 18:14:53.621  9917 10080 W SoLoader: 	at expo.modules.kotlin.AppContext.installJSIInterop(AppContext.kt:138)
+09-22 18:14:53.621  9917 10080 W SoLoader: 	at expo.modules.kotlin.KotlinInteropModuleRegistry.installJSIInterop(KotlinInteropModuleRegistry.kt:127)
+09-22 18:14:53.621  9917 10080 W SoLoader: 	at expo.modules.adapters.react.NativeModulesProxy.getConstants(NativeModulesProxy.java:102)
+09-22 18:14:53.621  9917 10080 W SoLoader: 	at com.facebook.react.bridge.JavaModuleWrapper.getConstants(JavaModuleWrapper.java:142)
+09-22 18:14:53.621  9917 10080 W SoLoader: 	at com.facebook.jni.NativeRunnable.run(Native Method)
+09-22 18:14:53.621  9917 10080 W SoLoader: 	at android.os.Handler.handleCallback(Handler.java:883)
+09-22 18:14:53.621  9917 10080 W SoLoader: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+09-22 18:14:53.621  9917 10080 W SoLoader: 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.java:27)
+09-22 18:14:53.621  9917 10080 W SoLoader: 	at android.os.Looper.loop(Looper.java:214)
+09-22 18:14:53.621  9917 10080 W SoLoader: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$4.run(MessageQueueThreadImpl.java:228)
+09-22 18:14:53.621  9917 10080 W SoLoader: 	at java.lang.Thread.run(Thread.java:919)
+09-22 18:14:53.626  9917 10080 D SoLoader: libturbomodulejsijni.so found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/base.apk!/lib/arm64-v8a
+09-22 18:14:53.626  9917 10080 I ExpoModulesCore: ✅ JSI interop was installed
+09-22 18:14:53.654  9917 10080 I ExpoModulesCore: ✅ Constants were exported
+09-22 18:14:53.699  9917 10080 V SoLoader: libreactnativeblob.so not found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/lib/arm64
+09-22 18:14:53.701  9917 10080 W SoLoader: libreactnativeblob.so not found on /data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a flag: 4
+09-22 18:14:53.701  9917 10080 W SoLoader: java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a/libreactnativeblob.so" not found
+09-22 18:14:53.701  9917 10080 W SoLoader: 	at java.lang.Runtime.load0(Runtime.java:938)
+09-22 18:14:53.701  9917 10080 W SoLoader: 	at java.lang.System.load(System.java:1631)
+09-22 18:14:53.701  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader$1.load(SoLoader.java:558)
+09-22 18:14:53.701  9917 10080 W SoLoader: 	at com.facebook.soloader.DirectApkSoSource.loadLibrary(DirectApkSoSource.java:81)
+09-22 18:14:53.701  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader.doLoadLibraryBySoName(SoLoader.java:1067)
+09-22 18:14:53.701  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibraryBySoNameImpl(SoLoader.java:943)
+09-22 18:14:53.701  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibraryBySoName(SoLoader.java:855)
+09-22 18:14:53.701  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibrary(SoLoader.java:802)
+09-22 18:14:53.701  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibrary(SoLoader.java:772)
+09-22 18:14:53.701  9917 10080 W SoLoader: 	at com.facebook.react.modules.blob.BlobCollector.<clinit>(BlobCollector.java:16)
+09-22 18:14:53.701  9917 10080 W SoLoader: 	at com.facebook.react.modules.blob.BlobCollector.install(BlobCollector.java:20)
+09-22 18:14:53.701  9917 10080 W SoLoader: 	at com.facebook.react.modules.blob.BlobModule.initialize(BlobModule.java:149)
+09-22 18:14:53.701  9917 10080 W SoLoader: 	at com.facebook.react.bridge.ModuleHolder.doInitialize(ModuleHolder.java:236)
+09-22 18:14:53.701  9917 10080 W SoLoader: 	at com.facebook.react.bridge.ModuleHolder.create(ModuleHolder.java:201)
+09-22 18:14:53.701  9917 10080 W SoLoader: 	at com.facebook.react.bridge.ModuleHolder.getModule(ModuleHolder.java:156)
+09-22 18:14:53.701  9917 10080 W SoLoader: 	at com.facebook.react.bridge.JavaModuleWrapper.getModule(JavaModuleWrapper.java:58)
+09-22 18:14:53.701  9917 10080 W SoLoader: 	at com.facebook.react.bridge.JavaModuleWrapper.getConstants(JavaModuleWrapper.java:139)
+09-22 18:14:53.701  9917 10080 W SoLoader: 	at com.facebook.jni.NativeRunnable.run(Native Method)
+09-22 18:14:53.701  9917 10080 W SoLoader: 	at android.os.Handler.handleCallback(Handler.java:883)
+09-22 18:14:53.701  9917 10080 W SoLoader: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+09-22 18:14:53.701  9917 10080 W SoLoader: 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.java:27)
+09-22 18:14:53.701  9917 10080 W SoLoader: 	at android.os.Looper.loop(Looper.java:214)
+09-22 18:14:53.701  9917 10080 W SoLoader: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$4.run(MessageQueueThreadImpl.java:228)
+09-22 18:14:53.701  9917 10080 W SoLoader: 	at java.lang.Thread.run(Thread.java:919)
+09-22 18:14:53.705  9917 10080 D SoLoader: libreactnativeblob.so found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/base.apk!/lib/arm64-v8a
+09-22 18:14:53.708  9917 10080 I ReactNativeJS: Shims Injected: TextDecoder
+09-22 18:14:53.708  9917 10080 I ReactNativeJS: Shims Injected: Buffer
+09-22 18:14:53.708  9917 10080 I ReactNativeJS: Shims Injected: crypto
+09-22 18:14:53.722  9917 10080 I ReactNativeJS: Shims Injected: atob
+09-22 18:14:53.723  9917 10080 I ReactNativeJS: Shims Injected: btoa
+09-22 18:14:53.723  9917 10080 I ReactNativeJS: Shims Injected: nextTick
+09-22 18:14:53.725  9917 10080 I ReactNativeJS: Shims Injected: FileReader.prototype.readAsArrayBuffer
+09-22 18:14:53.725  9917 10080 I ReactNativeJS: polyfillsPlatform.native shim loaded
+09-22 18:14:53.758  9917 10080 I MMKV    : Loading C++ library...
+09-22 18:14:53.761  9917 10080 I MMKV    : Installing MMKV JSI Bindings for MMKV root directory: /data/user/0/so.onekey.app.wallet.dev/files/mmkv
+09-22 18:14:53.762  9917 10080 I MMKV    : <MMKV.cpp:165::initialize> version v1.2.15, page size 4096, arch arm64-v8a
+09-22 18:14:53.762  9917 10080 I MMKV    : <MMKV.cpp:176::initialize> armv8 AES instructions is supported
+09-22 18:14:53.762  9917 10080 I MMKV    : <MMKV.cpp:184::initialize> armv8 CRC32 instructions is supported
+09-22 18:14:53.762  9917 10080 I MMKV    : <MMKV.cpp:208::initializeMMKV> root dir: /data/user/0/so.onekey.app.wallet.dev/files/mmkv
+09-22 18:14:53.762  9917 10080 I MMKV    : Successfully installed MMKV JSI Bindings!
+09-22 18:14:53.762  9917 10080 I RNMMKV  : Creating MMKV instance "onekey-app-setting"... (Path: , Encryption-Key: )
+09-22 18:14:53.762  9917 10080 I MMKV    : <MemoryFile.cpp:97::open> open fd[0xa0], /data/user/0/so.onekey.app.wallet.dev/files/mmkv/onekey-app-setting
+09-22 18:14:53.762  9917 10080 I MMKV    : <MemoryFile.cpp:97::open> open fd[0xa1], /data/user/0/so.onekey.app.wallet.dev/files/mmkv/onekey-app-setting.crc
+09-22 18:14:53.762  9917 10080 I MMKV    : <MMKV_IO.cpp:81::loadFromFile> loading [onekey-app-setting] with 0 actual size, file size 4096, InterProcess 0, meta info version:0
+09-22 18:14:53.762  9917 10080 I MMKV    : <MMKV_IO.cpp:130::loadFromFile> loaded [onekey-app-setting] with 0 key-values
+09-22 18:14:54.070  9917 10080 W ReactNativeJS: debugLogger init warning, neither `global.$$onekeyAppStorage` nor `window.localStorage` found.
+09-22 18:14:54.079  9917 10081 W System.err: java.lang.Exception: File does not exist
+09-22 18:14:54.079  9917 10081 W System.err: 	at com.rnfs.RNFSManager.unlink(RNFSManager.java:654)
+09-22 18:14:54.079  9917 10081 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+09-22 18:14:54.079  9917 10081 W System.err: 	at com.facebook.react.bridge.JavaMethodWrapper.invoke(JavaMethodWrapper.java:372)
+09-22 18:14:54.079  9917 10081 W System.err: 	at com.facebook.react.bridge.JavaModuleWrapper.invoke(JavaModuleWrapper.java:188)
+09-22 18:14:54.079  9917 10081 W System.err: 	at com.facebook.jni.NativeRunnable.run(Native Method)
+09-22 18:14:54.079  9917 10081 W System.err: 	at android.os.Handler.handleCallback(Handler.java:883)
+09-22 18:14:54.079  9917 10081 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+09-22 18:14:54.079  9917 10081 W System.err: 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.java:27)
+09-22 18:14:54.079  9917 10081 W System.err: 	at androidx.test.espresso.base.Interrogator.loopAndInterrogate(Interrogator.java:14)
+09-22 18:14:54.080  9917 10081 W System.err: 	at androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler$2.run(LooperIdlingResourceInterrogationHandler.java:3)
+09-22 18:14:54.080  9917 10081 W System.err: 	at android.os.Handler.handleCallback(Handler.java:883)
+09-22 18:14:54.080  9917 10081 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+09-22 18:14:54.080  9917 10081 W System.err: 	at android.os.Looper.loop(Looper.java:214)
+09-22 18:14:54.080  9917 10081 W System.err: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$4.run(MessageQueueThreadImpl.java:228)
+09-22 18:14:54.080  9917 10081 W System.err: 	at java.lang.Thread.run(Thread.java:919)
+09-22 18:14:54.084  9917 10080 V SoLoader: librealm.so not found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/lib/arm64
+09-22 18:14:54.086  9917 10080 V SoLoader: libz.so not found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/lib/arm64
+09-22 18:14:54.086  9917 10080 V SoLoader: libz.so not found on /data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a
+09-22 18:14:54.086  9917 10080 V SoLoader: libz.so not found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/base.apk!/lib/arm64-v8a
+09-22 18:14:54.086  9917 10080 D SoLoader: libz.so found on /system/lib64
+09-22 18:14:54.086  9917 10080 D SoLoader: libz.so loaded implicitly
+09-22 18:14:54.087  9917 10080 W SoLoader: librealm.so not found on /data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a flag: 4
+09-22 18:14:54.087  9917 10080 W SoLoader: java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a/librealm.so" not found
+09-22 18:14:54.087  9917 10080 W SoLoader: 	at java.lang.Runtime.load0(Runtime.java:938)
+09-22 18:14:54.087  9917 10080 W SoLoader: 	at java.lang.System.load(System.java:1631)
+09-22 18:14:54.087  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader$1.load(SoLoader.java:558)
+09-22 18:14:54.087  9917 10080 W SoLoader: 	at com.facebook.soloader.DirectApkSoSource.loadLibrary(DirectApkSoSource.java:81)
+09-22 18:14:54.087  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader.doLoadLibraryBySoName(SoLoader.java:1067)
+09-22 18:14:54.087  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibraryBySoNameImpl(SoLoader.java:943)
+09-22 18:14:54.087  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibraryBySoName(SoLoader.java:855)
+09-22 18:14:54.087  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibrary(SoLoader.java:802)
+09-22 18:14:54.087  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibrary(SoLoader.java:772)
+09-22 18:14:54.087  9917 10080 W SoLoader: 	at io.realm.react.RealmReactModule.<clinit>(RealmReactModule.java:57)
+09-22 18:14:54.087  9917 10080 W SoLoader: 	at io.realm.react.RealmReactPackage.getModule(RealmReactPackage.java:35)
+09-22 18:14:54.087  9917 10080 W SoLoader: 	at com.facebook.react.TurboReactPackage$ModuleHolderProvider.get(TurboReactPackage.java:161)
+09-22 18:14:54.087  9917 10080 W SoLoader: 	at com.facebook.react.TurboReactPackage$ModuleHolderProvider.get(TurboReactPackage.java:149)
+09-22 18:14:54.087  9917 10080 W SoLoader: 	at com.facebook.react.bridge.ModuleHolder.create(ModuleHolder.java:191)
+09-22 18:14:54.087  9917 10080 W SoLoader: 	at com.facebook.react.bridge.ModuleHolder.getModule(ModuleHolder.java:156)
+09-22 18:14:54.087  9917 10080 W SoLoader: 	at com.facebook.react.bridge.JavaModuleWrapper.findMethods(JavaModuleWrapper.java:71)
+09-22 18:14:54.087  9917 10080 W SoLoader: 	at com.facebook.react.bridge.JavaModuleWrapper.getMethodDescriptors(JavaModuleWrapper.java:111)
+09-22 18:14:54.087  9917 10080 W SoLoader: 	at com.facebook.jni.NativeRunnable.run(Native Method)
+09-22 18:14:54.087  9917 10080 W SoLoader: 	at android.os.Handler.handleCallback(Handler.java:883)
+09-22 18:14:54.087  9917 10080 W SoLoader: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+09-22 18:14:54.087  9917 10080 W SoLoader: 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.java:27)
+09-22 18:14:54.087  9917 10080 W SoLoader: 	at android.os.Looper.loop(Looper.java:214)
+09-22 18:14:54.087  9917 10080 W SoLoader: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$4.run(MessageQueueThreadImpl.java:228)
+09-22 18:14:54.087  9917 10080 W SoLoader: 	at java.lang.Thread.run(Thread.java:919)
+09-22 18:14:54.117  9917 10080 D SoLoader: librealm.so found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/base.apk!/lib/arm64-v8a
+09-22 18:14:54.117  9917 10080 V JSRealm : setDefaultRealmFileDirectory
+09-22 18:14:54.118  9917 10080 D JSRealm : Absolute path: /data/data/so.onekey.app.wallet.dev/files
+09-22 18:14:54.118  9917 10080 V JSRealm : install
+09-22 18:14:54.118  9917 10080 V JSRealm : Building an exports object
+09-22 18:14:54.118  9917 10080 V JSRealm : Initializing ...
+09-22 18:14:54.191  9917 10080 W ReactNativeJS: @polkadot/api requires direct dependencies exactly matching version 10.7.1.
+09-22 18:14:54.191  9917 10080 W ReactNativeJS: Either remove and explicitly install matching versions or dedupe using your package manager.
+09-22 18:14:54.191  9917 10080 W ReactNativeJS: The following conflicting packages were found:
+09-22 18:14:54.191  9917 10080 W ReactNativeJS: 	10.8.1	@polkadot/rpc-core
+09-22 18:14:54.191  9917 10080 W ReactNativeJS: 	10.8.1	@polkadot/types-known
+09-22 18:14:54.191  9917 10080 W ReactNativeJS: @polkadot/rpc-augment requires direct dependencies exactly matching version 10.8.1.
+09-22 18:14:54.191  9917 10080 W ReactNativeJS: Either remove and explicitly install matching versions or dedupe using your package manager.
+09-22 18:14:54.191  9917 10080 W ReactNativeJS: The following conflicting packages were found:
+09-22 18:14:54.191  9917 10080 W ReactNativeJS: 	10.7.1	@polkadot/types
+09-22 18:14:54.218  9917 10080 W ReactNativeJS: @polkadot/rpc-core requires direct dependencies exactly matching version 10.8.1.
+09-22 18:14:54.218  9917 10080 W ReactNativeJS: Either remove and explicitly install matching versions or dedupe using your package manager.
+09-22 18:14:54.218  9917 10080 W ReactNativeJS: The following conflicting packages were found:
+09-22 18:14:54.218  9917 10080 W ReactNativeJS: 	10.7.1	@polkadot/rpc-provider
+09-22 18:14:54.218  9917 10080 W ReactNativeJS: 	10.7.1	@polkadot/types
+09-22 18:14:54.218  9917 10080 W ReactNativeJS: @polkadot/types requires direct dependencies exactly matching version 10.7.1.
+09-22 18:14:54.218  9917 10080 W ReactNativeJS: Either remove and explicitly install matching versions or dedupe using your package manager.
+09-22 18:14:54.218  9917 10080 W ReactNativeJS: The following conflicting packages were found:
+09-22 18:14:54.218  9917 10080 W ReactNativeJS: 	10.8.1	@polkadot/types-codec
+09-22 18:14:54.218  9917 10080 W ReactNativeJS: 	10.8.1	@polkadot/types-create
+09-22 18:14:54.231  9917 10080 W ReactNativeJS: @polkadot/types-known requires direct dependencies exactly matching version 10.8.1.
+09-22 18:14:54.231  9917 10080 W ReactNativeJS: Either remove and explicitly install matching versions or dedupe using your package manager.
+09-22 18:14:54.231  9917 10080 W ReactNativeJS: The following conflicting packages were found:
+09-22 18:14:54.231  9917 10080 W ReactNativeJS: 	10.7.1	@polkadot/types
+09-22 18:14:54.295  9917 10080 V SoLoader: libreanimated.so not found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/lib/arm64
+09-22 18:14:54.298  9917 10080 W SoLoader: libreanimated.so not found on /data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a flag: 4
+09-22 18:14:54.298  9917 10080 W SoLoader: java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a/libreanimated.so" not found
+09-22 18:14:54.298  9917 10080 W SoLoader: 	at java.lang.Runtime.load0(Runtime.java:938)
+09-22 18:14:54.298  9917 10080 W SoLoader: 	at java.lang.System.load(System.java:1631)
+09-22 18:14:54.298  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader$1.load(SoLoader.java:558)
+09-22 18:14:54.298  9917 10080 W SoLoader: 	at com.facebook.soloader.DirectApkSoSource.loadLibrary(DirectApkSoSource.java:81)
+09-22 18:14:54.298  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader.doLoadLibraryBySoName(SoLoader.java:1067)
+09-22 18:14:54.298  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibraryBySoNameImpl(SoLoader.java:943)
+09-22 18:14:54.298  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibraryBySoName(SoLoader.java:855)
+09-22 18:14:54.298  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibrary(SoLoader.java:802)
+09-22 18:14:54.298  9917 10080 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibrary(SoLoader.java:772)
+09-22 18:14:54.298  9917 10080 W SoLoader: 	at com.swmansion.reanimated.nativeProxy.NativeProxyCommon.<clinit>(NativeProxyCommon.java:33)
+09-22 18:14:54.298  9917 10080 W SoLoader: 	at com.swmansion.reanimated.NodesManager.initWithContext(NodesManager.java:112)
+09-22 18:14:54.298  9917 10080 W SoLoader: 	at com.swmansion.reanimated.ReanimatedModule.installTurboModule(ReanimatedModule.java:100)
+09-22 18:14:54.298  9917 10080 W SoLoader: 	at com.facebook.jni.NativeRunnable.run(Native Method)
+09-22 18:14:54.298  9917 10080 W SoLoader: 	at android.os.Handler.handleCallback(Handler.java:883)
+09-22 18:14:54.298  9917 10080 W SoLoader: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+09-22 18:14:54.298  9917 10080 W SoLoader: 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.java:27)
+09-22 18:14:54.298  9917 10080 W SoLoader: 	at android.os.Looper.loop(Looper.java:214)
+09-22 18:14:54.298  9917 10080 W SoLoader: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$4.run(MessageQueueThreadImpl.java:228)
+09-22 18:14:54.298  9917 10080 W SoLoader: 	at java.lang.Thread.run(Thread.java:919)
+09-22 18:14:54.316  9917 10080 D SoLoader: libreanimated.so found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/base.apk!/lib/arm64-v8a
+09-22 18:14:54.317  9917 10080 I .app.wallet.de: Waiting for a blocking GC ClassLinker
+09-22 18:14:54.323  9917 10080 I .app.wallet.de: WaitForGcToComplete blocked ClassLinker on HeapTrim for 5.774ms
+09-22 18:14:54.513  9917 10080 I RNMMKV  : Creating MMKV instance "obsPersist"... (Path: , Encryption-Key: )
+09-22 18:14:54.513  9917 10080 I MMKV    : <MemoryFile.cpp:97::open> open fd[0xb0], /data/user/0/so.onekey.app.wallet.dev/files/mmkv/obsPersist
+09-22 18:14:54.513  9917 10080 I MMKV    : <MemoryFile.cpp:97::open> open fd[0xb1], /data/user/0/so.onekey.app.wallet.dev/files/mmkv/obsPersist.crc
+09-22 18:14:54.513  9917 10080 I MMKV    : <MMKV_IO.cpp:81::loadFromFile> loading [obsPersist] with 0 actual size, file size 4096, InterProcess 0, meta info version:0
+09-22 18:14:54.513  9917 10080 I MMKV    : <MMKV_IO.cpp:130::loadFromFile> loaded [obsPersist] with 0 key-values
+09-22 18:14:54.527  9917 10080 W ReactNativeJS: `new NativeEventEmitter()` was called with a non-null argument without the required `addListener` method.
+09-22 18:14:54.527  9917 10080 W ReactNativeJS: `new NativeEventEmitter()` was called with a non-null argument without the required `removeListeners` method.
+09-22 18:14:54.667  9917 10080 I ReactNativeJS: Running "main
+09-22 18:14:54.682  9917 10080 I ReactNativeJNI: Memory warning (pressure level: TRIM_MEMORY_RUNNING_MODERATE) received by JS VM, ignoring because it's non-severe
+09-22 18:14:54.695  9917  9917 I ReactNative: [GESTURE HANDLER] Initialize gesture handler for root view com.facebook.react.ReactRootView{da9f7a8 V.E...... ......ID 0,0-1080,2022 #b}
+09-22 18:14:54.704  9917 10059 W .app.wallet.de: Accessing hidden method Ljava/io/ObjectStreamClass;->getConstructorId(Ljava/lang/Class;)J (greylist, reflection, allowed)
+09-22 18:14:54.705  9917 10059 W .app.wallet.de: Accessing hidden field Lsun/misc/Unsafe;->theUnsafe:Lsun/misc/Unsafe; (greylist, reflection, allowed)
+09-22 18:14:54.883  9917 10080 D RNFBCrashlyticsInit: isCrashlyticsCollectionEnabled via RNFBMeta: true
+09-22 18:14:54.883  9917 10080 D RNFBCrashlyticsInit: isCrashlyticsCollectionEnabled after checking crashlytics_debug_enabled: false
+09-22 18:14:54.883  9917 10080 D RNFBCrashlyticsInit: isCrashlyticsCollectionEnabled final value: false
+09-22 18:14:54.884  9917 10080 D RNFBCrashlyticsInit: isErrorGenerationOnJSCrashEnabled via RNFBJSON: true
+09-22 18:14:54.884  9917 10080 D RNFBCrashlyticsInit: isErrorGenerationOnJSCrashEnabled final value: true
+09-22 18:14:54.884  9917 10080 D RNFBCrashlyticsInit: isCrashlyticsJavascriptExceptionHandlerChainingEnabled via RNFBJSON: true
+09-22 18:14:54.884  9917 10080 D RNFBCrashlyticsInit: isCrashlyticsJavascriptExceptionHandlerChainingEnabled final value: true
+09-22 18:14:54.887  9917 10081 W .app.wallet.de: Accessing hidden field Landroid/app/ActivityThread;->sCurrentActivityThread:Landroid/app/ActivityThread; (greylist, reflection, allowed)
+09-22 18:14:54.887  9917 10081 W .app.wallet.de: Accessing hidden method Landroid/app/ActivityThread;->getApplication()Landroid/app/Application; (greylist, reflection, allowed)
+09-22 18:14:54.894  9917 10081 D ActionManager: addAction type:JPUSH,action:cn.jpush.android.helper.b
+09-22 18:14:54.897  9917 10081 W .app.wallet.de: Accessing hidden method Landroid/app/ActivityThread;->currentActivityThread()Landroid/app/ActivityThread; (greylist, reflection, allowed)
+09-22 18:14:54.897  9917 10081 W .app.wallet.de: Accessing hidden field Landroid/app/ActivityThread;->mActivities:Landroid/util/ArrayMap; (greylist, reflection, allowed)
+09-22 18:14:54.897  9917 10081 W .app.wallet.de: Accessing hidden field Landroid/app/ActivityThread$ActivityClientRecord;->paused:Z (greylist, reflection, allowed)
+09-22 18:14:54.898  9917 10081 W .app.wallet.de: Accessing hidden field Landroid/app/ActivityThread$ActivityClientRecord;->activity:Landroid/app/Activity; (greylist, reflection, allowed)
+09-22 18:14:54.903  9917 10081 W .app.wallet.de: Accessing hidden method Landroid/view/Window;->getInsetsController()Landroid/view/WindowInsetsController; (blacklist, linking, denied)
+09-22 18:14:54.908  9917 10081 D RNFBCrashlyticsInit: isCrashlyticsCollectionEnabled via RNFBMeta: true
+09-22 18:14:54.908  9917 10081 D RNFBCrashlyticsInit: isCrashlyticsCollectionEnabled after checking crashlytics_debug_enabled: false
+09-22 18:14:54.908  9917 10081 D RNFBCrashlyticsInit: isCrashlyticsCollectionEnabled final value: false
+09-22 18:14:54.915  9917 10140 E JIGUANG-JOperate: [JOperateProccessHelper] The permission should be defined JO- so.onekey.app.wallet.dev.permission.JOPERATE_MESSAGE
+09-22 18:14:54.915  9917 10140 E JIGUANG-JOperate: [JOperateProccessHelper] getReceiverPermission:so.onekey.app.wallet.dev.permission.JPUSH_MESSAGE
+09-22 18:14:54.958  9917 10157 V SoLoader: libimagepipeline.so not found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/lib/arm64
+09-22 18:14:54.961  9917 10157 V SoLoader: libjnigraphics.so not found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/lib/arm64
+09-22 18:14:54.962  9917 10157 V SoLoader: libjnigraphics.so not found on /data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a
+09-22 18:14:54.962  9917 10157 V SoLoader: libjnigraphics.so not found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/base.apk!/lib/arm64-v8a
+09-22 18:14:54.962  9917 10157 D SoLoader: libjnigraphics.so found on /system/lib64
+09-22 18:14:54.962  9917 10157 D SoLoader: libjnigraphics.so loaded implicitly
+09-22 18:14:54.970  9917 10159 E JIGUANG-JCore: [CheckManifestHelper] errorcode:1008,Invalid appKey : 1, Please get your Appkey from JIGUANG web console!
+09-22 18:14:54.979  9917 10157 W SoLoader: libimagepipeline.so not found on /data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a flag: 4
+09-22 18:14:54.979  9917 10157 W SoLoader: java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/app/so.onekey.app.wallet.dev.test-USKf71pu1LJbIztz_kGmQw==/base.apk!/lib/arm64-v8a/libimagepipeline.so" not found
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at java.lang.Runtime.load0(Runtime.java:938)
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at java.lang.System.load(System.java:1631)
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at com.facebook.soloader.SoLoader$1.load(SoLoader.java:558)
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at com.facebook.soloader.DirectApkSoSource.loadLibrary(DirectApkSoSource.java:81)
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at com.facebook.soloader.SoLoader.doLoadLibraryBySoName(SoLoader.java:1067)
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibraryBySoNameImpl(SoLoader.java:943)
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibraryBySoName(SoLoader.java:855)
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at com.facebook.soloader.SoLoader.loadLibrary(SoLoader.java:802)
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at com.facebook.soloader.NativeLoaderToSoLoaderDelegate.loadLibrary(NativeLoaderToSoLoaderDelegate.java:29)
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at com.facebook.soloader.nativeloader.NativeLoader.loadLibrary(NativeLoader.java:51)
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at com.facebook.soloader.nativeloader.NativeLoader.loadLibrary(NativeLoader.java:30)
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at com.facebook.imagepipeline.memory.NativeMemoryChunk.<clinit>(NativeMemoryChunk.java:33)
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at com.facebook.imagepipeline.memory.NativeMemoryChunkPool.alloc(NativeMemoryChunkPool.java:31)
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at com.facebook.imagepipeline.memory.NativeMemoryChunkPool.alloc(NativeMemoryChunkPool.java:16)
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at com.facebook.imagepipeline.memory.BasePool.get(BasePool.java:256)
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at com.facebook.imagepipeline.memory.MemoryPooledByteBufferOutputStream.<init>(MemoryPooledByteBufferOutputStream.java:55)
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at com.facebook.imagepipeline.memory.MemoryPooledByteBufferFactory.newByteBuffer(MemoryPooledByteBufferFactory.java:75)
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at com.facebook.imagepipeline.memory.MemoryPooledByteBufferFactory.newByteBuffer(MemoryPooledByteBufferFactory.java:25)
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at com.facebook.imagepipeline.producers.LocalFetchProducer.getByteBufferBackedEncodedImage(LocalFetchProducer.java:83)
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at com.facebook.imagepipeline.producers.LocalFetchProducer.getEncodedImage(LocalFetchProducer.java:93)
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at com.facebook.imagepipeline.producers.LocalResourceFetchProducer.getEncodedImage(LocalResourceFetchProducer.java:37)
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at com.facebook.imagepipeline.producers.LocalFetchProducer$1.getResult(LocalFetchProducer.java:47)
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at com.facebook.imagepipeline.producers.LocalFetchProducer$1.getResult(LocalFetchProducer.java:43)
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at com.facebook.common.executors.StatefulRunnable.run(StatefulRunnable.java:46)
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at com.facebook.imagepipeline.core.PriorityThreadFactory$1.run(PriorityThreadFactory.java:52)
+09-22 18:14:54.979  9917 10157 W SoLoader: 	at java.lang.Thread.run(Thread.java:919)
+09-22 18:14:54.980  9917 10081 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreensShadowNode
+09-22 18:14:54.981  9917 10159 E JIGUANG-JCore: [CheckManifestHelper] errorcode:1008,Invalid appKey : 1, Please get your Appkey from JIGUANG web console!
+09-22 18:14:54.987  9917 10159 E JIGUANG-JCore: [CheckManifestHelper] errorcode:1008,Invalid appKey : 1, Please get your Appkey from JIGUANG web console!
+09-22 18:14:54.992  9917 10159 E JIGUANG-JCore: [CheckManifestHelper] errorcode:1008,Invalid appKey : 1, Please get your Appkey from JIGUANG web console!
+09-22 18:14:55.007  9917 10159 I chatty  : uid=10149(so.onekey.app.wallet.dev) jg_mn_pool_thre identical 1 line
+09-22 18:14:55.013  9917 10159 E JIGUANG-JCore: [CheckManifestHelper] errorcode:1008,Invalid appKey : 1, Please get your Appkey from JIGUANG web console!
+09-22 18:14:55.024  9917 10157 D SoLoader: libimagepipeline.so found on /data/app/so.onekey.app.wallet.dev-Js_ewY3u43eh6HSdx4gP7A==/base.apk!/lib/arm64-v8a
+09-22 18:14:55.279  9917 10080 I ReactNativeJS: 'LazyRenderWhenFocus >>>>>>>>>> ', { shouldFreeze: true,
+09-22 18:14:55.279  9917 10080 I ReactNativeJS:   freezeWhenBlur: undefined,
+09-22 18:14:55.279  9917 10080 I ReactNativeJS:   rootTabName: 'market' }
+09-22 18:14:55.300  9917 10080 I ReactNativeJS: 'LazyRenderWhenFocus >>>>>>>>>> ', { shouldFreeze: true,
+09-22 18:14:55.300  9917 10080 I ReactNativeJS:   freezeWhenBlur: undefined,
+09-22 18:14:55.300  9917 10080 I ReactNativeJS:   rootTabName: 'swap' }
+09-22 18:14:55.323  9917 10080 I ReactNativeJS: 'LazyRenderWhenFocus >>>>>>>>>> ', { shouldFreeze: true,
+09-22 18:14:55.323  9917 10080 I ReactNativeJS:   freezeWhenBlur: undefined,
+09-22 18:14:55.323  9917 10080 I ReactNativeJS:   rootTabName: 'discover' }
+09-22 18:14:55.354  9917 10080 I ReactNativeJS: 'LazyRenderWhenFocus >>>>>>>>>> ', { shouldFreeze: true,
+09-22 18:14:55.354  9917 10080 I ReactNativeJS:   freezeWhenBlur: undefined,
+09-22 18:14:55.354  9917 10080 I ReactNativeJS:   rootTabName: 'me' }
+09-22 18:14:55.444  9917 10080 W ReactNativeJS: `new NativeEventEmitter()` was called with a non-null argument without the required `addListener` method.
+09-22 18:14:55.444  9917 10080 W ReactNativeJS: `new NativeEventEmitter()` was called with a non-null argument without the required `removeListeners` method.
+09-22 18:14:55.513  9917 10081 D RNFBCrashlyticsInit: isCrashlyticsCollectionEnabled via RNFBMeta: true
+09-22 18:14:55.514  9917 10081 D RNFBCrashlyticsInit: isCrashlyticsCollectionEnabled after checking crashlytics_debug_enabled: false
+09-22 18:14:55.514  9917 10081 D RNFBCrashlyticsInit: isCrashlyticsCollectionEnabled final value: false
+09-22 18:14:55.544  9917  9917 I Choreographer: Skipped 36 frames!  The application may be doing too much work on its main thread.
+09-22 18:14:55.553  9917 10081 D RNFBCrashlyticsInit: isCrashlyticsCollectionEnabled via RNFBMeta: true
+09-22 18:14:55.553  9917 10081 D RNFBCrashlyticsInit: isCrashlyticsCollectionEnabled after checking crashlytics_debug_enabled: false
+09-22 18:14:55.553  9917 10081 D RNFBCrashlyticsInit: isCrashlyticsCollectionEnabled final value: false
+09-22 18:14:55.577  9917  9917 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:55.579  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+09-22 18:14:55.579  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:55.579  9917 10052 I chatty  : uid=10149(so.onekey.app.wallet.dev) pool-3-thread-1 identical 1 line
+09-22 18:14:55.582  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:55.594  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+09-22 18:14:55.601  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:55.601  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+09-22 18:14:55.911  9917  9917 D RenderScript HIDL Adaptation: IRenderScriptDevice::getService()
+09-22 18:14:55.912  9917  9917 D RenderScript HIDL Adaptation: IRenderScriptDevice::getService() returned 0x0
+09-22 18:14:55.912  9917  9917 D RenderScript HIDL Adaptation: Using Fallback Path.
+09-22 18:14:55.927  9917  9917 D         : Successfully queried cache dir: /data/user_de/0/so.onekey.app.wallet.dev/code_cache
+09-22 18:14:55.927  9917  9917 D RenderScript: Setting cache dir: /data/user_de/0/so.onekey.app.wallet.dev/code_cache
+09-22 18:14:55.979  9917  9917 W .app.wallet.de: Accessing hidden field Landroid/widget/ScrollView;->mScroller:Landroid/widget/OverScroller; (greylist, reflection, allowed)
+09-22 18:14:56.051  9917  9917 I ReactNative: [GESTURE HANDLER] Gesture handler is already enabled for a parent view
+09-22 18:14:56.061  9917  9917 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:56.062  9917  9917 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:56.062  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+09-22 18:14:56.062  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:56.062  9917  9917 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:56.062  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+09-22 18:14:56.062  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:56.062  9917  9917 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:56.063  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+09-22 18:14:56.063  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:56.063  9917 10052 I chatty  : uid=10149(so.onekey.app.wallet.dev) pool-3-thread-1 identical 4 lines
+09-22 18:14:56.063  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:56.099  9917 10081 W JIGUANG-JPush: [AndroidUtil] AndroidManifest.xml missing FileProvider: cn.jiguang.union.ads.service.JAdFileProvider, it necessary for inapp message
+09-22 18:14:56.099  9917 10081 W JIGUANG-JPush: [AndroidUtil] The fileprovider required for inapp-message is incorrectly configured, please check AndroidManifest.xml
+09-22 18:14:56.101  9917 10081 W JIGUANG-JCore: [JCoreManager] [requestPermission] context must instanceof Activity
+09-22 18:14:56.106  9917 10159 E JIGUANG-JCore: [CheckManifestHelper] errorcode:1008,Invalid appKey : 1, Please get your Appkey from JIGUANG web console!
+09-22 18:14:56.108  9917 10159 I chatty  : uid=10149(so.onekey.app.wallet.dev) jg_mn_pool_thre identical 1 line
+09-22 18:14:56.110  9917 10159 E JIGUANG-JCore: [CheckManifestHelper] errorcode:1008,Invalid appKey : 1, Please get your Appkey from JIGUANG web console!
+09-22 18:14:56.113  9917 10150 W JIGUANG-JPush: [AndroidUtil] AndroidManifest.xml missing FileProvider: cn.jiguang.union.ads.service.JAdFileProvider, it necessary for inapp message
+09-22 18:14:56.113  9917 10150 W JIGUANG-JPush: [AndroidUtil] The fileprovider required for inapp-message is incorrectly configured, please check AndroidManifest.xml
+09-22 18:14:56.137  9917 10150 W JIGUANG-JUnionAd: [InAppHelper] not allowed install apk by system
+09-22 18:14:56.140  9917 10159 E JIGUANG-JCore: [CheckManifestHelper] errorcode:1008,Invalid appKey : 1, Please get your Appkey from JIGUANG web console!
+09-22 18:14:56.204  9917 10150 W JIGUANG-JPush: [AsusPushHelper] AndroidManifest.xml missing receiver extends asus's AsusPushMessageReceiver
+09-22 18:14:56.276  9917  9932 W System  : A resource failed to call destroy. 
+09-22 18:14:56.276  9917  9932 W System  : A resource failed to call destroy. 
+09-22 18:14:56.442  9917 10174 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:56.444  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:56.444  9917 10052 I chatty  : uid=10149(so.onekey.app.wallet.dev) pool-3-thread-1 identical 1 line
+09-22 18:14:56.445  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:56.445  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+09-22 18:14:56.445  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:56.445  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+09-22 18:14:56.446  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+09-22 18:14:56.736  9917 10178 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:56.736  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:56.736  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+09-22 18:14:56.736  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:56.737  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:56.737  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+09-22 18:14:56.737  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:56.737  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+09-22 18:14:57.135  9917 10173 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:57.135  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:57.135  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+09-22 18:14:57.135  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:57.136  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:57.136  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+09-22 18:14:57.136  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:14:57.136  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+09-22 18:14:57.605  9917  9917 I Detox   : UIManagerModule is busy
+09-22 18:14:57.615  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:14:58.118  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 30 lines
+09-22 18:14:58.135  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:14:58.148  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:14:59.065  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 55 lines
+09-22 18:14:59.081  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:14:59.081  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 200 iterations.
+09-22 18:14:59.097  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:14:59.283  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 11 lines
+09-22 18:14:59.302  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:14:59.314  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:14:59.347  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 2 lines
+09-22 18:14:59.364  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:14:59.370  9917 10071 D DetoxWSClient: Received action 'currentStatus' (ID #1, params={})
+09-22 18:14:59.371  9917 10070 I DetoxDispatcher: Handling action 'currentStatus' (ID #1)...
+09-22 18:14:59.372  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:14:59.373  9917 10070 I DetoxWSClient: Sending out action 'currentStatusResult' (ID #1)
+09-22 18:14:59.373  9917 10070 I DetoxDispatcher: Done with action 'currentStatus'
+09-22 18:14:59.382  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:14:59.466  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 10 lines
+09-22 18:14:59.466  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:14:59.480  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:00.147  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 80 lines
+09-22 18:15:00.147  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:00.163  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:00.663  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 60 lines
+09-22 18:15:00.663  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:00.663  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 400 iterations.
+09-22 18:15:00.680  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:00.898  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 26 lines
+09-22 18:15:00.898  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:00.907  9917 10196 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:15:00.909  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:15:00.909  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+09-22 18:15:00.910  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:15:00.913  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:00.930  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 2 lines
+09-22 18:15:00.930  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:00.939  9917  9967 W System  : Ignoring header If-None-Match because its value was null.
+09-22 18:15:00.946  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:00.947  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:00.965  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:01.416  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 54 lines
+09-22 18:15:01.416  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:01.417  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 500 iterations.
+09-22 18:15:01.430  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:02.163  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 88 lines
+09-22 18:15:02.163  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:02.180  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:02.213  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 4 lines
+09-22 18:15:02.213  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:02.213  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 600 iterations.
+09-22 18:15:02.230  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:02.613  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 47 lines
+09-22 18:15:02.617  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:02.617  9917  9917 W IdlingPolicy: These resources are not idle: [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource]
+09-22 18:15:02.630  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:02.665  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 7 lines
+09-22 18:15:02.665  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:02.669  9917 10080 E ReactNativeJS: { context: 'core' }, { context: 'core/relayer' }, [Error: socket stalled]
+09-22 18:15:02.682  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:02.683  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 1 line
+09-22 18:15:02.683  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:02.688  9917 10080 E ReactNativeJS: 'WalletConnect V2 Core ERROR: relayer_transport_closed >>>>>> ', undefined
+09-22 18:15:02.690  9917 10080 E ReactNativeJS: { context: 'core' }, 'closeTransport called before connection was established'
+09-22 18:15:02.691  9917 10080 E ReactNativeJS: { context: 'client' }, 'closeTransport called before connection was established'
+09-22 18:15:02.691  9917 10080 E ReactNativeJS: { context: 'core' }, 'closeTransport called before connection was established'
+09-22 18:15:02.691  9917 10080 E ReactNativeJS: 'createWeb3WalletV2 ERROR:', [Error: closeTransport called before connection was established]
+09-22 18:15:02.691  9917 10081 E unknown:ReactNative: console.error: {"context":"core"} {"context":"core/relayer"} Error: socket stalled, js engine: v8, stack:
+09-22 18:15:02.691  9917 10081 E unknown:ReactNative: p@50:240
+09-22 18:15:02.691  9917 10081 E unknown:ReactNative: p@50:355
+09-22 18:15:02.691  9917 10081 E unknown:ReactNative: new s@48:362
+09-22 18:15:02.691  9917 10081 E unknown:ReactNative: f.<anonymous>@42:1043
+09-22 18:15:02.691  9917 10081 E unknown:ReactNative: new f@42:1221
+09-22 18:15:02.691  9917 10081 E unknown:ReactNative: b@42:2420
+09-22 18:15:02.691  9917 10081 E unknown:ReactNative: Object.error@512:1745
+09-22 18:15:02.691  9917 10081 E unknown:ReactNative: Object.error@8067:3297
+09-22 18:15:02.691  9917 10081 E unknown:ReactNative: Object.error@8067:4311
+09-22 18:15:02.691  9917 10081 E unknown:ReactNative: Object.error@8067:4311
+09-22 18:15:02.695  9917 10081 E unknown:ReactNative: console.error: WalletConnect V2 Core ERROR: relayer_transport_closed >>>>>>  undefined, js engine: v8, stack:
+09-22 18:15:02.695  9917 10081 E unknown:ReactNative: p@50:240
+09-22 18:15:02.695  9917 10081 E unknown:ReactNative: p@50:355
+09-22 18:15:02.695  9917 10081 E unknown:ReactNative: new s@48:362
+09-22 18:15:02.695  9917 10081 E unknown:ReactNative: f.<anonymous>@42:1043
+09-22 18:15:02.695  9917 10081 E unknown:ReactNative: new f@42:1221
+09-22 18:15:02.695  9917 10081 E unknown:ReactNative: b@42:2420
+09-22 18:15:02.695  9917 10081 E unknown:ReactNative: Object.error@512:1745
+09-22 18:15:02.695  9917 10081 E unknown:ReactNative: s.<anonymous>@8050:2248
+09-22 18:15:02.695  9917 10081 E unknown:ReactNative: Object.p@627:1873
+09-22 18:15:02.695  9917 10081 E unknown:ReactNative: s.emit@627:4098
+09-22 18:15:02.696  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:02.696  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 1 line
+09-22 18:15:02.696  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:02.697  9917 10081 E unknown:ReactNative: console.error: {"context":"core"} closeTransport called before connection was established, js engine: v8, stack:
+09-22 18:15:02.697  9917 10081 E unknown:ReactNative: p@50:240
+09-22 18:15:02.697  9917 10081 E unknown:ReactNative: p@50:355
+09-22 18:15:02.697  9917 10081 E unknown:ReactNative: new s@48:362
+09-22 18:15:02.697  9917 10081 E unknown:ReactNative: f.<anonymous>@42:1043
+09-22 18:15:02.697  9917 10081 E unknown:ReactNative: new f@42:1221
+09-22 18:15:02.697  9917 10081 E unknown:ReactNative: b@42:2420
+09-22 18:15:02.697  9917 10081 E unknown:ReactNative: Object.error@512:1745
+09-22 18:15:02.697  9917 10081 E unknown:ReactNative: Object.error@8067:3297
+09-22 18:15:02.697  9917 10081 E unknown:ReactNative: Object.error@8067:4311
+09-22 18:15:02.697  9917 10081 E unknown:ReactNative: s.<anonymous>@8052:68629
+09-22 18:15:02.698  9917 10081 E unknown:ReactNative: console.error: {"context":"client"} closeTransport called before connection was established, js engine: v8, stack:
+09-22 18:15:02.698  9917 10081 E unknown:ReactNative: p@50:240
+09-22 18:15:02.698  9917 10081 E unknown:ReactNative: p@50:355
+09-22 18:15:02.698  9917 10081 E unknown:ReactNative: new s@48:362
+09-22 18:15:02.698  9917 10081 E unknown:ReactNative: f.<anonymous>@42:1043
+09-22 18:15:02.698  9917 10081 E unknown:ReactNative: new f@42:1221
+09-22 18:15:02.698  9917 10081 E unknown:ReactNative: b@42:2420
+09-22 18:15:02.698  9917 10081 E unknown:ReactNative: Object.error@512:1745
+09-22 18:15:02.698  9917 10081 E unknown:ReactNative: Object.error@8067:3297
+09-22 18:15:02.698  9917 10081 E unknown:ReactNative: Object.error@8067:4311
+09-22 18:15:02.698  9917 10081 E unknown:ReactNative: d.<anonymous>@8113:32589
+09-22 18:15:02.699  9917 10081 E unknown:ReactNative: console.error: {"context":"core"} closeTransport called before connection was established, js engine: v8, stack:
+09-22 18:15:02.699  9917 10081 E unknown:ReactNative: p@50:240
+09-22 18:15:02.699  9917 10081 E unknown:ReactNative: p@50:355
+09-22 18:15:02.699  9917 10081 E unknown:ReactNative: new s@48:362
+09-22 18:15:02.699  9917 10081 E unknown:ReactNative: f.<anonymous>@42:1043
+09-22 18:15:02.699  9917 10081 E unknown:ReactNative: new f@42:1221
+09-22 18:15:02.699  9917 10081 E unknown:ReactNative: b@42:2420
+09-22 18:15:02.699  9917 10081 E unknown:ReactNative: Object.error@512:1745
+09-22 18:15:02.699  9917 10081 E unknown:ReactNative: Object.error@8067:3297
+09-22 18:15:02.699  9917 10081 E unknown:ReactNative: Object.error@8067:4311
+09-22 18:15:02.699  9917 10081 E unknown:ReactNative: l.<anonymous>@8106:12485
+09-22 18:15:02.700  9917 10081 E unknown:ReactNative: console.error: createWeb3WalletV2 ERROR: Error: closeTransport called before connection was established, js engine: v8, stack:
+09-22 18:15:02.700  9917 10081 E unknown:ReactNative: p@50:240
+09-22 18:15:02.700  9917 10081 E unknown:ReactNative: p@50:355
+09-22 18:15:02.700  9917 10081 E unknown:ReactNative: new s@48:362
+09-22 18:15:02.700  9917 10081 E unknown:ReactNative: f.<anonymous>@42:1043
+09-22 18:15:02.700  9917 10081 E unknown:ReactNative: new f@42:1221
+09-22 18:15:02.700  9917 10081 E unknown:ReactNative: b@42:2420
+09-22 18:15:02.700  9917 10081 E unknown:ReactNative: Object.error@512:1745
+09-22 18:15:02.700  9917 10081 E unknown:ReactNative: s.<anonymous>@8050:1585
+09-22 18:15:02.700  9917 10081 E unknown:ReactNative: Generator.throw@-1
+09-22 18:15:02.700  9917 10081 E unknown:ReactNative: n@353:69
+09-22 18:15:02.713  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:03.015  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 55 lines
+09-22 18:15:03.015  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:03.015  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 700 iterations.
+09-22 18:15:03.030  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:03.930  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 163 lines
+09-22 18:15:03.931  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:03.947  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:03.947  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 1 line
+09-22 18:15:03.947  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:03.963  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:03.963  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 1 line
+09-22 18:15:03.963  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:03.980  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:04.164  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 34 lines
+09-22 18:15:04.164  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:04.180  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:04.680  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 91 lines
+09-22 18:15:04.680  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:04.687  9917 10173 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:15:04.689  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:15:04.689  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:15:04.696  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:04.765  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 13 lines
+09-22 18:15:04.765  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:04.774  9917 10196 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:15:04.775  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:15:04.775  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:15:04.781  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:05.349  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 103 lines
+09-22 18:15:05.349  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:05.349  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 1000 iterations.
+09-22 18:15:05.363  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:05.948  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 106 lines
+09-22 18:15:05.949  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:05.965  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:05.965  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 1 line
+09-22 18:15:05.965  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:05.979  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:06.180  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 37 lines
+09-22 18:15:06.180  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:06.196  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:06.631  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 79 lines
+09-22 18:15:06.631  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:06.648  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:06.980  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 61 lines
+09-22 18:15:06.980  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:06.981  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 1200 iterations.
+09-22 18:15:06.997  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:07.616  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 113 lines
+09-22 18:15:07.618  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:07.619  9917  9917 W IdlingPolicy: These resources are not idle: [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource]
+09-22 18:15:07.631  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:08.201  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 138 lines
+09-22 18:15:08.201  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:08.213  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:08.956  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 178 lines
+09-22 18:15:08.956  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:08.963  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:09.082  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 30 lines
+09-22 18:15:09.082  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:09.086  9917 10173 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:15:09.088  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:15:09.088  9917 10052 W .app.wallet.de: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-22 18:15:09.096  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:09.231  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 34 lines
+09-22 18:15:09.231  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:09.247  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:09.381  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 34 lines
+09-22 18:15:09.381  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:09.388  9917 10071 D DetoxWSClient: Received action 'currentStatus' (ID #2, params={})
+09-22 18:15:09.388  9917 10070 I DetoxDispatcher: Handling action 'currentStatus' (ID #2)...
+09-22 18:15:09.391  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:09.393  9917 10070 I DetoxWSClient: Sending out action 'currentStatusResult' (ID #2)
+09-22 18:15:09.394  9917 10070 I DetoxDispatcher: Done with action 'currentStatus'
+09-22 18:15:09.396  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:10.198  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 243 lines
+09-22 18:15:10.198  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:10.216  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:10.216  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 3 lines
+09-22 18:15:10.216  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:10.230  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:10.980  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 228 lines
+09-22 18:15:10.980  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:10.980  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 1700 iterations.
+09-22 18:15:10.997  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:11.813  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 248 lines
+09-22 18:15:11.813  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:11.813  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 1800 iterations.
+09-22 18:15:11.831  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:12.214  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 118 lines
+09-22 18:15:12.214  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:12.230  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:12.347  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 38 lines
+09-22 18:15:12.347  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:12.363  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:12.613  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 79 lines
+09-22 18:15:12.620  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:12.620  9917  9917 W IdlingPolicy: These resources are not idle: [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource]
+09-22 18:15:12.620  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 1900 iterations.
+09-22 18:15:12.630  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:13.447  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 298 lines
+09-22 18:15:13.447  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:13.447  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 2000 iterations.
+09-22 18:15:13.464  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:13.964  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 184 lines
+09-22 18:15:13.964  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:13.980  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:13.996  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 10 lines
+09-22 18:15:13.996  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:14.013  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:14.013  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 4 lines
+09-22 18:15:14.013  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:14.030  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:14.214  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 70 lines
+09-22 18:15:14.214  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:14.235  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:15.064  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 304 lines
+09-22 18:15:15.064  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:15.065  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 2200 iterations.
+09-22 18:15:15.080  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:15.230  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 58 lines
+09-22 18:15:15.230  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:15.247  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:15.464  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 82 lines
+09-22 18:15:15.464  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:15.480  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:16.231  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 274 lines
+09-22 18:15:16.231  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:16.259  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:17.264  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 370 lines
+09-22 18:15:17.264  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:17.279  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:17.280  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 4 lines
+09-22 18:15:17.280  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:17.296  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:17.533  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 88 lines
+09-22 18:15:17.533  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:17.533  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 2500 iterations.
+09-22 18:15:17.548  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:17.615  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 29 lines
+09-22 18:15:17.621  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:17.621  9917  9917 W IdlingPolicy: These resources are not idle: [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource]
+09-22 18:15:17.631  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:17.716  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 40 lines
+09-22 18:15:17.716  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:17.730  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:18.231  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 215 lines
+09-22 18:15:18.231  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:18.249  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:18.332  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 40 lines
+09-22 18:15:18.332  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:18.332  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 2600 iterations.
+09-22 18:15:18.347  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:19.169  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 348 lines
+09-22 18:15:19.169  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:19.169  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 2700 iterations.
+09-22 18:15:19.180  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:19.397  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 96 lines
+09-22 18:15:19.397  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:19.406  9917 10071 D DetoxWSClient: Received action 'currentStatus' (ID #3, params={})
+09-22 18:15:19.406  9917 10070 I DetoxDispatcher: Handling action 'currentStatus' (ID #3)...
+09-22 18:15:19.409  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:19.410  9917 10070 I DetoxWSClient: Sending out action 'currentStatusResult' (ID #3)
+09-22 18:15:19.411  9917 10070 I DetoxDispatcher: Done with action 'currentStatus'
+09-22 18:15:19.413  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:19.934  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 254 lines
+09-22 18:15:19.934  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:19.934  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 2800 iterations.
+09-22 18:15:19.947  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:20.248  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 150 lines
+09-22 18:15:20.248  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:20.265  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:20.747  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 238 lines
+09-22 18:15:20.747  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:20.748  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 2900 iterations.
+09-22 18:15:20.765  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:21.280  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 254 lines
+09-22 18:15:21.280  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:21.296  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:21.297  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 6 lines
+09-22 18:15:21.297  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:21.313  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:21.313  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 6 lines
+09-22 18:15:21.313  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:21.330  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:22.248  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 446 lines
+09-22 18:15:22.248  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:22.263  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:22.381  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 62 lines
+09-22 18:15:22.381  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:22.381  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 3100 iterations.
+09-22 18:15:22.397  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:22.613  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 111 lines
+09-22 18:15:22.624  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:22.624  9917  9917 W IdlingPolicy: These resources are not idle: [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource]
+09-22 18:15:22.631  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:23.197  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 313 lines
+09-22 18:15:23.197  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:23.198  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 3200 iterations.
+09-22 18:15:23.215  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:24.248  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 565 lines
+09-22 18:15:24.248  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:24.264  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:24.280  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 16 lines
+09-22 18:15:24.280  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:24.296  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:24.382  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 52 lines
+09-22 18:15:24.382  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:24.398  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:24.548  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 88 lines
+09-22 18:15:24.548  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:24.564  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:25.646  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 592 lines
+09-22 18:15:25.646  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:25.646  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 3500 iterations.
+09-22 18:15:25.663  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:26.264  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 331 lines
+09-22 18:15:26.264  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:26.280  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:26.365  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 52 lines
+09-22 18:15:26.365  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:26.365  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 3600 iterations.
+09-22 18:15:26.380  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:27.614  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 674 lines
+09-22 18:15:27.627  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:27.628  9917  9917 W IdlingPolicy: These resources are not idle: [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource]
+09-22 18:15:27.630  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:28.013  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 238 lines
+09-22 18:15:28.013  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:28.013  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 3800 iterations.
+09-22 18:15:28.030  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:28.264  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 148 lines
+09-22 18:15:28.264  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:28.280  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:28.830  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 338 lines
+09-22 18:15:28.830  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:28.830  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 3900 iterations.
+09-22 18:15:28.847  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:29.416  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 348 lines
+09-22 18:15:29.416  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:29.421  9917 10071 D DetoxWSClient: Received action 'currentStatus' (ID #4, params={})
+09-22 18:15:29.421  9917 10070 I DetoxDispatcher: Handling action 'currentStatus' (ID #4)...
+09-22 18:15:29.423  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:29.424  9917 10070 I DetoxWSClient: Sending out action 'currentStatusResult' (ID #4)
+09-22 18:15:29.424  9917 10070 I DetoxDispatcher: Done with action 'currentStatus'
+09-22 18:15:29.430  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:29.600  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 119 lines
+09-22 18:15:29.600  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:29.600  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 4000 iterations.
+09-22 18:15:29.613  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:30.280  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 449 lines
+09-22 18:15:30.280  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:30.296  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:31.214  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 614 lines
+09-22 18:15:31.214  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:31.215  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 4200 iterations.
+09-22 18:15:31.229  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:31.314  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 64 lines
+09-22 18:15:31.314  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:31.330  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:32.281  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 636 lines
+09-22 18:15:32.281  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:32.296  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:32.565  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 174 lines
+09-22 18:15:32.565  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:32.579  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:32.615  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 32 lines
+09-22 18:15:32.629  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:32.629  9917  9917 W IdlingPolicy: These resources are not idle: [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource]
+09-22 18:15:32.629  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:32.867  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 178 lines
+09-22 18:15:32.867  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:32.867  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 4400 iterations.
+09-22 18:15:32.880  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:34.280  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 1018 lines
+09-22 18:15:34.280  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:34.299  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:34.482  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 142 lines
+09-22 18:15:34.482  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:34.482  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 4600 iterations.
+09-22 18:15:34.497  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:36.266  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 1282 lines
+09-22 18:15:36.266  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:36.266  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 4800 iterations.
+09-22 18:15:36.279  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:36.297  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 22 lines
+09-22 18:15:36.297  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:36.313  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:37.080  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 562 lines
+09-22 18:15:37.080  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:37.080  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 4900 iterations.
+09-22 18:15:37.096  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:37.615  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 383 lines
+09-22 18:15:37.632  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:37.633  9917  9917 W IdlingPolicy: These resources are not idle: [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource]
+09-22 18:15:37.633  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:38.297  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 531 lines
+09-22 18:15:38.297  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:38.313  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:38.732  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 336 lines
+09-22 18:15:38.732  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:38.732  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 5100 iterations.
+09-22 18:15:38.747  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:39.430  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 544 lines
+09-22 18:15:39.430  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:39.436  9917 10071 D DetoxWSClient: Received action 'currentStatus' (ID #5, params={})
+09-22 18:15:39.436  9917 10070 I DetoxDispatcher: Handling action 'currentStatus' (ID #5)...
+09-22 18:15:39.438  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:39.440  9917 10070 I DetoxWSClient: Sending out action 'currentStatusResult' (ID #5)
+09-22 18:15:39.440  9917 10070 I DetoxDispatcher: Done with action 'currentStatus'
+09-22 18:15:39.447  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:40.315  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 740 lines
+09-22 18:15:40.315  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:40.316  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 5300 iterations.
+09-22 18:15:40.330  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:40.581  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 222 lines
+09-22 18:15:40.581  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:40.597  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:40.597  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 12 lines
+09-22 18:15:40.597  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:40.613  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:41.130  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 446 lines
+09-22 18:15:41.130  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:41.131  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 5400 iterations.
+09-22 18:15:41.147  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:41.964  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 698 lines
+09-22 18:15:41.964  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:41.964  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 5500 iterations.
+09-22 18:15:41.980  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:42.315  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 292 lines
+09-22 18:15:42.315  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:42.329  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:42.633  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 265 lines
+09-22 18:15:42.633  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:42.633  9917  9917 W IdlingPolicy: These resources are not idle: [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource]
+09-22 18:15:42.646  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:42.765  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 118 lines
+09-22 18:15:42.765  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:42.765  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 5600 iterations.
+09-22 18:15:42.780  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:44.332  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 1408 lines
+09-22 18:15:44.332  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:44.347  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:44.381  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 43 lines
+09-22 18:15:44.381  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:44.381  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 5800 iterations.
+09-22 18:15:44.396  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:46.330  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 1753 lines
+09-22 18:15:46.330  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:46.347  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:46.846  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 463 lines
+09-22 18:15:46.846  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:46.846  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 6100 iterations.
+09-22 18:15:46.864  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:47.634  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 704 lines
+09-22 18:15:47.634  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:47.634  9917  9917 W IdlingPolicy: These resources are not idle: [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource]
+09-22 18:15:47.648  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:47.665  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 30 lines
+09-22 18:15:47.665  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:47.665  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 6200 iterations.
+09-22 18:15:47.680  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:48.347  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 654 lines
+09-22 18:15:48.347  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:48.364  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:49.280  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 894 lines
+09-22 18:15:49.280  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:49.284  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 6400 iterations.
+09-22 18:15:49.297  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:49.449  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 158 lines
+09-22 18:15:49.449  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:49.453  9917 10071 D DetoxWSClient: Received action 'currentStatus' (ID #6, params={})
+09-22 18:15:49.454  9917 10070 I DetoxDispatcher: Handling action 'currentStatus' (ID #6)...
+09-22 18:15:49.455  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:49.455  9917 10070 I DetoxWSClient: Sending out action 'currentStatusResult' (ID #6)
+09-22 18:15:49.456  9917 10070 I DetoxDispatcher: Done with action 'currentStatus'
+09-22 18:15:49.464  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:50.080  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 644 lines
+09-22 18:15:50.080  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:50.080  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 6500 iterations.
+09-22 18:15:50.097  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:50.347  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 270 lines
+09-22 18:15:50.347  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:50.364  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:50.615  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 270 lines
+09-22 18:15:50.615  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:50.631  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:51.597  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 1001 lines
+09-22 18:15:51.597  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:51.613  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:51.717  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 117 lines
+09-22 18:15:51.717  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:51.717  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 6700 iterations.
+09-22 18:15:51.731  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:52.349  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 627 lines
+09-22 18:15:52.349  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:52.363  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:52.565  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 219 lines
+09-22 18:15:52.565  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:52.580  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:52.632  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 67 lines
+09-22 18:15:52.634  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:52.634  9917  9917 W IdlingPolicy: These resources are not idle: [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource]
+09-22 18:15:52.647  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:53.599  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 1029 lines
+09-22 18:15:53.599  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:53.599  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:53.599  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 11 lines
+09-22 18:15:53.599  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:53.614  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:53.630  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 34 lines
+09-22 18:15:53.630  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:53.647  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:54.349  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 773 lines
+09-22 18:15:54.365  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:54.366  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:54.981  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 681 lines
+09-22 18:15:54.981  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:54.981  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 7100 iterations.
+09-22 18:15:54.997  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:55.831  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 916 lines
+09-22 18:15:55.831  9917  9917 I Detox   : Network is busy, with 1 in-flight calls
+09-22 18:15:55.847  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:56.366  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 574 lines
+09-22 18:15:56.366  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:56.381  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:57.198  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 898 lines
+09-22 18:15:57.198  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:57.255  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:57.449  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 232 lines
+09-22 18:15:57.449  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:57.449  9917  9917 W UiControllerImpl: Waiting for: DYNAMIC_TASKS_HAVE_IDLED for 7400 iterations.
+09-22 18:15:57.464  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:57.615  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 179 lines
+09-22 18:15:57.615  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:57.617  9917  9917 I Detox   : Wait is over: App is now idle!
+--------- beginning of crash
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: FATAL EXCEPTION: detox.primary
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: Process: so.onekey.app.wallet.dev, PID: 9917
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: java.lang.RuntimeException: java.util.concurrent.ExecutionException: androidx.test.espresso.IdlingResourceTimeoutException: Wait for [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource] to become idle timed out
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at androidx.test.espresso.Espresso.onIdle(Espresso.java:15)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at com.wix.detox.TestEngineFacade.awaitIdle(TestEngineFacade.kt:12)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at com.wix.detox.adapters.server.ReadyActionHandler.handle(DetoxActionHandlers.kt:25)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at com.wix.detox.adapters.server.ActionsExecutor.executeAction$lambda-2$lambda-1(DetoxActionsDispatcher.kt:64)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at com.wix.detox.adapters.server.ActionsExecutor.$r8$lambda$nk3cF8ntnfFqbJOcVqd04vjb5nY(Unknown Source:0)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at com.wix.detox.adapters.server.ActionsExecutor$$ExternalSyntheticLambda0.run(Unknown Source:8)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:883)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:214)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at com.wix.detox.adapters.server.ActionsExecutor._init_$lambda-0(DetoxActionsDispatcher.kt:50)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at com.wix.detox.adapters.server.ActionsExecutor.$r8$lambda$Hi5vyewqQiQqk57AkJy_cHqNGKY(Unknown Source:0)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at com.wix.detox.adapters.server.ActionsExecutor$$ExternalSyntheticLambda1.run(Unknown Source:4)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:919)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: Caused by: java.util.concurrent.ExecutionException: androidx.test.espresso.IdlingResourceTimeoutException: Wait for [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource] to become idle timed out
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at java.util.concurrent.FutureTask.report(FutureTask.java:123)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at java.util.concurrent.FutureTask.get(FutureTask.java:193)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at androidx.test.espresso.Espresso.onIdle(Espresso.java:10)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	... 12 more
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: Caused by: androidx.test.espresso.IdlingResourceTimeoutException: Wait for [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource] to become idle timed out
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at androidx.test.espresso.IdlingPolicy.handleTimeout(IdlingPolicy.java:4)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at androidx.test.espresso.base.UiControllerImpl$5.resourcesHaveTimedOut(UiControllerImpl.java:1)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at androidx.test.espresso.base.IdlingResourceRegistry$Dispatcher.handleTimeout(IdlingResourceRegistry.java:4)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at androidx.test.espresso.base.IdlingResourceRegistry$Dispatcher.handleMessage(IdlingResourceRegistry.java:6)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:103)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at androidx.test.espresso.base.Interrogator.loopAndInterrogate(Interrogator.java:14)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at androidx.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:8)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at androidx.test.espresso.base.UiControllerImpl.loopMainThreadUntilIdle(UiControllerImpl.java:17)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at androidx.test.espresso.Espresso$1.run(Espresso.java:1)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:883)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:214)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7356)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492)
+09-22 18:15:57.624  9917 10069 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)
+09-22 18:15:57.631  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:57.632  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 17 lines
+09-22 18:15:57.632  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:57.642  9917 10331 E JIGUANG-JCore: [ReportUtils] wrap data failed
+09-22 18:15:57.647  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:58.382  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 853 lines
+09-22 18:15:58.382  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:58.401  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:59.464  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 1220 lines
+09-22 18:15:59.464  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:59.465  9917 10071 D DetoxWSClient: Received action 'currentStatus' (ID #7, params={})
+09-22 18:15:59.465  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:59.465  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 11 lines
+09-22 18:15:59.465  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:59.466  9917 10070 I DetoxDispatcher: Handling action 'currentStatus' (ID #7)...
+09-22 18:15:59.467  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:59.470  9917 10070 I DetoxWSClient: Sending out action 'currentStatusResult' (ID #7)
+09-22 18:15:59.471  9917 10070 I DetoxDispatcher: Done with action 'currentStatus'
+09-22 18:15:59.481  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:59.632  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 198 lines
+09-22 18:15:59.632  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: Crash detected!!! thread=detox.primary (637)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: java.lang.RuntimeException: java.util.concurrent.ExecutionException: androidx.test.espresso.IdlingResourceTimeoutException: Wait for [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource] to become idle timed out
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at androidx.test.espresso.Espresso.onIdle(Espresso.java:15)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at com.wix.detox.TestEngineFacade.awaitIdle(TestEngineFacade.kt:12)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at com.wix.detox.adapters.server.ReadyActionHandler.handle(DetoxActionHandlers.kt:25)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at com.wix.detox.adapters.server.ActionsExecutor.executeAction$lambda-2$lambda-1(DetoxActionsDispatcher.kt:64)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at com.wix.detox.adapters.server.ActionsExecutor.$r8$lambda$nk3cF8ntnfFqbJOcVqd04vjb5nY(Unknown Source:0)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at com.wix.detox.adapters.server.ActionsExecutor$$ExternalSyntheticLambda0.run(Unknown Source:8)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at android.os.Handler.handleCallback(Handler.java:883)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at android.os.Looper.loop(Looper.java:214)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at com.wix.detox.adapters.server.ActionsExecutor._init_$lambda-0(DetoxActionsDispatcher.kt:50)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at com.wix.detox.adapters.server.ActionsExecutor.$r8$lambda$Hi5vyewqQiQqk57AkJy_cHqNGKY(Unknown Source:0)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at com.wix.detox.adapters.server.ActionsExecutor$$ExternalSyntheticLambda1.run(Unknown Source:4)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at java.lang.Thread.run(Thread.java:919)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: Caused by: java.util.concurrent.ExecutionException: androidx.test.espresso.IdlingResourceTimeoutException: Wait for [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource] to become idle timed out
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at java.util.concurrent.FutureTask.report(FutureTask.java:123)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at java.util.concurrent.FutureTask.get(FutureTask.java:193)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at androidx.test.espresso.Espresso.onIdle(Espresso.java:10)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	... 12 more
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: Caused by: androidx.test.espresso.IdlingResourceTimeoutException: Wait for [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource] to become idle timed out
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at androidx.test.espresso.IdlingPolicy.handleTimeout(IdlingPolicy.java:4)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at androidx.test.espresso.base.UiControllerImpl$5.resourcesHaveTimedOut(UiControllerImpl.java:1)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at androidx.test.espresso.base.IdlingResourceRegistry$Dispatcher.handleTimeout(IdlingResourceRegistry.java:4)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at androidx.test.espresso.base.IdlingResourceRegistry$Dispatcher.handleMessage(IdlingResourceRegistry.java:6)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at android.os.Handler.dispatchMessage(Handler.java:103)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at androidx.test.espresso.base.Interrogator.loopAndInterrogate(Interrogator.java:14)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at androidx.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:8)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at androidx.test.espresso.base.UiControllerImpl.loopMainThreadUntilIdle(UiControllerImpl.java:17)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at androidx.test.espresso.Espresso$1.run(Espresso.java:1)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at android.os.Handler.handleCallback(Handler.java:883)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at android.os.Looper.loop(Looper.java:214)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at android.app.ActivityThread.main(ActivityThread.java:7356)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at java.lang.reflect.Method.invoke(Native Method)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492)
+09-22 18:15:59.638  9917 10069 E DetoxCrashHandler: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)
+09-22 18:15:59.640  9917 10069 I DetoxWSClient: Sending out action 'AppWillTerminateWithError' (ID #-10000)
+09-22 18:15:59.647  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:16:00.399  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 918 lines
+09-22 18:16:00.400  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:16:00.413  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:16:02.420  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 2418 lines
+09-22 18:16:02.420  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:16:02.431  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:16:04.415  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) identical 2398 lines
+09-22 18:16:04.415  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:16:04.432  9917  9917 I Detox   : Network is busy, with 2 in-flight calls
+09-22 18:16:04.713  9917  9917 I chatty  : uid=10149(so.onekey.app.wallet.dev) .app.wallet.dev identical 338 lines
+09-22 18:16:04.713  9917  9917 I Detox   : Network is busy, with 2 in-flight calls

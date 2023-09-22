@@ -42,7 +42,10 @@ buildscript {
 allprojects {
     
     repositories { 
-
+        maven { // (4)
+          url("../../../../node_modules/detox/Detox-android")
+        }
+        maven { url 'https://maven.aliyun.com/repository/public' }
         maven { url 'https://www.jitpack.io' }
     }
 }

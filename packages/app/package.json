@@ -14,7 +14,13 @@
     "build:ios-js": "expo export --platform ios --public-url https://onekey.so",
     "lint": "tsc --noEmit && eslint . --ext .ts,.tsx",
     "clean": "rimraf node_modules && rimraf .expo && rimraf __generated__",
-    "eas-build-pre-install": "bash ./scripts/eas-build-pre-install.sh"
+    "eas-build-pre-install": "bash ./scripts/eas-build-pre-install.sh",
+    "build:android-debug": "detox build --configuration android.emu.debug",
+    "test:android-debug": "detox test --configuration android.emu.debug",
+    "e2e:android": "yarn  build:android-debug && yarn test:android-debug",
+    "generate:bundle": "npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
+    "android:apk": "yarn generate:bundle && cd android && ./gradlew assembleDebug && cd ..",
+    "test:e2e": "node ../../node_modules/@onekeyhq/e2e/cli/index.js run --platform=mobile --config=\"e2e.config.js\" --test-cases=\"e2e/*.e2e.js\""
   },
   "dependencies": {
     "@ethersproject/shims": "^5.7.0",
@@ -24,6 +30,7 @@
     "@onekeyfe/react-native-animated-charts": "https://github.com/OneKeyHQ/react-native-animated-charts.git",
     "@onekeyfe/react-native-ble-plx": "3.0.0",
     "@onekeyhq/components": "*",
+    "@onekeyhq/e2e": "workspace:^",
     "@onekeyhq/engine": "*",
     "@onekeyhq/kit": "*",
     "@react-native-async-storage/async-storage": "1.18.2",
@@ -123,7 +130,11 @@
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@types/levelup": "^5",
+    "@types/mocha": "^10",
     "@types/react-native-canvas": "^0.1.9",
+    "detox": "^20.12.1",
+    "jest": "^29.7.0",
+    "mocha": "^10.2.0",
     "react-native-flipper-performance-plugin": "^0.4.0",
     "rimraf": "^3"
   },

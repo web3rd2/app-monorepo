@@ -1,0 +1,115 @@
+18:13:00.440 detox[12990] [90mB[39m node_modules/detox/local-cli/cli.js test -c android.emu.debug -C /Users/joe/p2e/app-monorepo/packages/app/detox.config.js --record-logs all
+  data: {
+    "id": "b90d81b4-6d57-87c0-fbc5-a2f107bcf314",
+    "detoxConfig": {
+      "configurationName": "android.emu.debug",
+      "apps": {
+        "default": {
+          "type": "android.apk",
+          "build": "cd android && ./gradlew :app:assembleDebug :app:assembleAndroidTest -DtestBuildType=debug && cd ..",
+          "testBinaryPath": "android/app/build/outputs/apk/androidTest/direct/debug/app-direct-debug-androidTest.apk",
+          "binaryPath": "android/app/build/outputs/apk/direct/debug/app-direct-debug.apk"
+        }
+      },
+      "artifacts": {
+        "rootDir": "artifacts/android.emu.debug.2023-09-22 10-13-00Z",
+        "plugins": {
+          "log": {
+            "enabled": true,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "screenshot": {
+            "enabled": true,
+            "shouldTakeAutomaticSnapshots": false,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "video": {
+            "enabled": false,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "instruments": {
+            "enabled": false,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "uiHierarchy": {
+            "enabled": false,
+            "keepOnlyFailedTestsArtifacts": false
+          }
+        }
+      },
+      "behavior": {
+        "init": {
+          "keepLockFile": false,
+          "reinstallApp": true,
+          "exposeGlobals": true
+        },
+        "cleanup": {
+          "shutdownDevice": false
+        },
+        "launchApp": "auto"
+      },
+      "cli": {
+        "recordLogs": "all",
+        "configPath": "/Users/joe/p2e/app-monorepo/packages/app/detox.config.js",
+        "configuration": "android.emu.debug",
+        "start": true
+      },
+      "device": {
+        "type": "android.emulator",
+        "device": {
+          "avdName": "Pixel_3a_API_29"
+        }
+      },
+      "logger": {
+        "level": "info",
+        "overrideConsole": true,
+        "options": {
+          "showLoggerName": true,
+          "showPid": true,
+          "showLevel": false,
+          "showMetadata": false,
+          "basepath": "/Users/joe/p2e/app-monorepo/packages/app/node_modules/detox/src",
+          "prefixers": {},
+          "stringifiers": {}
+        }
+      },
+      "testRunner": {
+        "retries": 0,
+        "forwardEnv": false,
+        "bail": false,
+        "jest": {
+          "setupTimeout": 300000,
+          "teardownTimeout": 30000,
+          "retryAfterCircusRetries": false,
+          "reportWorkerAssign": true
+        },
+        "args": {
+          "$0": "yarn dlx jest",
+          "_": [
+            "/Users/joe/p2e/app-monorepo/packages/app/e2e"
+          ],
+          "config": "/Users/joe/p2e/app-monorepo/packages/app/e2e/jest.config.js",
+          "--": []
+        }
+      },
+      "session": {
+        "autoStart": true,
+        "debugSynchronization": 10000
+      }
+    },
+    "detoxIPCServer": "primary-12990",
+    "testResults": [],
+    "testSessionIndex": 0,
+    "workersCount": 0
+  }
+18:13:00.445 detox[12990] [90mi[39m Server path not specified, so defaulting to ipc.config.socketRoot + ipc.config.appspace + ipc.config.id /tmp/detox.primary-12990
+18:13:00.446 detox[12990] [90mi[39m starting server on  /tmp/detox.primary-12990 
+18:13:00.446 detox[12990] [90mi[39m starting TLS server false
+18:13:00.446 detox[12990] [90mi[39m starting server as Unix || Windows Socket
+18:13:00.450 detox[12990] [90mi[39m Detox server listening on localhost:57151...
+18:13:00.454 detox[12990] [90mi[39m Serialized the session state at: /private/var/folders/lz/tqh25x1x7xg561858y_kk3900000gn/T/b90d81b4-6d57-87c0-fbc5-a2f107bcf314.detox.json
+18:13:00.456 detox[12990] [90mB[39m yarn dlx jest --config /Users/joe/p2e/app-monorepo/packages/app/e2e/jest.config.js /Users/joe/p2e/app-monorepo/packages/app/e2e
+18:13:09.722 detox[12990] [90mE[39m Command failed with exit code = 1:
+yarn dlx jest --config /Users/joe/p2e/app-monorepo/packages/app/e2e/jest.config.js /Users/joe/p2e/app-monorepo/packages/app/e2e
+18:13:09.722 detox[12990] [90mi[39m Detox server has been closed gracefully
+18:13:09.723 detox[12990] [90mE[39m node_modules/detox/local-cli/cli.js test -c android.emu.debug -C /Users/joe/p2e/app-monorepo/packages/app/detox.config.js --record-logs all

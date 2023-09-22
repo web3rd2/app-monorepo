@@ -146,6 +146,7 @@ const Setup: FC<SetupProps> = ({
           }}
         >
           <Form.PasswordInput
+            testID="password"
             autoFocus
             // press enter key to submit
             onSubmitEditing={handleSubmit(onSubmit)}
@@ -180,6 +181,7 @@ const Setup: FC<SetupProps> = ({
           }}
         >
           <Form.PasswordInput
+            testID="confirmPassword"
             // press enter key to submit
             onSubmitEditing={handleSubmit(onSubmit)}
             placeholder={intl.formatMessage({
@@ -208,6 +210,7 @@ const Setup: FC<SetupProps> = ({
           size="xl"
           onPress={handleSubmit(onSubmit)}
           isDisabled={submitDisabled}
+          testID="continue"
         >
           {intl.formatMessage({
             id: 'action__continue',

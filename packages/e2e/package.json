@@ -1,0 +1,32 @@
+{
+  "name": "@onekeyhq/e2e",
+  "version": "1.0.0",
+  "description": "A unified End-to-End testing framework for React Native and Web projects.",
+  "main": "api/index.js",
+  "bin": "cli/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "e2e",
+    "testing",
+    "framework",
+    "react-native",
+    "web"
+  ],
+  "author": "joe",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/mocha": "^10",
+    "@types/selenium-webdriver": "^4",
+    "@types/yargs": "^17",
+    "detox": "^20.12.1",
+    "glob": "^10.3.4",
+    "mocha": "^10.2.0",
+    "selenium-webdriver": "^4.12.0",
+    "yargs": "^17.7.2"
+  },
+  "dependencies": {
+    "playwright": "^1.38.0"
+  }
+}

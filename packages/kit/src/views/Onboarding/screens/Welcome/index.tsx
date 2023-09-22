@@ -176,6 +176,7 @@ const Welcome = () => {
         >
           <Box flexDirection={{ sm: 'row' }} w={{ sm: '100%' }}>
             <PressableListItem
+              testID="create_wallet"
               icon="PlusCircleOutline"
               label={intl.formatMessage({
                 id: 'action__create_wallet',

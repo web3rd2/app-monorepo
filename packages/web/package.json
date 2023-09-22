@@ -8,10 +8,12 @@
     "start": "WEB_PORT=3000 ENABLE_ANALYZER= ENABLE_ANALYZER_HTML_REPORT= expo start --web",
     "build": "rm -rf ./web-build && ENABLE_ANALYZER=1 ENABLE_ANALYZER_HTML_REPORT=1 expo export:web && cp ./web-build/index.html ./web-build/404.html && sh ./postbuild.sh",
     "lint": "tsc --noEmit && eslint . --ext .ts,.tsx",
-    "stats": "NODE_ENV=production ENABLE_ANALYZER=1 webpack build"
+    "stats": "NODE_ENV=production ENABLE_ANALYZER=1 webpack build",
+    "test:e2e": "node ../../node_modules/@onekeyhq/e2e/cli/index.js run --platform=web --config=\"e2e.config.js\" --test-cases=\"e2e/*.e2e.js\""
   },
   "dependencies": {
     "@onekeyhq/components": "*",
+    "@onekeyhq/e2e": "workspace:^",
     "@onekeyhq/kit": "*",
     "expo": "49.0.6",
     "firebase": "^9.8.2"

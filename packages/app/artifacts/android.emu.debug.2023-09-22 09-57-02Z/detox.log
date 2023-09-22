@@ -1,0 +1,1531 @@
+17:57:02.690 detox[12079] B node_modules/detox/local-cli/cli.js test -c android.emu.debug -C /Users/joe/p2e/app-monorepo/packages/app/detox.config.js --record-logs all
+  data: {
+    "id": "2c781372-3a6c-4605-4a14-bb86de5d138e",
+    "detoxConfig": {
+      "configurationName": "android.emu.debug",
+      "apps": {
+        "default": {
+          "type": "android.apk",
+          "build": "cd android && ./gradlew :app:assembleDebug :app:assembleAndroidTest -DtestBuildType=debug && cd ..",
+          "testBinaryPath": "android/app/build/outputs/apk/androidTest/direct/debug/app-direct-debug-androidTest.apk",
+          "binaryPath": "android/app/build/outputs/apk/direct/debug/app-direct-debug.apk"
+        }
+      },
+      "artifacts": {
+        "rootDir": "artifacts/android.emu.debug.2023-09-22 09-57-02Z",
+        "plugins": {
+          "log": {
+            "enabled": true,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "screenshot": {
+            "enabled": true,
+            "shouldTakeAutomaticSnapshots": false,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "video": {
+            "enabled": false,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "instruments": {
+            "enabled": false,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "uiHierarchy": {
+            "enabled": false,
+            "keepOnlyFailedTestsArtifacts": false
+          }
+        }
+      },
+      "behavior": {
+        "init": {
+          "keepLockFile": false,
+          "reinstallApp": true,
+          "exposeGlobals": true
+        },
+        "cleanup": {
+          "shutdownDevice": false
+        },
+        "launchApp": "auto"
+      },
+      "cli": {
+        "recordLogs": "all",
+        "configPath": "/Users/joe/p2e/app-monorepo/packages/app/detox.config.js",
+        "configuration": "android.emu.debug",
+        "start": true
+      },
+      "device": {
+        "type": "android.emulator",
+        "device": {
+          "avdName": "Pixel_3a_API_29"
+        }
+      },
+      "logger": {
+        "level": "info",
+        "overrideConsole": true,
+        "options": {
+          "showLoggerName": true,
+          "showPid": true,
+          "showLevel": false,
+          "showMetadata": false,
+          "basepath": "/Users/joe/p2e/app-monorepo/packages/app/node_modules/detox/src",
+          "prefixers": {},
+          "stringifiers": {}
+        }
+      },
+      "testRunner": {
+        "retries": 0,
+        "forwardEnv": false,
+        "bail": false,
+        "jest": {
+          "setupTimeout": 300000,
+          "teardownTimeout": 30000,
+          "retryAfterCircusRetries": false,
+          "reportWorkerAssign": true
+        },
+        "args": {
+          "$0": "yarn dlx jest",
+          "_": [
+            "/Users/joe/p2e/app-monorepo/packages/app/e2e"
+          ],
+          "config": "/Users/joe/p2e/app-monorepo/packages/app/e2e/jest.config.js",
+          "--": []
+        }
+      },
+      "session": {
+        "autoStart": true,
+        "debugSynchronization": 10000
+      }
+    },
+    "detoxIPCServer": "primary-12079",
+    "testResults": [],
+    "testSessionIndex": 0,
+    "workersCount": 0
+  }
+17:57:02.695 detox[12079] i Server path not specified, so defaulting to ipc.config.socketRoot + ipc.config.appspace + ipc.config.id /tmp/detox.primary-12079
+17:57:02.695 detox[12079] i starting server on  /tmp/detox.primary-12079 
+17:57:02.695 detox[12079] i starting TLS server false
+17:57:02.696 detox[12079] i starting server as Unix || Windows Socket
+17:57:02.699 detox[12079] i Detox server listening on localhost:54744...
+17:57:02.702 detox[12079] i Serialized the session state at: /private/var/folders/lz/tqh25x1x7xg561858y_kk3900000gn/T/2c781372-3a6c-4605-4a14-bb86de5d138e.detox.json
+17:57:02.703 detox[12079] B yarn dlx jest --config /Users/joe/p2e/app-monorepo/packages/app/e2e/jest.config.js /Users/joe/p2e/app-monorepo/packages/app/e2e
+17:57:10.948 detox[12092] B e2e/suite1.e2e.js
+17:57:10.956 detox[12092] B set up environment
+17:57:10.961 detox[12092] i Service path not specified, so defaulting to ipc.config.socketRoot + ipc.config.appspace + id 
+17:57:10.962 detox[12079] i ## socket connection to server detected ##
+17:57:10.962 detox[12092] i requested connection to  primary-12079 /tmp/detox.primary-12079
+17:57:10.962 detox[12092] i Connecting client on Unix Socket : /tmp/detox.primary-12079
+17:57:10.962 detox[12092] i retrying reset
+17:57:10.963 detox[12092] i dispatching event to  primary-12079 /tmp/detox.primary-12079  :  registerContext , { id: 'secondary-12092' }
+17:57:10.965 detox[12079] i received event of :  registerContext { id: 'secondary-12092' }
+17:57:10.965 detox[12079] i dispatching event to socket  :  registerContextDone { testResults: [], testSessionIndex: 0 }
+17:57:10.965 detox[12092] i ## received events ##
+17:57:10.965 detox[12092] i detected event registerContextDone { testResults: [], testSessionIndex: 0 }
+17:57:10.966 detox[12079] i received event of :  registerWorker { workerId: 'w1' }
+17:57:10.966 detox[12079] i dispatching event to socket  :  registerWorkerDone { workersCount: 1 }
+17:57:10.966 detox[12079] i broadcasting event to all known sockets listening to  /tmp/detox.primary-12079  :   sessionStateUpdate { workersCount: 1 }
+17:57:10.966 detox[12092] i dispatching event to  primary-12079 /tmp/detox.primary-12079  :  registerWorker , { workerId: 'w1' }
+17:57:10.966 detox[12092] i ## received events ##
+17:57:10.966 detox[12092] i detected event registerWorkerDone { workersCount: 1 }
+17:57:11.058 detox[12092] i ## received events ##
+17:57:11.059 detox[12092] i detected event sessionStateUpdate { workersCount: 1 }
+17:57:11.061 detox[12079] B connection :54744<->:54796
+17:57:11.062 detox[12092] i opened web socket to: ws://localhost:54744
+17:57:11.063 detox[12092] i send message
+  data: {"type":"login","params":{"sessionId":"3c459a24-664f-f908-e754-37358ea1ca60","role":"tester"},"messageId":0}
+17:57:11.065 detox[12079] i get
+  data: {"type":"login","params":{"sessionId":"3c459a24-664f-f908-e754-37358ea1ca60","role":"tester"},"messageId":0}
+17:57:11.065 detox[12079] i created session 3c459a24-664f-f908-e754-37358ea1ca60
+17:57:11.065 detox[12079] i send
+  data: {
+    "type": "loginSuccess",
+    "params": {
+      "testerConnected": true,
+      "appConnected": false
+    },
+    "messageId": 0
+  }
+17:57:11.065 detox[12079] i tester joined session 3c459a24-664f-f908-e754-37358ea1ca60
+17:57:11.066 detox[12092] i get message
+  data: {"type":"loginSuccess","params":{"testerConnected":true,"appConnected":false},"messageId":0}
+   
+17:57:11.109 detox[12092] B allocate
+  args: ({"type":"android.emulator","device":{"avdName":"Pixel_3a_API_29"}})
+17:57:11.109 detox[12092] i "/Users/joe/Library/Android/sdk/emulator/emulator" -list-avds --verbose
+17:57:11.163 detox[12092] i Pixel_3a_API_29
+
+17:57:11.164 detox[12092] i "/Users/joe/Library/Android/sdk/emulator/emulator" -version 
+17:57:11.578 detox[12092] i INFO    | Storing crashdata in: /tmp/android-joe/emu-crash.db, detection is enabled
+INFO    | Duplicate loglines will be removed, if you wish to see each indiviudal line launch with the -log-nofilter flag.
+Android emulator version 32.1.15.0 (build_id 10696886) (CL:N/A)
+Copyright (C) 2006-2017 The Android Open Source Project and many others.
+This program is a derivative of the QEMU CPU emulator (www.qemu.org).
+
+  This software is licensed under the terms of the GNU General Public
+  License version 2, as published by the Free Software Foundation, and
+  may be copied, distributed, and modified under those terms.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+
+17:57:11.579 detox[12092] i Detected emulator binary version { major: 32, minor: 1, patch: 15, toString: [Function: toString] }
+17:57:11.579 detox[12092] i Trying to allocate a device based on "Pixel_3a_API_29"
+17:57:11.580 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb"  devices
+17:57:11.756 detox[12092] i List of devices attached
+
+
+17:57:11.757 detox[12092] i Settled on emulator-11654
+17:57:11.757 detox[12092] E allocate
+17:57:11.757 detox[12092] B postAllocate
+  args: ({"adbName":"emulator-11654"})
+17:57:11.758 detox[12092] i /Users/joe/Library/Android/sdk/emulator/emulator -verbose -no-audio -no-boot-anim -read-only -port 11654 @Pixel_3a_API_29
+17:57:11.760 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 wait-for-device
+17:57:15.510 detox[12092] i 
+17:57:15.511 detox[12092] i INFO    | Android emulator version 32.1.15.0 (build_id 10696886) (CL:N/A)
+INFO    | Found systemPath /Users/joe/Library/Android/sdk/system-images/android-29/google_apis_playstore/arm64-v8a/
+WARNING | Please update the emulator to one that supports the feature(s): Vulkan
+WARNING | cannot add library /Users/joe/Library/Android/sdk/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib: failed
+INFO    | Storing crashdata in: /tmp/android-joe/emu-crash.db, detection is enabled
+INFO    | Duplicate loglines will be removed, if you wish to see each indiviudal line launch with the -log-nofilter flag.
+VERBOSE | autoconfig: -skin pixel_3a
+VERBOSE | autoconfig: -skindir /Users/joe/Library/Android/sdk/skins/
+VERBOSE | autoconfig: -kernel /Users/joe/Library/Android/sdk/system-images/android-29/google_apis_playstore/arm64-v8a//kernel-ranchu
+VERBOSE | Target arch = 'arm64'
+VERBOSE | Auto-detect: Kernel image requires new device naming scheme.
+VERBOSE | Auto-detect: Kernel does not support YAFFS2 partitions.
+VERBOSE | autoconfig: -ramdisk /Users/joe/Library/Android/sdk/system-images/android-29/google_apis_playstore/arm64-v8a//ramdisk.img
+VERBOSE | Using initial system image: /Users/joe/Library/Android/sdk/system-images/android-29/google_apis_playstore/arm64-v8a//system.img
+VERBOSE | Using initial vendor image: /Users/joe/Library/Android/sdk/system-images/android-29/google_apis_playstore/arm64-v8a//vendor.img
+VERBOSE | autoconfig: -data /Users/joe/.android/avd/Pixel_3a_API_29.avd/userdata-qemu.img
+VERBOSE | autoconfig: -initdata /Users/joe/.android/avd/Pixel_3a_API_29.avd/userdata.img
+VERBOSE | autoconfig: -cache /Users/joe/.android/avd/Pixel_3a_API_29.avd/cache.img
+VERBOSE | autoconfig: -sdcard /Users/joe/.android/avd/Pixel_3a_API_29.avd/sdcard.img
+VERBOSE | Increasing RAM size to 2048MB
+VERBOSE | VM heap size 228MB is below hardware specified minimum of 512MB,setting it to that value
+VERBOSE | System image is read only
+VERBOSE | Ignore IPv6 link local address: fe80::1
+VERBOSE | Found 1 DNS servers:
+VERBOSE | 	192.168.101.1
+VERBOSE | trying to load skin file '/Users/joe/Library/Android/sdk/skins//pixel_3a/layout'
+VERBOSE | Requested console port 11654: Inferring adb port 11655.
+VERBOSE | CPU Acceleration: working
+VERBOSE | CPU Acceleration status: Hypervisor.Framework OS X Version 12.2
+VERBOSE | handleCpuAcceleration: feature check for hvf
+VERBOSE | registered 'boot-properties' qemud service
+VERBOSE | Adding boot property: 'qemu.cmdline' = 'androidboot.logcat=*:V androidboot.consolepipe=qemu_pipe,pipe:logcat'
+VERBOSE | Adding boot property: 'qemu.logcat' = 'start'
+INFO    | Warning: QMetaObject::connectSlotsByName: No matching signal for on_new_posture_requested(int) ((null):0, (null))
+INFO    | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_posture_selection_dialog() ((null):0, (null))
+INFO    | Warning: QMetaObject::connectSlotsByName: No matching signal for on_new_resizable_requested(PresetEmulatorSizeType) ((null):0, (null))
+INFO    | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_resizable_dialog() ((null):0, (null))
+VERBOSE | GPU emulation enabled using 'host' mode
+VERBOSE | Initializing hardware OpenGLES emulation support
+VERBOSE | create display 0
+VERBOSE | setDisplayPose 0 x 0 y 0 w 1080 h 2220 dpi 0
+VERBOSE | In test environment or ICD set to swiftshader, using Swiftshader ICD libvk_swiftshader.dylib
+VERBOSE | Swiftshader library doesn't exist, trying launcher path
+VERBOSE | Swiftshader library found in launcher path
+VERBOSE | setIcdPath: path doesn't exist: /Users/joe/Library/Android/sdk/emulator/qemu/darwin-aarch64/lib64/vulkan/vk_swiftshader_icd.json:/Users/joe/Library/Android/sdk/emulator/lib64/vulkan/vk_swiftshader_icd.json
+VERBOSE | Not in test environment. Using loader: /Users/joe/Library/Android/sdk/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib
+VERBOSE | Not in test environment. Using loader: /Users/joe/Library/Android/sdk/emulator/lib64/vulkan/libvulkan.dylib
+INFO    | added library /Users/joe/Library/Android/sdk/emulator/lib64/vulkan/libvulkan.dylib
+VERBOSE | has extension: VK_KHR_device_group_creation
+VERBOSE | has extension: VK_KHR_external_fence_capabilities
+VERBOSE | has extension: VK_KHR_external_memory_capabilities
+VERBOSE | has extension: VK_KHR_external_semaphore_capabilities
+VERBOSE | has extension: VK_KHR_get_physical_device_properties2
+VERBOSE | has extension: VK_EXT_debug_utils
+VERBOSE | has extension: VK_EXT_headless_surface
+VERBOSE | has extension: VK_KHR_surface
+VERBOSE | has extension: VK_MVK_macos_surface
+VERBOSE | has extension: VK_EXT_metal_surface
+VERBOSE | has extension: VK_EXT_debug_report
+VERBOSE | needed extension: VK_KHR_external_memory_capabilities found: 1
+VERBOSE | needed extension: VK_KHR_get_physical_device_properties2 found: 1
+VERBOSE | global loader has vkEnumerateInstanceVersion.
+VERBOSE | global loader has vkEnumerateInstanceVersion returning >= 1.1.
+VERBOSE | Creating instance, asking for version 1.1.0 ...
+VERBOSE | Found 1 Vulkan physical devices.
+VERBOSE | Considering Vulkan physical device 0: SwiftShader Device (LLVM 10.0.0)
+VERBOSE | has extension: VK_KHR_driver_properties
+VERBOSE | has extension: VK_KHR_bind_memory2
+VERBOSE | has extension: VK_KHR_create_renderpass2
+VERBOSE | has extension: VK_KHR_dedicated_allocation
+VERBOSE | has extension: VK_KHR_descriptor_update_template
+VERBOSE | has extension: VK_KHR_device_group
+VERBOSE | has extension: VK_KHR_external_fence
+VERBOSE | has extension: VK_KHR_external_memory
+VERBOSE | has extension: VK_KHR_external_semaphore
+VERBOSE | has extension: VK_KHR_get_memory_requirements2
+VERBOSE | has extension: VK_KHR_maintenance1
+VERBOSE | has extension: VK_KHR_maintenance2
+VERBOSE | has extension: VK_KHR_maintenance3
+VERBOSE | has extension: VK_KHR_multiview
+VERBOSE | has extension: VK_KHR_relaxed_block_layout
+VERBOSE | has extension: VK_KHR_sampler_ycbcr_conversion
+VERBOSE | has extension: VK_KHR_separate_depth_stencil_layouts
+VERBOSE | has extension: VK_EXT_depth_clip_enable
+VERBOSE | has extension: VK_EXT_custom_border_color
+VERBOSE | has extension: VK_EXT_load_store_op_none
+VERBOSE | has extension: VK_KHR_storage_buffer_storage_class
+VERBOSE | has extension: VK_EXT_queue_family_foreign
+VERBOSE | has extension: VK_EXT_line_rasterization
+VERBOSE | has extension: VK_EXT_shader_stencil_export
+VERBOSE | has extension: VK_EXT_image_robustness
+VERBOSE | has extension: VK_EXT_4444_formats
+VERBOSE | has extension: VK_EXT_blend_operation_advanced
+VERBOSE | has extension: VK_KHR_swapchain
+VERBOSE | has extension: VK_KHR_external_memory_fd
+VERBOSE | has extension: VK_EXT_external_memory_host
+VERBOSE | has extension: VK_EXT_provoking_vertex
+VERBOSE | has extension: VK_GOOGLE_sampler_filtering_precision
+VERBOSE | has extension: VK_EXT_depth_range_unrestricted
+VERBOSE | has extension: VK_EXT_host_query_reset
+VERBOSE | has extension: VK_EXT_scalar_block_layout
+VERBOSE | has extension: VK_EXT_separate_stencil_usage
+VERBOSE | has extension: VK_KHR_depth_stencil_resolve
+VERBOSE | has extension: VK_KHR_image_format_list
+VERBOSE | has extension: VK_KHR_imageless_framebuffer
+VERBOSE | has extension: VK_KHR_shader_float_controls
+VERBOSE | has extension: VK_KHR_shader_subgroup_extended_types
+VERBOSE | has extension: VK_KHR_spirv_1_4
+VERBOSE | has extension: VK_KHR_uniform_buffer_standard_layout
+VERBOSE | has extension: VK_KHR_timeline_semaphore
+VERBOSE | has extension: VK_EXT_pipeline_creation_cache_control
+VERBOSE | has extension: VK_EXT_pipeline_creation_feedback
+VERBOSE | has extension: VK_EXT_tooling_info
+VERBOSE | has extension: VK_KHR_copy_commands2
+VERBOSE | has extension: VK_KHR_format_feature_flags2
+VERBOSE | has extension: VK_GOOGLE_decorate_string
+VERBOSE | has extension: VK_GOOGLE_hlsl_functionality1
+VERBOSE | has extension: VK_GOOGLE_user_type
+VERBOSE | has extension: VK_KHR_vulkan_memory_model
+VERBOSE | has extension: VK_KHR_sampler_mirror_clamp_to_edge
+VERBOSE | has extension: VK_KHR_swapchain_mutable_format
+VERBOSE | needed extension: VK_KHR_dedicated_allocation found: 1
+VERBOSE | needed extension: VK_KHR_get_memory_requirements2 found: 1
+VERBOSE | needed extension: VK_KHR_external_memory found: 1
+VERBOSE | needed extension: VK_KHR_external_memory_fd found: 1
+VERBOSE | Graphics queue family index: 0
+VERBOSE | Compute queue family index: 0
+VERBOSE | Supported: VK_FORMAT_R8G8B8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8B8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8B8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8B8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8B8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_INPUT_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8B8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8B8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8B8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R5G6B5_UNORM_PACK16 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R5G6B5_UNORM_PACK16 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R5G6B5_UNORM_PACK16 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R5G6B5_UNORM_PACK16 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R5G6B5_UNORM_PACK16 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_INPUT_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R5G6B5_UNORM_PACK16 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R5G6B5_UNORM_PACK16 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R5G6B5_UNORM_PACK16 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R16G16B16A16_SFLOAT VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R16G16B16A16_SFLOAT VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R16G16B16A16_SFLOAT VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R16G16B16A16_SFLOAT VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R16G16B16A16_SFLOAT VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_INPUT_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R16G16B16A16_SFLOAT VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R16G16B16A16_SFLOAT VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R16G16B16A16_SFLOAT VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_B8G8R8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_B8G8R8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_B8G8R8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_B8G8R8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_B8G8R8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_INPUT_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_B8G8R8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_B8G8R8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_B8G8R8A8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_INPUT_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UINT_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UINT_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UINT_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UINT_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UINT_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_INPUT_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UINT_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UINT_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UINT_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_INPUT_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2R10G10B10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2B10G10R10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2B10G10R10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2B10G10R10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2B10G10R10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2B10G10R10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_INPUT_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2B10G10R10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2B10G10R10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_A2B10G10R10_UNORM_PACK32 VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_ETC2_R8G8B8A8_UNORM_BLOCK VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_ETC2_R8G8B8A8_UNORM_BLOCK VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_ETC2_R8G8B8A8_UNORM_BLOCK VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_ETC2_R8G8B8A8_UNORM_BLOCK VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_ETC2_R8G8B8A8_UNORM_BLOCK VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_ASTC_4x4_UNORM_BLOCK VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_ASTC_4x4_UNORM_BLOCK VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_ASTC_4x4_UNORM_BLOCK VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_ASTC_4x4_UNORM_BLOCK VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_ASTC_4x4_UNORM_BLOCK VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_G8_B8R8_2PLANE_420_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_G8_B8R8_2PLANE_420_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_G8_B8R8_2PLANE_420_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_G8_B8R8_2PLANE_420_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_G8_B8R8_2PLANE_420_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_G8_B8R8_2PLANE_420_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_LINEAR VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_INPUT_ATTACHMENT_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_SAMPLED_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_SRC_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Supported: VK_FORMAT_R8G8_UNORM VK_IMAGE_TYPE_2D VK_IMAGE_TILING_OPTIMAL VK_IMAGE_USAGE_TRANSFER_DST_BIT supportsExternalMemory? 1 requiresDedicated? 0
+VERBOSE | Vulkan device found: SwiftShader Device (LLVM 10.0.0)
+VERBOSE | Version: 1.2.0
+VERBOSE | Has graphics queue? 1
+VERBOSE | Has external memory support? 1
+VERBOSE | Has compute queue? 1
+VERBOSE | Vulkan logical device created and extension functions obtained.
+VERBOSE | Vulkan device queue obtained.
+VERBOSE | Vulkan global emulation state successfully initialized.
+VERBOSE | Using deferred Vulkan commands: 1
+VERBOSE | Using deferred Vulkan commands: 1
+VERBOSE | Enable ASTC LDR emulation: 1
+VERBOSE | Setting gl interop support for Vk to: 0
+INFO    | Setting vsync to 60 hz
+VERBOSE | Found 1 DNS servers:
+VERBOSE | 	192.168.101.1
+INFO    | Content of hardware configuration file:
+INFO    | 	hw.cpu.arch = arm64
+INFO    | 	hw.cpu.ncore = 4
+INFO    | 	hw.ramSize = 2048
+INFO    | 	hw.screen = multi-touch
+INFO    | 	hw.mainKeys = false
+INFO    | 	hw.trackBall = false
+INFO    | 	hw.keyboard = true
+INFO    | 	hw.keyboard.lid = false
+INFO    | 	hw.keyboard.charmap = qwerty2
+INFO    | 	hw.dPad = false
+INFO    | 	hw.rotaryInput = false
+INFO    | 	hw.gsmModem = true
+INFO    | 	hw.gps = true
+INFO    | 	hw.battery = true
+INFO    | 	hw.accelerometer = true
+INFO    | 	hw.accelerometer_uncalibrated = true
+INFO    | 	hw.gyroscope = true
+INFO    | 	hw.audioInput = true
+INFO    | 	hw.audioOutput = true
+INFO    | 	hw.sdCard = true
+INFO    | 	hw.sdCard.path = /Users/joe/.android/avd/Pixel_3a_API_29.avd/sdcard.img
+INFO    | 	disk.cachePartition = true
+INFO    | 	disk.cachePartition.path = /Users/joe/.android/avd/Pixel_3a_API_29.avd/cache.img
+INFO    | 	disk.cachePartition.size = 66m
+INFO    | 	test.quitAfterBootTimeOut = -1
+INFO    | 	test.delayAdbTillBootComplete = 0
+INFO    | 	test.monitorAdb = 0
+INFO    | 	hw.lcd.width = 1080
+INFO    | 	hw.lcd.height = 2220
+INFO    | 	hw.lcd.depth = 16
+INFO    | 	hw.lcd.circular = false
+INFO    | 	hw.lcd.density = 440
+INFO    | 	hw.lcd.backlight = true
+INFO    | 	hw.lcd.vsync = 60
+INFO    | 	hw.gltransport = pipe
+INFO    | 	hw.gltransport.asg.writeBufferSize = 1048576
+INFO    | 	hw.gltransport.asg.writeStepSize = 4096
+INFO    | 	hw.gltransport.asg.dataRingSize = 32768
+INFO    | 	hw.gltransport.drawFlushInterval = 800
+INFO    | 	hw.displayRegion.0.1.xOffset = -1
+INFO    | 	hw.displayRegion.0.1.yOffset = -1
+INFO    | 	hw.displayRegion.0.1.width = 0
+INFO    | 	hw.displayRegion.0.1.height = 0
+INFO    | 	hw.displayRegion.0.2.xOffset = -1
+INFO    | 	hw.displayRegion.0.2.yOffset = -1
+INFO    | 	hw.displayRegion.0.2.width = 0
+INFO    | 	hw.displayRegion.0.2.height = 0
+INFO    | 	hw.displayRegion.0.3.xOffset = -1
+INFO    | 	hw.displayRegion.0.3.yOffset = -1
+INFO    | 	hw.displayRegion.0.3.width = 0
+INFO    | 	hw.displayRegion.0.3.height = 0
+INFO    | 	hw.display1.width = 0
+INFO    | 	hw.display1.height = 0
+INFO    | 	hw.display1.density = 0
+INFO    | 	hw.display1.xOffset = -1
+INFO    | 	hw.display1.yOffset = -1
+INFO    | 	hw.display1.flag = 0
+INFO    | 	hw.display2.width = 0
+INFO    | 	hw.display2.height = 0
+INFO    | 	hw.display2.density = 0
+INFO    | 	hw.display2.xOffset = -1
+INFO    | 	hw.display2.yOffset = -1
+INFO    | 	hw.display2.flag = 0
+INFO    | 	hw.display3.width = 0
+INFO    | 	hw.display3.height = 0
+INFO    | 	hw.display3.density = 0
+INFO    | 	hw.display3.xOffset = -1
+INFO    | 	hw.display3.yOffset = -1
+INFO    | 	hw.display3.flag = 0
+INFO    | 	hw.multi_display_window = false
+INFO    | 	hw.gpu.enabled = true
+INFO    | 	hw.gpu.mode = host
+INFO    | 	hw.initialOrientation = Portrait
+INFO    | 	hw.camera.back = virtualscene
+INFO    | 	hw.camera.front = emulated
+INFO    | 	vm.heapSize = 512
+INFO    | 	hw.sensors.light = true
+INFO    | 	hw.sensors.pressure = true
+INFO    | 	hw.sensors.humidity = true
+INFO    | 	hw.sensors.proximity = true
+INFO    | 	hw.sensors.magnetic_field = true
+INFO    | 	hw.sensors.magnetic_field_uncalibrated = true
+INFO    | 	hw.sensors.gyroscope_uncalibrated = true
+INFO    | 	hw.sensors.orientation = true
+INFO    | 	hw.sensors.temperature = true
+INFO    | 	hw.sensors.rgbclight = false
+INFO    | 	hw.sensor.hinge = false
+INFO    | 	hw.sensor.hinge.count = 0
+INFO    | 	hw.sensor.hinge.type = 0
+INFO    | 	hw.sensor.hinge.sub_type = 0
+INFO    | 	hw.sensor.hinge.fold_to_displayRegion.0.1_at_posture = 1
+INFO    | 	hw.sensor.roll = false
+INFO    | 	hw.sensor.roll.count = 0
+INFO    | 	hw.sensor.roll.resize_to_displayRegion.0.1_at_posture = 6
+INFO    | 	hw.sensor.roll.resize_to_displayRegion.0.2_at_posture = 6
+INFO    | 	hw.sensor.roll.resize_to_displayRegion.0.3_at_posture = 6
+INFO    | 	hw.sensors.heart_rate = false
+INFO    | 	hw.sensors.wrist_tilt = false
+INFO    | 	hw.useext4 = true
+INFO    | 	hw.arc = false
+INFO    | 	hw.arc.autologin = false
+INFO    | 	hw.device.name = pixel_3a
+INFO    | 	kernel.path = /Users/joe/Library/Android/sdk/system-images/android-29/google_apis_playstore/arm64-v8a//kernel-ranchu
+INFO    | 	kernel.newDeviceNaming = yes
+INFO    | 	kernel.supportsYaffs2 = no
+INFO    | 	disk.ramdisk.path = /Users/joe/Library/Android/sdk/system-images/android-29/google_apis_playstore/arm64-v8a//ramdisk.img
+INFO    | 	disk.systemPartition.initPath = /Users/joe/Library/Android/sdk/system-images/android-29/google_apis_playstore/arm64-v8a//system.img
+INFO    | 	disk.systemPartition.size = 2457m
+INFO    | 	disk.vendorPartition.initPath = /Users/joe/Library/Android/sdk/system-images/android-29/google_apis_playstore/arm64-v8a//vendor.img
+INFO    | 	disk.vendorPartition.size = 800m
+INFO    | 	disk.dataPartition.path = /Users/joe/.android/avd/Pixel_3a_API_29.avd/userdata-qemu.img
+INFO    | 	disk.dataPartition.size = 6g
+INFO    | 	disk.encryptionKeyPartition.path = /Users/joe/.android/avd/Pixel_3a_API_29.avd/encryptionkey.img
+INFO    | 	PlayStore.enabled = true
+INFO    | 	avd.name = Pixel_3a_API_29
+INFO    | 	avd.id = Pixel_3a_API_29
+INFO    | 	fastboot.forceColdBoot = false
+INFO    | 	android.sdk.root = /Users/joe/Library/Android/sdk
+INFO    | 	android.avd.home = /Users/joe/.android/avd
+INFO    | .
+INFO    | QEMU options list:
+INFO    | 	 argv[00] = "/Users/joe/Library/Android/sdk/emulator/qemu/darwin-aarch64/qemu-system-aarch64"
+INFO    | 	 argv[01] = "-read-only"
+INFO    | 	 argv[02] = "-dns-server"
+INFO    | 	 argv[03] = "192.168.101.1"
+INFO    | 	 argv[04] = "-no-audio"
+INFO    | 	 argv[05] = "-serial"
+INFO    | 	 argv[06] = "null"
+INFO    | 	 argv[07] = "-android-ports"
+INFO    | 	 argv[08] = "11654,11655"
+INFO    | 	 argv[09] = "-cpu"
+INFO    | 	 argv[10] = "cortex-a53"
+INFO    | 	 argv[11] = "-machine"
+INFO    | 	 argv[12] = "type=virt"
+INFO    | 	 argv[13] = "-enable-hvf"
+INFO    | 	 argv[14] = "-smp"
+INFO    | 	 argv[15] = "cores=4"
+INFO    | 	 argv[16] = "-m"
+INFO    | 	 argv[17] = "2048"
+INFO    | 	 argv[18] = "-lcd-density"
+INFO    | 	 argv[19] = "440"
+INFO    | 	 argv[20] = "-nodefaults"
+INFO    | 	 argv[21] = "-kernel"
+INFO    | 	 argv[22] = "/Users/joe/Library/Android/sdk/system-images/android-29/google_apis_playstore/arm64-v8a//kernel-ranchu"
+INFO    | 	 argv[23] = "-initrd"
+INFO    | 	 argv[24] = "/Users/joe/Library/Android/sdk/system-images/android-29/google_apis_playstore/arm64-v8a//ramdisk.img"
+INFO    | 	 argv[25] = "-drive"
+INFO    | 	 argv[26] = "index=0,id=sdcard,if=none,file=/Users/joe/.android/avd/Pixel_3a_API_29.avd/sdcard.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+INFO    | 	 argv[27] = "-device"
+INFO    | 	 argv[28] = "virtio-blk-device,drive=sdcard"
+INFO    | 	 argv[29] = "-drive"
+INFO    | 	 argv[30] = "index=1,id=vendor,if=none,file=/Users/joe/Library/Android/sdk/system-images/android-29/google_apis_playstore/arm64-v8a//vendor.img,read-only"
+INFO    | 	 argv[31] = "-device"
+INFO    | 	 argv[32] = "virtio-blk-device,drive=vendor"
+INFO    | 	 argv[33] = "-drive"
+INFO    | 	 argv[34] = "index=2,id=encrypt,if=none,file=/Users/joe/.android/avd/Pixel_3a_API_29.avd/encryptionkey.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+INFO    | 	 argv[35] = "-device"
+INFO    | 	 argv[36] = "virtio-blk-device,drive=encrypt"
+INFO    | 	 argv[37] = "-drive"
+INFO    | 	 argv[38] = "index=3,id=userdata,if=none,file=/Users/joe/.android/avd/Pixel_3a_API_29.avd/userdata-qemu.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+INFO    | 	 argv[39] = "-device"
+INFO    | 	 argv[40] = "virtio-blk-device,drive=userdata"
+INFO    | 	 argv[41] = "-drive"
+INFO    | 	 argv[42] = "index=4,id=cache,if=none,file=/Users/joe/.android/avd/Pixel_3a_API_29.avd/cache.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+INFO    | 	 argv[43] = "-device"
+INFO    | 	 argv[44] = "virtio-blk-device,drive=cache"
+INFO    | 	 argv[45] = "-drive"
+INFO    | 	 argv[46] = "index=5,id=system,if=none,file=/Users/joe/Library/Android/sdk/system-images/android-29/google_apis_playstore/arm64-v8a//system.img,read-only"
+INFO    | 	 argv[47] = "-device"
+INFO    | 	 argv[48] = "virtio-blk-device,drive=system"
+INFO    | 	 argv[49] = "-netdev"
+INFO    | 	 argv[50] = "user,id=mynet"
+INFO    | 	 argv[51] = "-device"
+INFO    | 	 argv[52] = "virtio-net-device,netdev=mynet"
+INFO    | 	 argv[53] = "-device"
+INFO    | 	 argv[54] = "virtio-rng-device"
+INFO    | 	 argv[55] = "-show-cursor"
+INFO    | 	 argv[56] = "-device"
+INFO    | 	 argv[57] = "virtio_input_multi_touch_pci_1"
+INFO    | 	 argv[58] = "-device"
+INFO    | 	 argv[59] = "virtio_input_multi_touch_pci_2"
+INFO    | 	 argv[60] = "-device"
+INFO    | 	 argv[61] = "virtio_input_multi_touch_pci_3"
+INFO    | 	 argv[62] = "-device"
+INFO    | 	 argv[63] = "virtio_input_multi_touch_pci_4"
+INFO    | 	 argv[64] = "-device"
+INFO    | 	 argv[65] = "virtio_input_multi_touch_pci_5"
+INFO    | 	 argv[66] = "-device"
+INFO    | 	 argv[67] = "virtio_input_multi_touch_pci_6"
+INFO    | 	 argv[68] = "-device"
+INFO    | 	 argv[69] = "virtio_input_multi_touch_pci_7"
+INFO    | 	 argv[70] = "-device"
+INFO    | 	 argv[71] = "virtio_input_multi_touch_pci_8"
+INFO    | 	 argv[72] = "-device"
+INFO    | 	 argv[73] = "virtio_input_multi_touch_pci_9"
+INFO    | 	 argv[74] = "-device"
+INFO    | 	 argv[75] = "virtio_input_multi_touch_pci_10"
+INFO    | 	 argv[76] = "-device"
+INFO    | 	 argv[77] = "virtio_input_multi_touch_pci_11"
+INFO    | 	 argv[78] = "-device"
+INFO    | 	 argv[79] = "virtio-keyboard-pci"
+INFO    | 	 argv[80] = "-L"
+INFO    | 	 argv[81] = "/Users/joe/Library/Android/sdk/emulator/lib/pc-bios"
+INFO    | 	 argv[82] = "-soundhw"
+INFO    | 	 argv[83] = "hda"
+INFO    | 	 argv[84] = "-append"
+INFO    | 	 argv[85] = "no_timer_check keep_bootcon earlyprintk=ttyAMA0 console=0 cma=294M@0-4G mac80211_hwsim.radios=2 mac80211_hwsim.channels=2 loop.max_part=7 printk.devkmsg=on qemu=1 androidboot.hardware=ranchu androidboot.serialno=EMULATOR32X1X15X0 android.bootanim=0 qemu.gles=1 qemu.settings.system.screen_off_timeout=2147483647 qemu.encrypt=1 qemu.vsync=60 qemu.gltransport=pipe qemu.gltransport.drawFlushInterval=800 qemu.opengles.version=196608 qemu.uirenderer=skiagl qemu.dalvik.vm.heapsize=512m qemu.camera_hq_edge_processing=0 androidboot.vbmeta.size=4352 androidboot.vbmeta.hash_alg=sha256 androidboot.vbmeta.digest=52a4dfa2c327504503ef68d86b5ff8d86f6fdb25de469ac27bf505c6bb33f15a androidboot.boot_devices=a003400.virtio_mmio qemu.wifi=1 android.qemud=1 qemu.avd_name=Pixel_3a_API_29"
+INFO    | 	 argv[86] = "-android-hw"
+INFO    | 	 argv[87] = "/tmp/android-joe/emulator-iqrAtZ"
+INFO    | Concatenated QEMU options: /Users/joe/Library/Android/sdk/emulator/qemu/darwin-aarch64/qemu-system-aarch64 -read-only -dns-server 192.168.101.1 -no-audio -serial null -android-ports 11654,11655 -cpu cortex-a53 -machine type=virt -enable-hvf -smp cores=4 -m 2048 -lcd-density 440 -nodefaults -kernel /Users/joe/Library/Android/sdk/system-images/android-29/google_apis_playstore/arm64-v8a//kernel-ranchu -initrd /Users/joe/Library/Android/sdk/system-images/android-29/google_apis_playstore/arm64-v8a//ramdisk.img -drive index=0,id=sdcard,if=none,file=/Users/joe/.android/avd/Pixel_3a_API_29.avd/sdcard.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-device,drive=sdcard -drive index=1,id=vendor,if=none,file=/Users/joe/Library/Android/sdk/system-images/android-29/google_apis_playstore/arm64-v8a//vendor.img,read-only -device virtio-blk-device,drive=vendor -drive index=2,id=encrypt,if=none,file=/Users/joe/.android/avd/Pixel_3a_API_29.avd/encryptionkey.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-device,drive=encrypt -drive index=3,id=userdata,if=none,file=/Users/joe/.android/avd/Pixel_3a_API_29.avd/userdata-qemu.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-device,drive=userdata -drive index=4,id=cache,if=none,file=/Users/joe/.android/avd/Pixel_3a_API_29.avd/cache.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-device,drive=cache -drive index=5,id=system,if=none,file=/Users/joe/Library/Android/sdk/system-images/android-29/google_apis_playstore/arm64-v8a//system.img,read-only -device virtio-blk-device,drive=system -netdev user,id=mynet -device virtio-net-device,netdev=mynet -device virtio-rng-device -show-cursor -device virtio_input_multi_touch_pci_1 -device virtio_input_multi_touch_pci_2 -device virtio_input_multi_touch_pci_3 -device virtio_input_multi_touch_pci_4 -device virtio_input_multi_touch_pci_5 -device virtio_input_multi_touch_pci_6 -device virtio_input_multi_touch_
+VERBOSE | Android qemu version 32.1.15.0 (build_id 10696886) (CL:N/A)
+VERBOSE | Starting QEMU main loop
+VERBOSE | Adding boot property: 'ro.opengles.version' = '196608'
+VERBOSE | Adding boot property: 'qemu.sf.fake_camera' = 'front'
+VERBOSE | Adding boot property: 'qemu.adb.secure' = '1'
+VERBOSE | Adding boot property: 'dalvik.vm.heapsize' = '512m'
+VERBOSE | Adding boot property: 'qemu.hw.mainkeys' = '0'
+VERBOSE | Adding boot property: 'qemu.sf.lcd_density' = '440'
+VERBOSE | goldfish_events.have-dpad: false
+VERBOSE | goldfish_events.have-trackball: false
+VERBOSE | goldfish_events.have-camera: true
+VERBOSE | goldfish_events.have-keyboard: false
+VERBOSE | goldfish_events.have-lidswitch: false
+VERBOSE | goldfish_events.have-tabletmode: false
+VERBOSE | goldfish_events.have-touch: false
+VERBOSE | goldfish_events.have-multitouch: false
+WARNING | Requested adb port (11655) is outside the recommended range [5555,5586]. ADB may not function properly for the emulator. See -help-port for details.
+VERBOSE | Not using any http proxy
+VERBOSE | Adding boot property: 'qemu.timezone' = 'Asia/Shanghai'
+VERBOSE | android_hw_fingerprint_init: fingerprint qemud listen service initialized
+VERBOSE | emulator_window_fb_rotate
+INFO    | Setting display: 0 configuration to: 1080x2220, dpi: 440x440 
+VERBOSE | config multidisplay with config.ini 0x0 0x0 0x0
+VERBOSE | Path:/Users/joe/Library/Android/sdk/platform-tools/adb protocol version: 41
+VERBOSE | Path:/Users/joe/Library/Android/sdk/platform-tools/adb protocol version: 41 (2x)
+VERBOSE | Found: 3 adb executables
+VERBOSE | Adb: /Users/joe/Library/Android/sdk/platform-tools/adb
+VERBOSE | Adb: /Users/joe/Library/Android/sdk/platform-tools/adb (2x)
+VERBOSE | Path:/Users/joe/Library/Android/sdk/platform-tools/adb protocol version: 41
+VERBOSE | Path:/Users/joe/Library/Android/sdk/platform-tools/adb protocol version: 41 (2x)
+INFO    | Your emulator is out of date, please update by launching Android Studio:
+ - Start Android Studio
+ - Select menu "Tools > Android > SDK Manager"
+ - Click "SDK Tools" tab
+ - Check "Android Emulator" checkbox
+ - Click "OK"
+VERBOSE | _hwFingerprint_connect: connect finger print listen is called
+VERBOSE | got message from guest system fingerprint HAL
+VERBOSE | onGuestSendCommand: [0x60000091dd40] Adb connected, start proxing data
+
+17:57:15.511 detox[12092] B _awaitEmulatorBoot
+  args: ("emulator-11654")
+17:57:15.511 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"
+17:57:15.543 detox[12092] i 
+
+17:57:18.045 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"
+17:57:18.064 detox[12092] i 
+
+17:57:23.066 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"
+17:57:24.383 detox[12092] i ""/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"" failed with error = ChildProcessError: Command failed: "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"
+adb: protocol fault (couldn't read status): Undefined error: 0
+ `"/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"` (exited with error code 1) (code=1), stdout and stderr:
+
+17:57:24.384 detox[12092] i 
+17:57:24.384 detox[12092] i adb: protocol fault (couldn't read status): Undefined error: 0
+
+17:57:31.884 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"
+17:57:33.337 detox[12092] i ""/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"" failed with error = ChildProcessError: Command failed: "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"
+adb: protocol fault (couldn't read status): Undefined error: 0
+ `"/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"` (exited with error code 1) (code=1), stdout and stderr:
+
+17:57:33.337 detox[12092] i 
+17:57:33.338 detox[12092] i adb: protocol fault (couldn't read status): Undefined error: 0
+
+17:57:43.346 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"
+17:57:44.759 detox[12092] i ""/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"" failed with error = ChildProcessError: Command failed: "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"
+adb: protocol fault (couldn't read status): Undefined error: 0
+ `"/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"` (exited with error code 1) (code=1), stdout and stderr:
+
+17:57:44.760 detox[12092] i 
+17:57:44.760 detox[12092] i adb: protocol fault (couldn't read status): Undefined error: 0
+
+17:57:57.262 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"
+17:57:58.539 detox[12092] i ""/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"" failed with error = ChildProcessError: Command failed: "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"
+adb: protocol fault (couldn't read status): Undefined error: 0
+ `"/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"` (exited with error code 1) (code=1), stdout and stderr:
+
+17:57:58.539 detox[12092] i 
+17:57:58.539 detox[12092] i adb: protocol fault (couldn't read status): Undefined error: 0
+
+17:58:13.542 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"
+17:58:14.886 detox[12092] i ""/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"" failed with error = ChildProcessError: Command failed: "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"
+adb: protocol fault (couldn't read status): Undefined error: 0
+ `"/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"` (exited with error code 1) (code=1), stdout and stderr:
+
+17:58:14.888 detox[12092] i 
+17:58:14.888 detox[12092] i adb: protocol fault (couldn't read status): Undefined error: 0
+
+17:58:32.390 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"
+17:58:33.669 detox[12092] i ""/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"" failed with error = ChildProcessError: Command failed: "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"
+adb: protocol fault (couldn't read status): Undefined error: 0
+ `"/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"` (exited with error code 1) (code=1), stdout and stderr:
+
+17:58:33.670 detox[12092] i 
+17:58:33.670 detox[12092] i adb: protocol fault (couldn't read status): Undefined error: 0
+
+17:58:53.674 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"
+17:58:54.982 detox[12092] i ""/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"" failed with error = ChildProcessError: Command failed: "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"
+adb: protocol fault (couldn't read status): Undefined error: 0
+ `"/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"` (exited with error code 1) (code=1), stdout and stderr:
+
+17:58:54.983 detox[12092] i 
+17:58:54.983 detox[12092] i adb: protocol fault (couldn't read status): Undefined error: 0
+
+17:59:17.488 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop dev.bootcomplete"
+17:59:17.534 detox[12092] i 1
+
+17:59:17.534 detox[12092] E _awaitEmulatorBoot
+17:59:17.536 detox[12092] B onBootDevice
+  args: ({"deviceId":"emulator-11654","type":"Pixel_3a_API_29","coldBoot":true})
+17:59:17.536 detox[12092] E onBootDevice
+17:59:17.537 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "getprop ro.build.version.sdk"
+17:59:17.567 detox[12092] i 29
+
+17:59:17.567 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "settings put global animator_duration_scale 0"
+17:59:17.594 detox[12092] i 
+17:59:17.594 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "settings put global window_animation_scale 0"
+17:59:17.618 detox[12092] i 
+17:59:17.618 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "settings put global transition_animation_scale 0"
+17:59:17.641 detox[12092] i 
+17:59:17.641 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "dumpsys power | grep \"^[ ]*m[UW].*=\""
+17:59:17.667 detox[12092] i   mWakefulness=Awake
+  mWakefulnessChanging=false
+  mWakeLockSummary=0x1
+  mUserActivitySummary=0x1
+  mWakeUpWhenPluggedOrUnpluggedConfig=false
+  mWakeUpWhenPluggedOrUnpluggedInTheaterModeConfig=false
+  mUserActivityTimeoutOverrideFromWindowManager=-1
+  mUserInactiveOverrideFromWindowManager=false
+
+17:59:17.667 detox[12092] E postAllocate
+17:59:17.692 detox[12092] B installUtilBinaries
+  args: ()
+17:59:17.692 detox[12092] E installUtilBinaries
+17:59:17.693 detox[12092] B selectApp
+  args: ("default")
+17:59:17.697 detox[12092] i "/Users/joe/Library/Android/sdk/build-tools/34.0.0/aapt" dump badging "/Users/joe/p2e/app-monorepo/packages/app/android/app/build/outputs/apk/direct/debug/app-direct-debug.apk"
+17:59:17.769 detox[12092] i package: name='so.onekey.app.wallet.dev' versionCode='1' versionName='4.14.0' platformBuildVersionName='13' platformBuildVersionCode='33' compileSdkVersion='33' compileSdkVersionCodename='13'
+sdkVersion:'23'
+targetSdkVersion:'33'
+uses-permission: name='android.permission.SYSTEM_ALERT_WINDOW'
+uses-permission: name='android.permission.POST_NOTIFICATIONS'
+uses-permission: name='android.permission.CAMERA'
+uses-permission: name='android.permission.FOREGROUND_SERVICE'
+uses-permission: name='android.permission.INTERNET'
+uses-permission: name='android.permission.ACCESS_WIFI_STATE'
+uses-permission: name='android.permission.READ_EXTERNAL_STORAGE'
+uses-permission: name='android.permission.VIBRATE'
+uses-permission: name='android.permission.WRITE_EXTERNAL_STORAGE'
+uses-permission: name='android.permission.NFC'
+uses-permission: name='android.permission.BLUETOOTH_SCAN'
+uses-permission: name='android.permission.BLUETOOTH_CONNECT'
+uses-permission: name='android.permission.READ_MEDIA_IMAGES'
+uses-permission: name='android.permission.READ_MEDIA_VIDEO'
+uses-permission: name='android.permission.BLUETOOTH' maxSdkVersion='30'
+uses-permission: name='android.permission.BLUETOOTH_ADMIN' maxSdkVersion='30'
+uses-permission-sdk-23: name='android.permission.ACCESS_COARSE_LOCATION' maxSdkVersion='30'
+uses-permission-sdk-23: name='android.permission.ACCESS_FINE_LOCATION' maxSdkVersion='30'
+uses-permission: name='android.permission.ACCESS_NETWORK_STATE'
+uses-permission: name='android.permission.WAKE_LOCK'
+uses-permission: name='so.onekey.app.wallet.dev.permission.JPUSH_MESSAGE'
+uses-permission: name='android.permission.RECEIVE_USER_PRESENT'
+uses-permission: name='android.permission.READ_PHONE_STATE'
+uses-permission: name='android.permission.MOUNT_UNMOUNT_FILESYSTEMS'
+uses-permission: name='android.permission.CHANGE_NETWORK_STATE'
+uses-permission: name='android.permission.USE_FINGERPRINT'
+uses-permission: name='android.permission.USE_BIOMETRIC'
+uses-permission: name='android.permission.READ_MEDIA_AUDIO'
+uses-permission: name='android.permission.ACCESS_MEDIA_LOCATION'
+uses-permission: name='android.permission.RECEIVE_BOOT_COMPLETED'
+uses-permission: name='com.google.android.c2dm.permission.RECEIVE'
+uses-permission: name='com.google.android.gms.permission.AD_ID'
+uses-permission: name='com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE'
+uses-permission: name='so.onekey.app.wallet.dev.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'
+uses-permission: name='com.google.android.providers.gsf.permission.READ_GSERVICES'
+uses-permission: name='com.google.android.gms.permission.ACTIVITY_RECOGNITION'
+uses-permission: name='com.sec.android.provider.badge.permission.READ'
+uses-permission: name='com.sec.android.provider.badge.permission.WRITE'
+uses-permission: name='com.htc.launcher.permission.READ_SETTINGS'
+uses-permission: name='com.htc.launcher.permission.UPDATE_SHORTCUT'
+uses-permission: name='com.sonyericsson.home.permission.BROADCAST_BADGE'
+uses-permission: name='com.sonymobile.home.permission.PROVIDER_INSERT_BADGE'
+uses-permission: name='com.anddoes.launcher.permission.UPDATE_COUNT'
+uses-permission: name='com.majeur.launcher.permission.UPDATE_BADGE'
+uses-permission: name='com.huawei.android.launcher.permission.CHANGE_BADGE'
+uses-permission: name='com.huawei.android.launcher.permission.READ_SETTINGS'
+uses-permission: name='com.huawei.android.launcher.permission.WRITE_SETTINGS'
+uses-permission: name='android.permission.READ_APP_BADGE'
+uses-permission: name='com.oppo.launcher.permission.READ_SETTINGS'
+uses-permission: name='com.oppo.launcher.permission.WRITE_SETTINGS'
+uses-permission: name='me.everything.badger.permission.BADGE_COUNT_READ'
+uses-permission: name='me.everything.badger.permission.BADGE_COUNT_WRITE'
+application-label:'OneKey Dev'
+application-label-af:'OneKey Dev'
+application-label-am:'OneKey Dev'
+application-label-ar:'OneKey Dev'
+application-label-as:'OneKey Dev'
+application-label-az:'OneKey Dev'
+application-label-be:'OneKey Dev'
+application-label-bg:'OneKey Dev'
+application-label-bn:'OneKey Dev'
+application-label-bs:'OneKey Dev'
+application-label-ca:'OneKey Dev'
+application-label-cs:'OneKey Dev'
+application-label-da:'OneKey Dev'
+application-label-de:'OneKey Dev'
+application-label-el:'OneKey Dev'
+application-label-en-AU:'OneKey Dev'
+application-label-en-CA:'OneKey Dev'
+application-label-en-GB:'OneKey Dev'
+application-label-en-IN:'OneKey Dev'
+application-label-en-XC:'OneKey Dev'
+application-label-es:'OneKey Dev'
+application-label-es-419:'OneKey Dev'
+application-label-es-GT:'OneKey Dev'
+application-label-es-US:'OneKey Dev'
+application-label-et:'OneKey Dev'
+application-label-eu:'OneKey Dev'
+application-label-fa:'OneKey Dev'
+application-label-fi:'OneKey Dev'
+application-label-fr:'OneKey Dev'
+application-label-fr-CA:'OneKey Dev'
+application-label-gl:'OneKey Dev'
+application-label-gu:'OneKey Dev'
+application-label-he:'OneKey Dev'
+application-label-hi:'OneKey Dev'
+application-label-hr:'OneKey Dev'
+application-label-hu:'OneKey Dev'
+application-label-hy:'OneKey Dev'
+application-label-id:'OneKey Dev'
+application-label-in:'OneKey Dev'
+application-label-is:'OneKey Dev'
+application-label-it:'OneKey Dev'
+application-label-iw:'OneKey Dev'
+application-label-ja:'OneKey Dev'
+application-label-ka:'OneKey Dev'
+application-label-kk:'OneKey Dev'
+application-label-km:'OneKey Dev'
+application-label-kn:'OneKey Dev'
+application-label-ko:'OneKey Dev'
+application-label-ky:'OneKey Dev'
+application-label-lo:'OneKey Dev'
+application-label-lt:'OneKey Dev'
+application-label-lv:'OneKey Dev'
+application-label-mk:'OneKey Dev'
+application-label-ml:'OneKey Dev'
+application-label-mn:'OneKey Dev'
+application-label-mr:'OneKey Dev'
+application-label-ms:'OneKey Dev'
+application-label-my:'OneKey Dev'
+application-label-nb:'OneKey Dev'
+application-label-ne:'OneKey Dev'
+application-label-nl:'OneKey Dev'
+application-label-or:'OneKey Dev'
+application-label-pa:'OneKey Dev'
+application-label-pl:'OneKey Dev'
+application-label-pt:'OneKey Dev'
+application-label-pt-BR:'OneKey Dev'
+application-label-pt-PT:'OneKey Dev'
+application-label-ro:'OneKey Dev'
+application-label-ru:'OneKey Dev'
+application-label-ru-RU:'OneKey Dev'
+application-label-si:'OneKey Dev'
+application-label-sk:'OneKey Dev'
+application-label-sl:'OneKey Dev'
+application-label-sq:'OneKey Dev'
+application-label-sr:'OneKey Dev'
+application-label-sr-Latn:'OneKey Dev'
+application-label-sv:'OneKey Dev'
+application-label-sw:'OneKey Dev'
+application-label-ta:'OneKey Dev'
+application-label-te:'OneKey Dev'
+application-label-th:'OneKey Dev'
+application-label-tl:'OneKey Dev'
+application-label-tr:'OneKey Dev'
+application-label-uk:'OneKey Dev'
+application-label-ur:'OneKey Dev'
+application-label-uz:'OneKey Dev'
+application-label-vi:'OneKey Dev'
+application-label-zh:'OneKey Dev'
+application-label-zh-CN:'OneKey Dev'
+application-label-zh-HK:'OneKey Dev'
+application-label-zh-TW:'OneKey Dev'
+application-label-zu:'OneKey Dev'
+application-icon-120:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application-icon-160:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application-icon-240:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application-icon-320:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application-icon-480:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application-icon-640:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application-icon-65534:'res/mipmap-anydpi-v26/ic_launcher.xml'
+application: label='OneKey Dev' icon='res/mipmap-anydpi-v26/ic_launcher.xml'
+application-debuggable
+launchable-activity: name='so.onekey.app.wallet.MainActivity'  label='OneKey Dev' icon=''
+feature-group: label=''
+  uses-feature: name='android.hardware.bluetooth_le'
+  uses-feature: name='android.hardware.bluetooth'
+  uses-implied-feature: name='android.hardware.bluetooth' reason='requested android.permission.BLUETOOTH permission, requested android.permission.BLUETOOTH_ADMIN permission, and targetSdkVersion > 4'
+  uses-feature: name='android.hardware.camera'
+  uses-implied-feature: name='android.hardware.camera' reason='requested android.permission.CAMERA permission'
+  uses-feature: name='android.hardware.faketouch'
+  uses-implied-feature: name='android.hardware.faketouch' reason='default feature for all apps'
+  uses-feature-sdk-23: name='android.hardware.location'
+  uses-implied-feature-sdk-23: name='android.hardware.location' reason='requested android.permission.ACCESS_COARSE_LOCATION permission, and requested android.permission.ACCESS_FINE_LOCATION permission'
+  uses-feature: name='android.hardware.screen.portrait'
+  uses-implied-feature: name='android.hardware.screen.portrait' reason='one or more activities have specified a portrait orientation'
+  uses-feature: name='android.hardware.wifi'
+  uses-implied-feature: name='android.hardware.wifi' reason='requested android.permission.ACCESS_WIFI_STATE permission'
+main
+other-activities
+other-receivers
+other-services
+supports-screens: 'small' 'normal' 'large' 'xlarge'
+supports-any-density: 'true'
+locales: '--_--' 'af' 'am' 'ar' 'as' 'az' 'be' 'bg' 'bn' 'bs' 'ca' 'cs' 'da' 'de' 'el' 'en-AU' 'en-CA' 'en-GB' 'en-IN' 'en-XC' 'es' 'es-419' 'es-GT' 'es-US' 'et' 'eu' 'fa' 'fi' 'fr' 'fr-CA' 'gl' 'gu' 'he' 'hi' 'hr' 'hu' 'hy' 'id' 'in' 'is' 'it' 'iw' 'ja' 'ka' 'kk' 'km' 'kn' 'ko' 'ky' 'lo' 'lt' 'lv' 'mk' 'ml' 'mn' 'mr' 'ms' 'my' 'nb' 'ne' 'nl' 'or' 'pa' 'pl' 'pt' 'pt-BR' 'pt-PT' 'ro' 'ru' 'ru-RU' 'si' 'sk' 'sl' 'sq' 'sr' 'sr-Latn' 'sv' 'sw' 'ta' 'te' 'th' 'tl' 'tr' 'uk' 'ur' 'uz' 'vi' 'zh' 'zh-CN' 'zh-HK' 'zh-TW' 'zu'
+densities: '120' '160' '240' '320' '480' '640' '65534'
+native-code: 'arm64-v8a' 'x86'
+
+17:59:17.769 detox[12092] E selectApp
+17:59:17.769 detox[12092] B uninstallApp
+  args: ()
+17:59:17.770 detox[12092] B onBeforeUninstallApp
+  args: ({"deviceId":"emulator-11654","bundleId":"so.onekey.app.wallet.dev"})
+17:59:17.770 detox[12092] E onBeforeUninstallApp
+17:59:17.770 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "pm list packages so.onekey.app.wallet.dev"
+17:59:17.797 detox[12092] i 
+17:59:17.798 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "pm list packages so.onekey.app.wallet.dev.test"
+17:59:17.830 detox[12092] i 
+17:59:17.830 detox[12092] E uninstallApp
+17:59:17.830 detox[12092] B selectApp
+  args: ("default")
+17:59:17.832 detox[12092] B terminateApp
+  args: ()
+17:59:17.832 detox[12092] B onBeforeTerminateApp
+  args: ({"deviceId":"emulator-11654","bundleId":"so.onekey.app.wallet.dev"})
+17:59:17.832 detox[12092] E onBeforeTerminateApp
+17:59:17.832 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "am force-stop so.onekey.app.wallet.dev"
+17:59:17.855 detox[12092] i 
+17:59:17.855 detox[12092] B onTerminateApp
+  args: ({"deviceId":"emulator-11654","bundleId":"so.onekey.app.wallet.dev"})
+17:59:17.856 detox[12092] E onTerminateApp
+17:59:17.856 detox[12092] E terminateApp
+17:59:17.856 detox[12092] E selectApp
+17:59:17.856 detox[12092] B installApp
+  args: ()
+17:59:17.857 detox[12092] i "/Users/joe/Library/Android/sdk/build-tools/34.0.0/aapt" dump xmlstrings "/Users/joe/p2e/app-monorepo/packages/app/android/app/build/outputs/apk/direct/debug/app-direct-debug.apk" AndroidManifest.xml
+17:59:17.867 detox[12092] i String pool of 282 unique UTF-16 non-sorted strings, 282 entries and 0 styles using 23140 bytes:
+String #0: theme
+String #1: label
+String #2: icon
+String #3: name
+String #4: permission
+String #5: protectionLevel
+String #6: enabled
+String #7: debuggable
+String #8: exported
+String #9: process
+String #10: taskAffinity
+String #11: stateNotNeeded
+String #12: excludeFromRecents
+String #13: authorities
+String #14: initOrder
+String #15: grantUriPermissions
+String #16: priority
+String #17: launchMode
+String #18: screenOrientation
+String #19: configChanges
+String #20: value
+String #21: resource
+String #22: mimeType
+String #23: scheme
+String #24: minSdkVersion
+String #25: versionCode
+String #26: versionName
+String #27: windowSoftInputMode
+String #28: noHistory
+String #29: targetSdkVersion
+String #30: maxSdkVersion
+String #31: allowBackup
+String #32: required
+String #33: largeHeap
+String #34: extractNativeLibs
+String #35: usesCleartextTraffic
+String #36: directBootAware
+String #37: networkSecurityConfig
+String #38: roundIcon
+String #39: compileSdkVersion
+String #40: compileSdkVersionCodename
+String #41: appComponentFactory
+String #42: foregroundServiceType
+String #43: usesPermissionFlags
+String #44: 
+String #45: */*
+String #46: 13
+String #47: 4.14.0
+String #48: :phoenix
+String #49: GlideModule
+String #50: JPUSH_APPKEY
+String #51: JPUSH_CHANNEL
+String #52: action
+String #53: activity
+String #54: android
+String #55: android.hardware.bluetooth_le
+String #56: android.intent.action.BOOT_COMPLETED
+String #57: android.intent.action.GET_CONTENT
+String #58: android.intent.action.MAIN
+String #59: android.intent.action.MY_PACKAGE_REPLACED
+String #60: android.intent.action.OPEN_DOCUMENT_TREE
+String #61: android.intent.action.PACKAGE_ADDED
+String #62: android.intent.action.PACKAGE_REMOVED
+String #63: android.intent.action.QUICKBOOT_POWERON
+String #64: android.intent.action.REBOOT
+String #65: android.intent.action.VIEW
+String #66: android.intent.category.BROWSABLE
+String #67: android.intent.category.DEFAULT
+String #68: android.intent.category.LAUNCHER
+String #69: android.intent.category.OPENABLE
+String #70: android.media.action.ACTION_VIDEO_CAPTURE
+String #71: android.media.action.IMAGE_CAPTURE
+String #72: android.net.conn.CONNECTIVITY_CHANGE
+String #73: android.permission.ACCESS_COARSE_LOCATION
+String #74: android.permission.ACCESS_FINE_LOCATION
+String #75: android.permission.ACCESS_MEDIA_LOCATION
+String #76: android.permission.ACCESS_NETWORK_STATE
+String #77: android.permission.ACCESS_WIFI_STATE
+String #78: android.permission.BIND_JOB_SERVICE
+String #79: android.permission.BLUETOOTH
+String #80: android.permission.BLUETOOTH_ADMIN
+String #81: android.permission.BLUETOOTH_CONNECT
+String #82: android.permission.BLUETOOTH_SCAN
+String #83: android.permission.CAMERA
+String #84: android.permission.CHANGE_NETWORK_STATE
+String #85: android.permission.DUMP
+String #86: android.permission.FOREGROUND_SERVICE
+String #87: android.permission.INTERNET
+String #88: android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+String #89: android.permission.NFC
+String #90: android.permission.POST_NOTIFICATIONS
+String #91: android.permission.READ_APP_BADGE
+String #92: android.permission.READ_EXTERNAL_STORAGE
+String #93: android.permission.READ_MEDIA_AUDIO
+String #94: android.permission.READ_MEDIA_IMAGES
+String #95: android.permission.READ_MEDIA_VIDEO
+String #96: android.permission.READ_PHONE_STATE
+String #97: android.permission.RECEIVE_BOOT_COMPLETED
+String #98: android.permission.RECEIVE_USER_PRESENT
+String #99: android.permission.SYSTEM_ALERT_WINDOW
+String #100: android.permission.USE_BIOMETRIC
+String #101: android.permission.USE_FINGERPRINT
+String #102: android.permission.VIBRATE
+String #103: android.permission.WAKE_LOCK
+String #104: android.permission.WRITE_EXTERNAL_STORAGE
+String #105: android.support.FILE_PROVIDER_PATHS
+String #106: androidx.camera.camera2.Camera2Config$DefaultProvider
+String #107: androidx.camera.core.impl.MetadataHolderService
+String #108: androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER
+String #109: androidx.core.app.CoreComponentFactory
+String #110: androidx.core.content.FileProvider
+String #111: androidx.emoji2.text.EmojiCompatInitializer
+String #112: androidx.lifecycle.ProcessLifecycleInitializer
+String #113: androidx.profileinstaller.ProfileInstallReceiver
+String #114: androidx.profileinstaller.ProfileInstallerInitializer
+String #115: androidx.profileinstaller.action.BENCHMARK_OPERATION
+String #116: androidx.profileinstaller.action.INSTALL_PROFILE
+String #117: androidx.profileinstaller.action.SAVE_PROFILE
+String #118: androidx.profileinstaller.action.SKIP_FILE
+String #119: androidx.startup
+String #120: androidx.startup.InitializationProvider
+String #121: androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity
+String #122: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity
+String #123: androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity
+String #124: app_data_collection_default_enabled
+String #125: application
+String #126: backend:com.google.android.datatransport.cct.CctBackendFactory
+String #127: category
+String #128: cct
+String #129: cl.json.RNShareFileProvider
+String #130: cn.android.service.JTransitActivity
+String #131: cn.jiguang.plugins.push.receiver.JPushBroadcastReceiver
+String #132: cn.jiguang.plugins.push.receiver.JPushModuleReceiver
+String #133: cn.jiguang.plugins.service.JCoreModuleService
+String #134: cn.jiguang.user.service.action
+String #135: cn.jpush.android.intent.DActivity
+String #136: cn.jpush.android.intent.JNotifyActivity
+String #137: cn.jpush.android.intent.NOTIFICATION_OPENED
+String #138: cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY
+String #139: cn.jpush.android.intent.PUSH_TIME
+String #140: cn.jpush.android.intent.PushService
+String #141: cn.jpush.android.intent.RECEIVE_MESSAGE
+String #142: cn.jpush.android.intent.REGISTER
+String #143: cn.jpush.android.intent.REPORT
+String #144: cn.jpush.android.service.AlarmReceiver
+String #145: cn.jpush.android.service.DActivity
+String #146: cn.jpush.android.service.JNotifyActivity
+String #147: cn.jpush.android.service.PushReceiver
+String #148: cn.jpush.android.service.PushService
+String #149: cn.jpush.android.service.SchedulerReceiver
+String #150: cn.jpush.android.ui.PopWinActivity
+String #151: cn.jpush.android.ui.PushActivity
+String #152: com.anddoes.launcher.permission.UPDATE_COUNT
+String #153: com.bumptech.glide.integration.okhttp3.OkHttpGlideModule
+String #154: com.canhub.cropper.CropFileProvider
+String #155: com.canhub.cropper.CropImageActivity
+String #156: com.facebook.react.devsupport.DevSettingsActivity
+String #157: com.facebook.soloader.enabled
+String #158: com.google.android.c2dm.intent.RECEIVE
+String #159: com.google.android.c2dm.permission.RECEIVE
+String #160: com.google.android.c2dm.permission.SEND
+String #161: com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+String #162: com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+String #163: com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+String #164: com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+String #165: com.google.android.gms.auth.api.signin.RevocationBoundService
+String #166: com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+String #167: com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION
+String #168: com.google.android.gms.common.api.GoogleApiActivity
+String #169: com.google.android.gms.measurement.AppMeasurementJobService
+String #170: com.google.android.gms.measurement.AppMeasurementReceiver
+String #171: com.google.android.gms.measurement.AppMeasurementService
+String #172: com.google.android.gms.permission.ACTIVITY_RECOGNITION
+String #173: com.google.android.gms.permission.AD_ID
+String #174: com.google.android.gms.version
+String #175: com.google.android.play.core.common.PlayCoreDialogWrapperActivity
+String #176: com.google.android.providers.gsf.permission.READ_GSERVICES
+String #177: com.google.firebase.MESSAGING_EVENT
+String #178: com.google.firebase.components.ComponentDiscoveryService
+String #179: com.google.firebase.components.ComponentRegistrar
+String #180: com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar
+String #181: com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+String #182: com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar
+String #183: com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar
+String #184: com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar
+String #185: com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+String #186: com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
+String #187: com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar
+String #188: com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar
+String #189: com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar
+String #190: com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar
+String #191: com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar
+String #192: com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar
+String #193: com.google.firebase.iid.FirebaseInstanceIdReceiver
+String #194: com.google.firebase.messaging.FirebaseMessagingService
+String #195: com.google.firebase.provider.FirebaseInitProvider
+String #196: com.google.mlkit.common.internal.MlKitComponentDiscoveryService
+String #197: com.google.mlkit.common.internal.MlKitInitProvider
+String #198: com.htc.intent.action.QUICKBOOT_POWERON
+String #199: com.htc.launcher.permission.READ_SETTINGS
+String #200: com.htc.launcher.permission.UPDATE_SHORTCUT
+String #201: com.huawei.android.launcher.permission.CHANGE_BADGE
+String #202: com.huawei.android.launcher.permission.READ_SETTINGS
+String #203: com.huawei.android.launcher.permission.WRITE_SETTINGS
+String #204: com.jakewharton.processphoenix.ProcessPhoenix
+String #205: com.majeur.launcher.permission.UPDATE_BADGE
+String #206: com.oppo.launcher.permission.READ_SETTINGS
+String #207: com.oppo.launcher.permission.WRITE_SETTINGS
+String #208: com.reactnativecommunity.webview.RNCWebViewFileProvider
+String #209: com.sec.android.provider.badge.permission.READ
+String #210: com.sec.android.provider.badge.permission.WRITE
+String #211: com.sonyericsson.home.permission.BROADCAST_BADGE
+String #212: com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+String #213: data
+String #214: ethereum
+String #215: expo.modules.adapters.react.apploader.RNHeadlessAppLoader
+String #216: expo.modules.clipboard.CLIPBOARD_FILE_PROVIDER_PATHS
+String #217: expo.modules.clipboard.ClipboardFileProvider
+String #218: expo.modules.filesystem.FileSystemFileProvider
+String #219: expo.modules.imagepicker.fileprovider.ImagePickerFileProvider
+String #220: expo.modules.location.services.LocationTaskService
+String #221: expo.modules.notifications.NOTIFICATION_EVENT
+String #222: expo.modules.notifications.service.ExpoFirebaseMessagingService
+String #223: expo.modules.notifications.service.NotificationForwarderActivity
+String #224: expo.modules.notifications.service.NotificationsService
+String #225: firebase_analytics_collection_deactivated
+String #226: firebase_analytics_collection_enabled
+String #227: firebase_crashlytics_collection_enabled
+String #228: firebase_performance_collection_deactivated
+String #229: firebase_performance_collection_enabled
+String #230: google_analytics_adid_collection_enabled
+String #231: google_analytics_automatic_screen_reporting_enabled
+String #232: google_analytics_default_allow_ad_personalization_signals
+String #233: google_analytics_ssaid_collection_enabled
+String #234: http://schemas.android.com/apk/res/android
+String #235: https
+String #236: intent
+String #237: intent-filter
+String #238: io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider
+String #239: io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider
+String #240: io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService
+String #241: io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService
+String #242: io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService
+String #243: jpush.custom
+String #244: manifest
+String #245: me.everything.badger.permission.BADGE_COUNT_READ
+String #246: me.everything.badger.permission.BADGE_COUNT_WRITE
+String #247: meta-data
+String #248: onekey-wallet
+String #249: org.unimodules.core.AppLoader#react-native-headless
+String #250: package
+String #251: permission
+String #252: platformBuildVersionCode
+String #253: platformBuildVersionName
+String #254: prod
+String #255: provider
+String #256: queries
+String #257: receiver
+String #258: service
+String #259: so.onekey.app.wallet
+String #260: so.onekey.app.wallet.MainActivity
+String #261: so.onekey.app.wallet.MainApplication
+String #262: so.onekey.app.wallet.dev
+String #263: so.onekey.app.wallet.dev.ClipboardFileProvider
+String #264: so.onekey.app.wallet.dev.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+String #265: so.onekey.app.wallet.dev.FileSystemFileProvider
+String #266: so.onekey.app.wallet.dev.ImagePickerFileProvider
+String #267: so.onekey.app.wallet.dev.androidx-startup
+String #268: so.onekey.app.wallet.dev.cropper.fileprovider
+String #269: so.onekey.app.wallet.dev.fileprovider
+String #270: so.onekey.app.wallet.dev.firebaseinitprovider
+String #271: so.onekey.app.wallet.dev.mlkitinitprovider
+String #272: so.onekey.app.wallet.dev.permission.JPUSH_MESSAGE
+String #273: so.onekey.app.wallet.dev.provider
+String #274: so.onekey.app.wallet.dev.reactnativefirebaseappinitprovider
+String #275: so.onekey.app.wallet.dev.reactnativefirebasecrashlyticsinitprovider
+String #276: so.onekey.app.wallet.dev.rnshare.fileprovider
+String #277: uses-feature
+String #278: uses-permission
+String #279: uses-permission-sdk-23
+String #280: uses-sdk
+String #281: wc
+
+17:59:17.868 detox[12092] i "/Users/joe/Library/Android/sdk/build-tools/34.0.0/aapt" dump xmlstrings "/Users/joe/p2e/app-monorepo/packages/app/android/app/build/outputs/apk/androidTest/direct/debug/app-direct-debug-androidTest.apk" AndroidManifest.xml
+17:59:17.881 detox[12092] i String pool of 43 unique UTF-16 non-sorted strings, 43 entries and 0 styles using 2168 bytes:
+String #0: theme
+String #1: label
+String #2: name
+String #3: debuggable
+String #4: exported
+String #5: priority
+String #6: targetPackage
+String #7: handleProfiling
+String #8: functionalTest
+String #9: minSdkVersion
+String #10: targetSdkVersion
+String #11: extractNativeLibs
+String #12: compileSdkVersion
+String #13: compileSdkVersionCodename
+String #14: 13
+String #15: Tests for so.onekey.app.wallet.dev
+String #16: activity
+String #17: android
+String #18: android.intent.category.LAUNCHER
+String #19: android.permission.REORDER_TASKS
+String #20: android.test.runner
+String #21: androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity
+String #22: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity
+String #23: androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity
+String #24: androidx.test.orchestrator
+String #25: androidx.test.runner.AndroidJUnitRunner
+String #26: androidx.test.services
+String #27: application
+String #28: category
+String #29: com.google.android.apps.common.testing.services
+String #30: http://schemas.android.com/apk/res/android
+String #31: instrumentation
+String #32: intent-filter
+String #33: manifest
+String #34: package
+String #35: platformBuildVersionCode
+String #36: platformBuildVersionName
+String #37: queries
+String #38: so.onekey.app.wallet.dev
+String #39: so.onekey.app.wallet.dev.test
+String #40: uses-library
+String #41: uses-permission
+String #42: uses-sdk
+
+17:59:17.881 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "rm -fr /data/local/tmp/detox"
+17:59:17.900 detox[12092] i 
+17:59:17.900 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "mkdir -p /data/local/tmp/detox"
+17:59:17.919 detox[12092] i 
+17:59:17.920 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 push "/Users/joe/p2e/app-monorepo/packages/app/android/app/build/outputs/apk/direct/debug/app-direct-debug.apk" "/data/local/tmp/detox/Application.apk"
+17:59:18.785 detox[12092] i /Users/joe/p2e/app-monorepo/packages/app/android/app/build/outputs/apk/direct/debug/app-direct-debug.apk: 1 file pushed, 0 skipped. 294.3 MB/s (260948701 bytes in 0.846s)
+
+17:59:18.789 detox[12092] i /Users/joe/Library/Android/sdk/platform-tools/adb -s emulator-11654 shell pm install -r -g -t /data/local/tmp/detox/Application.apk
+17:59:19.772 detox[12092] i Success
+
+17:59:19.776 detox[12092] i /Users/joe/Library/Android/sdk/platform-tools/adb -s emulator-11654 shell pm install -r -g -t /data/local/tmp/detox/Application.apk exited with code #0
+17:59:19.777 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 push "/Users/joe/p2e/app-monorepo/packages/app/android/app/build/outputs/apk/androidTest/direct/debug/app-direct-debug-androidTest.apk" "/data/local/tmp/detox/Test.apk"
+17:59:19.828 detox[12092] i /Users/joe/p2e/app-monorepo/packages/app/android/app/build/outputs/apk/androidTest/direct/debug/app-direct-debug-androidTest.apk: 1 file pushed, 0 skipped. 245.2 MB/s (3333802 bytes in 0.013s)
+
+17:59:19.831 detox[12092] i /Users/joe/Library/Android/sdk/platform-tools/adb -s emulator-11654 shell pm install -r -g -t /data/local/tmp/detox/Test.apk
+17:59:20.086 detox[12092] i Success
+
+17:59:20.087 detox[12092] i /Users/joe/Library/Android/sdk/platform-tools/adb -s emulator-11654 shell pm install -r -g -t /data/local/tmp/detox/Test.apk exited with code #0
+17:59:20.087 detox[12092] E installApp
+17:59:20.088 detox[12092] B selectApp
+  args: ("default")
+17:59:20.088 detox[12092] B terminateApp
+  args: ()
+17:59:20.088 detox[12092] B onBeforeTerminateApp
+  args: ({"deviceId":"emulator-11654","bundleId":"so.onekey.app.wallet.dev"})
+17:59:20.088 detox[12092] E onBeforeTerminateApp
+17:59:20.088 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "am force-stop so.onekey.app.wallet.dev"
+17:59:20.172 detox[12092] i 
+17:59:20.172 detox[12092] B onTerminateApp
+  args: ({"deviceId":"emulator-11654","bundleId":"so.onekey.app.wallet.dev"})
+17:59:20.172 detox[12092] E onTerminateApp
+17:59:20.172 detox[12092] E terminateApp
+17:59:20.172 detox[12092] E selectApp
+17:59:20.172 detox[12092] E set up environment
+17:59:20.497 detox[12092] i suite1.e2e.js is assigned to emulator-11654 (Pixel_3a_API_29)
+17:59:20.497 detox[12092] B run the tests
+17:59:20.498 detox[12092] B onRunDescribeStart
+  args: ({"name":"ROOT_DESCRIBE_BLOCK"})
+17:59:20.498 detox[12092] E onRunDescribeStart
+17:59:20.498 detox[12092] B Test suite 1
+17:59:20.498 detox[12092] B onRunDescribeStart
+  args: ({"name":"Test suite 1"})
+17:59:20.498 detox[12092] E onRunDescribeStart
+17:59:20.499 detox[12092] B beforeAll
+17:59:20.500 detox[12092] B launchApp
+  args: ()
+17:59:20.500 detox[12092] B terminateApp
+  args: ("so.onekey.app.wallet.dev")
+17:59:20.500 detox[12092] B onBeforeTerminateApp
+  args: ({"deviceId":"emulator-11654","bundleId":"so.onekey.app.wallet.dev"})
+17:59:20.500 detox[12092] E onBeforeTerminateApp
+17:59:20.500 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "am force-stop so.onekey.app.wallet.dev"
+17:59:20.564 detox[12092] i 
+17:59:20.565 detox[12092] B onTerminateApp
+  args: ({"deviceId":"emulator-11654","bundleId":"so.onekey.app.wallet.dev"})
+17:59:20.565 detox[12092] E onTerminateApp
+17:59:20.565 detox[12092] E terminateApp
+17:59:20.566 detox[12092] B onBeforeLaunchApp
+  args: ({"deviceId":"emulator-11654","bundleId":"so.onekey.app.wallet.dev","launchArgs":{"detoxServer":"ws://localhost:54744","detoxSessionId":"3c459a24-664f-f908-e754-37358ea1ca60"}})
+17:59:20.566 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "date +\"%m-%d %T.000\""
+17:59:20.599 detox[12092] i 09-22 17:59:20.000
+
+17:59:20.600 detox[12092] E onBeforeLaunchApp
+17:59:20.602 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 reverse tcp:54744 tcp:54744
+17:59:20.622 detox[12092] i 54744
+
+17:59:20.623 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "pm list instrumentation"
+17:59:20.667 detox[12092] i instrumentation:so.onekey.app.wallet.dev.test/androidx.test.runner.AndroidJUnitRunner (target=so.onekey.app.wallet.dev)
+
+17:59:20.672 detox[12092] i /Users/joe/Library/Android/sdk/platform-tools/adb -s emulator-11654 shell am instrument -w -r -e detoxServer ws://localhost:54744 -e detoxSessionId 3c459a24-664f-f908-e754-37358ea1ca60 -e debug false so.onekey.app.wallet.dev.test/androidx.test.runner.AndroidJUnitRunner
+17:59:21.174 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "ps | grep \"so\.onekey\.app\.wallet\.dev$\""
+17:59:21.204 detox[12092] i u0_a145       6943  2043 5660480 104636 0                   0 R so.onekey.app.wallet.dev
+
+17:59:21.204 detox[12092] B onLaunchApp
+  args: ({"deviceId":"emulator-11654","bundleId":"so.onekey.app.wallet.dev","launchArgs":{"detoxServer":"ws://localhost:54744","detoxSessionId":"3c459a24-664f-f908-e754-37358ea1ca60"},"pid":6943})
+17:59:21.205 detox[12092] i starting ADBLogcatRecording
+17:59:21.208 detox[12092] i /Users/joe/Library/Android/sdk/platform-tools/adb -s emulator-11654 shell "logcat -T \"09-22 17:59:20.000\" --pid=6943 -f /sdcard/17571198_0.log"
+17:59:21.209 detox[12092] E onLaunchApp
+17:59:21.510 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell du /sdcard/17571198_0.log
+17:59:21.543 detox[12092] i 4	/sdcard/17571198_0.log
+
+17:59:23.130 detox[12092] i INSTRUMENTATION_STATUS: class=so.onekey.app.wallet.DetoxTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+17:59:23.131 detox[12092] i 
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+so.onekey.app.wallet.DetoxTest:
+INSTRUMENTATION_STATUS: test=runDetoxTests
+INSTRUMENTATION_STATUS_CODE: 1
+
+17:59:23.539 detox[12079] B connection :54744<->:55777
+17:59:23.554 detox[12079] i get
+  data: {"messageId":0,"type":"login","params":{"role":"app","sessionId":"3c459a24-664f-f908-e754-37358ea1ca60"}}
+17:59:23.555 detox[12079] i send
+  data: {
+    "messageId": 0,
+    "type": "loginSuccess",
+    "params": {
+      "testerConnected": true,
+      "appConnected": true
+    }
+  }
+17:59:23.555 detox[12079] i app joined session 3c459a24-664f-f908-e754-37358ea1ca60
+17:59:23.555 detox[12079] i send
+  data: {
+    "type": "appConnected"
+  }
+17:59:23.564 detox[12092] i get message
+  data: {"type":"appConnected"}
+   
+17:59:23.567 detox[12092] i send message
+  data: {"type":"isReady","params":{},"messageId":-1000}
+17:59:23.576 detox[12079] i tester exited session 3c459a24-664f-f908-e754-37358ea1ca60
+17:59:23.576 detox[12079] i send
+  data: {
+    "type": "testerDisconnected",
+    "messageId": -1
+  }
+17:59:23.576 detox[12079] E connection :54744<->:54796
+17:59:26.604 detox[12079] i app exited session 3c459a24-664f-f908-e754-37358ea1ca60
+17:59:26.604 detox[12079] E connection :54744<->:55777
+17:59:26.610 detox[12079] B connection :54744<->:55781
+17:59:26.613 detox[12079] i get
+  data: {"messageId":0,"type":"login","params":{"role":"app","sessionId":"3c459a24-664f-f908-e754-37358ea1ca60"}}
+17:59:26.613 detox[12079] i created session 3c459a24-664f-f908-e754-37358ea1ca60
+17:59:26.613 detox[12079] i send
+  data: {
+    "messageId": 0,
+    "type": "loginSuccess",
+    "params": {
+      "testerConnected": false,
+      "appConnected": true
+    }
+  }
+17:59:26.613 detox[12079] i app joined session 3c459a24-664f-f908-e754-37358ea1ca60
+17:59:33.573 detox[12092] i Failed to execute the current status query.
+17:59:36.219 detox[12079] i get
+  data: {"messageId":-1000,"type":"ready","params":{}}
+17:59:36.220 detox[12079] i Caught unhandled error:
+  error: Cannot forward the message to the Detox client.
+  
+  {
+    messageId: -1000,
+    type: 'ready',
+    params: {}
+  }
+17:59:36.261 detox[12079] i get
+  data: {"messageId":-1000,"type":"ready","params":{}}
+17:59:36.261 detox[12079] i Caught unhandled error:
+  error: Cannot forward the message to the Detox client.
+  
+  {
+    messageId: -1000,
+    type: 'ready',
+    params: {}
+  }
+18:01:20.507 detox[12092] B onHookFailure
+  args: ({"error":"Exceeded timeout of 120000 ms for a hook.\nAdd a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout.","hook":"beforeAll"})
+18:01:20.509 detox[12092] E onHookFailure
+18:01:20.511 detox[12092] E beforeAll
+  error: 'Exceeded timeout of 120000 ms for a hook.\n' +
+    'Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout.'
+18:01:20.518 detox[12092] B "create wallet" button should be visible
+18:01:20.518 detox[12092] i Test suite 1: "create wallet" button should be visible
+18:01:20.523 detox[12092] E "create wallet" button should be visible
+18:01:20.523 detox[12092] i Test suite 1: "create wallet" button should be visible [FAIL]
+18:01:20.529 detox[12092] B create wallet
+18:01:20.529 detox[12092] i Test suite 1: create wallet
+18:01:20.530 detox[12092] E create wallet
+18:01:20.531 detox[12092] i Test suite 1: create wallet [FAIL]
+18:01:20.531 detox[12092] B onRunDescribeFinish
+  args: ({"name":"Test suite 1"})
+18:01:20.531 detox[12092] E onRunDescribeFinish
+18:01:20.531 detox[12092] E Test suite 1
+18:01:20.532 detox[12092] B onRunDescribeFinish
+  args: ({"name":"ROOT_DESCRIBE_BLOCK"})
+18:01:20.532 detox[12092] E onRunDescribeFinish
+18:01:20.532 detox[12092] E run the tests
+18:01:20.544 detox[12092] B tear down environment
+18:01:20.545 detox[12092] B onBeforeCleanup
+  args: ()
+18:01:20.548 detox[12092] i saving ADBLogcatRecording to: artifacts/android.emu.debug.2023-09-22 09-57-02Z/emulator-11654 2023-09-22 10-01-20Z.startup.log
+18:01:20.548 detox[12092] i stopping ADBLogcatRecording
+18:01:20.548 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "date +\"%m-%d %T.000\""
+18:01:20.874 detox[12092] i 09-22 18:01:20.000
+
+18:01:20.876 detox[12092] i sending SIGINT to: /Users/joe/Library/Android/sdk/platform-tools/adb -s emulator-11654 shell logcat -T "09-22 17:59:20.000" --pid=6943 -f /sdcard/17571198_0.log
+18:01:20.879 detox[12092] i /Users/joe/Library/Android/sdk/platform-tools/adb -s emulator-11654 shell "logcat -T \"09-22 17:59:20.000\" --pid=6943 -f /sdcard/17571198_0.log" terminated with SIGINT
+18:01:20.880 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 pull "/sdcard/17571198_0.log" "artifacts/android.emu.debug.2023-09-22 09-57-02Z/emulator-11654 2023-09-22 10-01-20Z.startup.log"
+18:01:20.907 detox[12092] i /sdcard/17571198_0.log: 1 file pulled, 0 skipped. 50.7 MB/s (102242 bytes in 0.002s)
+
+18:01:20.907 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 shell "rm  \"/sdcard/17571198_0.log\""
+18:01:20.931 detox[12092] i 
+18:01:20.932 detox[12092] i saving FileArtifact to: artifacts/android.emu.debug.2023-09-22 09-57-02Z/detox_pid_12092.json.log { append: true }
+18:01:20.932 detox[12092] i saving FileArtifact to: artifacts/android.emu.debug.2023-09-22 09-57-02Z/detox_pid_12092.log { append: true }
+18:01:20.932 detox[12092] E onBeforeCleanup
+18:01:20.932 detox[12092] i The app has not responded to the network requests below:
+  (id = -1000) isReady: {}
+
+Unresponded network requests might result in timeout errors in Detox tests.
+
+18:01:20.934 detox[12092] i sending SIGINT to: /Users/joe/Library/Android/sdk/platform-tools/adb -s emulator-11654 shell am instrument -w -r -e detoxServer ws://localhost:54744 -e detoxSessionId 3c459a24-664f-f908-e754-37358ea1ca60 -e debug false so.onekey.app.wallet.dev.test/androidx.test.runner.AndroidJUnitRunner
+18:01:20.936 detox[12092] i /Users/joe/Library/Android/sdk/platform-tools/adb -s emulator-11654 shell am instrument -w -r -e detoxServer ws://localhost:54744 -e detoxSessionId 3c459a24-664f-f908-e754-37358ea1ca60 -e debug false so.onekey.app.wallet.dev.test/androidx.test.runner.AndroidJUnitRunner terminated with SIGINT
+18:01:20.936 detox[12092] i An error occurred while waiting for the app to become ready. Waiting for disconnection...
+  error: Failed to run application on the device
+  
+  HINT: Most likely, your tests have timed out and called detox.cleanup() while it was waiting for "ready" message (over WebSocket) from the instrumentation process.
+18:01:20.936 detox[12092] i "/Users/joe/Library/Android/sdk/platform-tools/adb" -s emulator-11654 reverse --remove tcp:54744
+18:01:20.939 detox[12092] B free
+  args: ({"adbName":"emulator-11654"}, {"shutdown":false})
+18:01:20.943 detox[12092] E free
+18:01:20.943 detox[12092] i connection closed primary-12079 /tmp/detox.primary-12079 0 tries remaining of 0
+18:01:20.943 detox[12092] i secondary-12092 exceeded connection rety amount of  or stopRetrying flag set.
+18:01:20.943 detox[12092] E tear down environment
+18:01:20.943 detox[12092] E e2e/suite1.e2e.js
+18:01:20.946 detox[12079] i socket disconnected secondary-12092
+18:01:21.338 detox[12079] E Command failed with exit code = 1:
+yarn dlx jest --config /Users/joe/p2e/app-monorepo/packages/app/e2e/jest.config.js /Users/joe/p2e/app-monorepo/packages/app/e2e
+18:01:31.340 detox[12079] i Detox server has been closed abruptly! See the error details below:
+  error: Detox server close callback was not invoked within the 10000 ms timeout
+18:01:31.344 detox[12079] E node_modules/detox/local-cli/cli.js test -c android.emu.debug -C /Users/joe/p2e/app-monorepo/packages/app/detox.config.js --record-logs all
